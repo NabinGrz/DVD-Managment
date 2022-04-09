@@ -1,0 +1,35 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+    margin-bottom: 60px;
+    font-family: "Roboto",sans-serif
+}
+.navbar-custom {
+    background-color: #4928a6;
+}
+.hero-container {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    color:white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 15px;
+}
