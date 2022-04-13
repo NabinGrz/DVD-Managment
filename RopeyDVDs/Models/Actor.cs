@@ -9,6 +9,6 @@ namespace RopeyDVDs.Models
         [Required(ErrorMessage = "First name is required")]
         public string ActorFirstName { get; set; }
         public string ActorSurname { get; set; }
-       
+
     }
 }

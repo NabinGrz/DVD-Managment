@@ -54,7 +54,7 @@ namespace RopeyDVDs.Controllers
                  // Persistent coolkie is not loss even after closong broswer
                     await _signInManager.SignInAsync(user, isPersistent: false);
 
-                    return RedirectToAction("Homepage", "Home");
+                    return RedirectToAction("Privacy", "Home");
                 }
 
                 foreach (var error in result.Errors)
@@ -86,7 +86,7 @@ namespace RopeyDVDs.Controllers
                 //returnns sign in result
                 if (result.Succeeded)
                 {
-                    return RedirectToAction("Index", "Home");
+                    return RedirectToAction("Privacy", "Home");
                 }
 
                 ModelState.AddModelError(string.Empty, "Invalid Username/Password");

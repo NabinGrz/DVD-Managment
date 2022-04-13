@@ -31,5 +31,7 @@ namespace RopeyDVDs.Data
         {
             Database.EnsureCreated();
         }
- }
+
+
+    }
 }
