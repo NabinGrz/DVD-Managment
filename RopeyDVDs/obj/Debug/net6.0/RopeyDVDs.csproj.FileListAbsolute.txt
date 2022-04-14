@@ -534,3 +534,10 @@ D:\C#\ADCW2\RopeyDVDs\obj\Debug\net6.0\refint\RopeyDVDs.dll
 D:\C#\ADCW2\RopeyDVDs\obj\Debug\net6.0\RopeyDVDs.pdb
 D:\C#\ADCW2\RopeyDVDs\obj\Debug\net6.0\RopeyDVDs.genruntimeconfig.cache
 D:\C#\ADCW2\RopeyDVDs\obj\Debug\net6.0\ref\RopeyDVDs.dll
+C:\Coursework\C#\RopeyDVDs\RopeyDVDs\bin\Debug\net6.0\Microsoft.AspNet.Identity.Core.dll
+C:\Coursework\C#\RopeyDVDs\RopeyDVDs\bin\Debug\net6.0\Microsoft.AspNet.Identity.Owin.dll
+C:\Coursework\C#\RopeyDVDs\RopeyDVDs\bin\Debug\net6.0\Microsoft.Owin.dll
+C:\Coursework\C#\RopeyDVDs\RopeyDVDs\bin\Debug\net6.0\Microsoft.Owin.Security.dll
+C:\Coursework\C#\RopeyDVDs\RopeyDVDs\bin\Debug\net6.0\Microsoft.Owin.Security.Cookies.dll
+C:\Coursework\C#\RopeyDVDs\RopeyDVDs\bin\Debug\net6.0\Microsoft.Owin.Security.OAuth.dll
+C:\Coursework\C#\RopeyDVDs\RopeyDVDs\bin\Debug\net6.0\Owin.dll

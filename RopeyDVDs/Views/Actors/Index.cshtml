@@ -26,6 +26,9 @@
 @foreach (var item in Model) {
         <tr>
             <td>
+                @Html.DisplayFor(modelItem => item.ActorNumber)
+            </td>
+            <td>
                 @Html.DisplayFor(modelItem => item.ActorFirstName)
             </td>
             <td>

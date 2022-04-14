@@ -280,9 +280,10 @@ namespace RopeyDVDs.Migrations
                 {
                     DVDNumber = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    ProduceNumber = table.Column<int>(type: "int", nullable: false),
+                    ProducerNumber = table.Column<int>(type: "int", nullable: false),
                     CategoryNumber = table.Column<int>(type: "int", nullable: false),
                     StudioNumber = table.Column<int>(type: "int", nullable: false),
+                    DVDTitleName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     DateReleased = table.Column<DateTime>(type: "datetime2", nullable: true),
                     StandardCharge = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     PenaltyCharge = table.Column<string>(type: "nvarchar(max)", nullable: false)
@@ -297,8 +298,8 @@ namespace RopeyDVDs.Migrations
                         principalColumn: "CategoryNumber",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_DVDTitles_Producers_ProduceNumber",
-                        column: x => x.ProduceNumber,
+                        name: "FK_DVDTitles_Producers_ProducerNumber",
+                        column: x => x.ProducerNumber,
                         principalTable: "Producers",
                         principalColumn: "ProducerNumber",
                         onDelete: ReferentialAction.Cascade);
@@ -452,9 +453,9 @@ namespace RopeyDVDs.Migrations
                 column: "CategoryNumber");
 
             migrationBuilder.CreateIndex(
-                name: "IX_DVDTitles_ProduceNumber",
+                name: "IX_DVDTitles_ProducerNumber",
                 table: "DVDTitles",
-                column: "ProduceNumber");
+                column: "ProducerNumber");
 
             migrationBuilder.CreateIndex(
                 name: "IX_DVDTitles_StudioNumber",

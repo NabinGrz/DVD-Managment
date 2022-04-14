@@ -1,0 +1,72 @@
+﻿@{
+    ViewData["Title"] = "GetActorDetails";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>GetActorDetails</h1>
+
+@*<p>
+    <a asp-action="Create">Create New</a>
+    </p>*@
+
+        <script>
+        function getInputValue(){
+            // Selecting the input element and get its value 
+            var inputVal = document.getElementById("ActorSurName").value;
+            $.get("/NormalUser/GetActorDetails",{name:"Smith"},function(){
+              alert(inputVal)
+            });
+            // Displaying the value
+           
+        }
+    </script>
+
+<div class="container">
+    <form action="@Url.Action("GetActionDetails", "NormalUser")" method="get">
+        <div class="row">
+            <div class="col-sm">
+                <div class="form-group">
+                    <label for="ActorSurName" class="control-label"></label>
+                    <input id="ActorSurName" name="ActorSurName" type="text" class="form-control" />
+                </div>
+            </div>
+            <div class="col-sm">
+              <div class="form-group">
+             @*      <input type="button" value="Search" onclick="location.href='@Url.Action("GetActorDetails", "NormalUser", new {name = "Smith"})'" />*@
+                    <input type="button" value="Search" onclick="getInputValue();" />
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>DVD Number</th>
+            <th>DVD Title</th>
+            <th>Cast Memeber No</th>
+            <th>Actor First Name</th>
+            <th>Actor Last Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in ViewBag.name)
+        {
+            <tr>
+                <td>@item.dvdTitle.DVDNumber</td>
+                <td>@item.dvdTitle.DVDTitleName</td>
+                <td>@item.castMember.CastMemberNo</td>
+                <td>@item.actorDetails.ActorFirstName</td>
+                <td>@item.actorDetails.ActorSurname</td>
+
+                @*     <a asp-action="Edit" asp-route-id="@item.id">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.id">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.id">Delete</a>*@
+
+            </tr>
+        }
+    </tbody>
+</table>

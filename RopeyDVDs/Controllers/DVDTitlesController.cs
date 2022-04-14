@@ -23,7 +23,7 @@ namespace RopeyDVDs.Controllers
         // GET: DVDTitles
         public async Task<IActionResult> Index()
         {
-            var ropeyDVDsContext = _context.DVDTitles.Include(d => d.Category).Include(d => d.Produce).Include(d => d.Studio);
+            var ropeyDVDsContext = _context.DVDTitles.Include(d => d.Category).Include(d => d.Producer).Include(d => d.Studio);
             return View(await ropeyDVDsContext.ToListAsync());
         }
 
@@ -37,7 +37,7 @@ namespace RopeyDVDs.Controllers
 
             var dVDTitle = await _context.DVDTitles
                 .Include(d => d.Category)
-                .Include(d => d.Produce)
+                .Include(d => d.Producer)
                 .Include(d => d.Studio)
                 .FirstOrDefaultAsync(m => m.DVDNumber == id);
             if (dVDTitle == null)
@@ -52,7 +52,7 @@ namespace RopeyDVDs.Controllers
         public IActionResult Create()
         {
             ViewData["CategoryNumber"] = new SelectList(_context.DVDCategorys, "CategoryNumber", "AgeRestricted");
-            ViewData["ProduceNumber"] = new SelectList(_context.Producers, "ProducerNumber", "ProducerName");
+            ViewData["ProducerNumber"] = new SelectList(_context.Producers, "ProducerNumber", "ProducerName");
             ViewData["StudioNumber"] = new SelectList(_context.Studios, "StudioNumber", "StudioName");
             return View();
         }
@@ -62,7 +62,7 @@ namespace RopeyDVDs.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("DVDNumber,ProduceNumber,CategoryNumber,StudioNumber,DateReleased,StandardCharge,PenaltyCharge")] DVDTitle dVDTitle)
+        public async Task<IActionResult> Create([Bind("DVDNumber,ProducerNumber,CategoryNumber,StudioNumber,DateReleased,StandardCharge,PenaltyCharge")] DVDTitle dVDTitle)
         {
             if (ModelState.IsValid)
             {
@@ -71,7 +71,7 @@ namespace RopeyDVDs.Controllers
                 return RedirectToAction(nameof(Index));
             }
             ViewData["CategoryNumber"] = new SelectList(_context.DVDCategorys, "CategoryNumber", "AgeRestricted", dVDTitle.CategoryNumber);
-            ViewData["ProduceNumber"] = new SelectList(_context.Producers, "ProducerNumber", "ProducerName", dVDTitle.ProduceNumber);
+            ViewData["ProducerNumber"] = new SelectList(_context.Producers, "ProducerNumber", "ProducerName", dVDTitle.ProducerNumber);
             ViewData["StudioNumber"] = new SelectList(_context.Studios, "StudioNumber", "StudioName", dVDTitle.StudioNumber);
             return View(dVDTitle);
         }
@@ -90,7 +90,7 @@ namespace RopeyDVDs.Controllers
                 return NotFound();
             }
             ViewData["CategoryNumber"] = new SelectList(_context.DVDCategorys, "CategoryNumber", "AgeRestricted", dVDTitle.CategoryNumber);
-            ViewData["ProduceNumber"] = new SelectList(_context.Producers, "ProducerNumber", "ProducerName", dVDTitle.ProduceNumber);
+            ViewData["ProducerNumber"] = new SelectList(_context.Producers, "ProducerNumber", "ProducerName", dVDTitle.ProducerNumber);
             ViewData["StudioNumber"] = new SelectList(_context.Studios, "StudioNumber", "StudioName", dVDTitle.StudioNumber);
             return View(dVDTitle);
         }
@@ -100,7 +100,7 @@ namespace RopeyDVDs.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("DVDNumber,ProduceNumber,CategoryNumber,StudioNumber,DateReleased,StandardCharge,PenaltyCharge")] DVDTitle dVDTitle)
+        public async Task<IActionResult> Edit(int id, [Bind("DVDNumber,ProducerNumber,CategoryNumber,StudioNumber,DateReleased,StandardCharge,PenaltyCharge")] DVDTitle dVDTitle)
         {
             if (id != dVDTitle.DVDNumber)
             {
@@ -128,7 +128,7 @@ namespace RopeyDVDs.Controllers
                 return RedirectToAction(nameof(Index));
             }
             ViewData["CategoryNumber"] = new SelectList(_context.DVDCategorys, "CategoryNumber", "AgeRestricted", dVDTitle.CategoryNumber);
-            ViewData["ProduceNumber"] = new SelectList(_context.Producers, "ProducerNumber", "ProducerName", dVDTitle.ProduceNumber);
+            ViewData["ProducerNumber"] = new SelectList(_context.Producers, "ProducerNumber", "ProducerName", dVDTitle.ProducerNumber);
             ViewData["StudioNumber"] = new SelectList(_context.Studios, "StudioNumber", "StudioName", dVDTitle.StudioNumber);
             return View(dVDTitle);
         }
@@ -143,7 +143,7 @@ namespace RopeyDVDs.Controllers
 
             var dVDTitle = await _context.DVDTitles
                 .Include(d => d.Category)
-                .Include(d => d.Produce)
+                .Include(d => d.Producer)
                 .Include(d => d.Studio)
                 .FirstOrDefaultAsync(m => m.DVDNumber == id);
             if (dVDTitle == null)

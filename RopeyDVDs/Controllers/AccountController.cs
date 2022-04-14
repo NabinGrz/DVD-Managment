@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNet.Identity.Owin;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -10,6 +11,7 @@ using Microsoft.EntityFrameworkCore;
 using RopeyDVDs.Data;
 using RopeyDVDs.Models;
 using RopeyDVDs.ViewModels;
+using SignInResult = Microsoft.AspNetCore.Identity.SignInResult;
 
 namespace RopeyDVDs.Controllers
 {
@@ -87,8 +89,13 @@ namespace RopeyDVDs.Controllers
                 if (result.Succeeded)
                 {
                     return RedirectToAction("Privacy", "Home");
-                }
 
+                }
+                //switch (result)
+                //{
+                //    case SignInStatus.Success:
+                //        return RedirectToAction(nameof(Login), "Home");
+                //}
                 ModelState.AddModelError(string.Empty, "Invalid Username/Password");
 
             }

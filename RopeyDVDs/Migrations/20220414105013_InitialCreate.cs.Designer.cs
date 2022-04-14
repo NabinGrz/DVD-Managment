@@ -12,7 +12,7 @@ using RopeyDVDs.Data;
 namespace RopeyDVDs.Migrations
 {
     [DbContext(typeof(RopeyDVDsContext))]
-    [Migration("20220409085344_InitialCreate.cs")]
+    [Migration("20220414105013_InitialCreate.cs")]
     partial class InitialCreatecs
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -320,6 +320,10 @@ namespace RopeyDVDs.Migrations
                     b.Property<int>("CategoryNumber")
                         .HasColumnType("int");
 
+                    b.Property<string>("DVDTitleName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<DateTime?>("DateReleased")
                         .HasColumnType("datetime2");
 
@@ -327,7 +331,7 @@ namespace RopeyDVDs.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("ProduceNumber")
+                    b.Property<int>("ProducerNumber")
                         .HasColumnType("int");
 
                     b.Property<string>("StandardCharge")
@@ -341,7 +345,7 @@ namespace RopeyDVDs.Migrations
 
                     b.HasIndex("CategoryNumber");
 
-                    b.HasIndex("ProduceNumber");
+                    b.HasIndex("ProducerNumber");
 
                     b.HasIndex("StudioNumber");
 
@@ -613,9 +617,9 @@ namespace RopeyDVDs.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("RopeyDVDs.Models.Producer", "Produce")
+                    b.HasOne("RopeyDVDs.Models.Producer", "Producer")
                         .WithMany()
-                        .HasForeignKey("ProduceNumber")
+                        .HasForeignKey("ProducerNumber")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -627,7 +631,7 @@ namespace RopeyDVDs.Migrations
 
                     b.Navigation("Category");
 
-                    b.Navigation("Produce");
+                    b.Navigation("Producer");
 
                     b.Navigation("Studio");
                 });
