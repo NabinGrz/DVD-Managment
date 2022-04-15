@@ -33,6 +33,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=NormalUser}/{action=GetDateOut}/{id?}");
+    pattern: "{controller=Assistant}/{action=GetDVDofNoLoan}/{id?}");
 
 app.Run();

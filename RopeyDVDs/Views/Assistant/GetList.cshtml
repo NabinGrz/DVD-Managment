@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewData["Title"] = "GetList";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>List of producers, studio and cast members detail</h1>
+
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>DVD Title</th>
+            <th>Date Released</th>
+            <th>Producer Name</th>
+            <th>Studio Name</th>
+            <th>Cast Member No</th>
+            <th>Actor First Name</th>
+            <th>Actor Last Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in ViewBag.listProducer)
+        {
+            <tr>
+                <td>@item.dvdTitle.DVDTitleName</td>
+                <td>@item.dvdTitle.DateReleased</td>
+                <td>@item.producer.ProducerName</td>
+                <td>@item.studio.StudioName</td>
+                <td>@item.castMember.CastMemberNo</td>
+                <td>@item.actorDetails.ActorFirstName</td>
+                <td>@item.actorDetails.ActorSurname</td>
+
+                @*     <a asp-action="Edit" asp-route-id="@item.id">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.id">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.id">Delete</a>*@
+
+            </tr>
+        }
+    </tbody>
+</table>

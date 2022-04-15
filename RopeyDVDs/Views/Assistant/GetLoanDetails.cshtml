@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewData["Title"] = "GetLoanDetails";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Details of last loan for the copy</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Member Firstname</th>
+            <th>Member Lastname</th>
+            <th>Member Address</th>
+            <th>Member DOB</th>
+            <th>DVD Title Name</th>
+            <th>Date Out</th>
+            <th>Date Due</th>
+            <th>Date Returned</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in ViewBag.loanDetails)
+        {
+            <tr>
+                <td>@item.member.MembershipFirstName</td>
+                <td>@item.member.MembershipLastName</td>
+                <td>@item.member.MembershipAddress</td>
+                <td>@item.member.MemberDOB</td>
+                <td>@item.dvdTitle.DVDTitleName</td>
+                <td>@item.loan.DateOut</td>
+                <td>@item.loan.DateDue</td>
+                <td>@item.loan.DateReturned</td>
+
+                @*     <a asp-action="Edit" asp-route-id="@item.id">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.id">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.id">Delete</a>*@
+
+            </tr>
+        }
+    </tbody>
+</table>

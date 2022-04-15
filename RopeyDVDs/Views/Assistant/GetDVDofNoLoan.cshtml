@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewData["Title"] = "GetDVDofNoLoan";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>GetDVDofNoLoan</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>DVD Title Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in ViewBag.dvd)
+        {
+            <tr>
+                <td>@item.dvdTitle.DVDTitleName</td>
+
+                @*     <a asp-action="Edit" asp-route-id="@item.id">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.id">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.id">Delete</a>*@
+
+            </tr>
+        }
+    </tbody>
+</table>
+

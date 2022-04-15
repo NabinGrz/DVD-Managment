@@ -82,6 +82,10 @@ namespace RopeyDVDs.Controllers
 
         //    return View(details);
         //}
+
+
+
+        //Function 3
         public IActionResult GetDateOut(int name)
         {
             /**
@@ -97,28 +101,29 @@ where (L.DateOut >= (GETDATE()-31));
 
             DateTime currentDate = DateTime.Now.Date;
             DateTime lastDate = currentDate.Subtract(new TimeSpan(31, 0, 0, 0, 0));
-
+            Console.WriteLine("============================================================");
+            Console.WriteLine("CURRENT"+currentDate);
+            Console.WriteLine("LAST DATE"+lastDate);
         
             var dvdTitle = _context.DVDTitles.ToList();
             var dvdCopy = _context.DVDCopys.ToList();
             var castMember = _context.CastMembers.ToList();
             var member = _context.Members.ToList();
             var loan = _context.Loans.ToList();
-
             
 
         var details = from d in dvdTitle
                           join dc in dvdCopy
                           on d.DVDNumber equals dc.DVDNumber into table1
-                          from dc in table1.Distinct().ToList().Where(dc => dc.DVDNumber == d.DVDNumber)
+                          from dc in table1.ToList().Where(dc => dc.DVDNumber == d.DVDNumber)
                           join l in loan on dc.CopyNumber equals l.CopyNumber into table2
-                          from l in table2.Distinct().ToList().Where(l => l.CopyNumber == dc.CopyNumber)
+                          from l in table2.ToList().Where(l => l.CopyNumber == dc.CopyNumber)
                           join c in castMember
                           on dc.DVDNumber equals c.DVDNumber into table3
-                          from c in table3.Distinct().ToList().Where(c => c.DVDNumber == dc.DVDNumber)
+                          from c in table3.ToList().Where(c => c.DVDNumber == dc.DVDNumber)
                           join m in member
                           on l.MemberNumber equals m.MembershipNumber into table4
-                          from m in table4.Distinct().ToList().Where(m => m.MembershipNumber == l.MemberNumber && m.MembershipNumber == name && DateTime.Parse(l.DateOut) >= lastDate)
+                          from m in table4.ToList().Where(m => m.MembershipNumber == l.MemberNumber && m.MembershipNumber == name && DateTime.Parse(l.DateOut) >= lastDate)
                           select new { dvdTitle = d, castMember = c,dvdCopy =dc,loan  = l,member  = m };
 
             //var r = _context.Actors.FirstOrDefault();
