@@ -546,3 +546,4 @@ C:\Coursework\C#\RopeyDVDs\RopeyDVDs\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swa
 C:\Coursework\C#\RopeyDVDs\RopeyDVDs\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Coursework\C#\RopeyDVDs\RopeyDVDs\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Coursework\C#\RopeyDVDs\RopeyDVDs\obj\Debug\net6.0\RopeyDVDs.MvcApplicationPartsAssemblyInfo.cs
+C:\Coursework\C#\RopeyDVDs\RopeyDVDs\bin\Debug\net6.0\Castle.Core.dll

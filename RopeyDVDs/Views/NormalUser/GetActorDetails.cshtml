@@ -9,31 +9,27 @@
     <a asp-action="Create">Create New</a>
     </p>*@
 
-        <script>
-        function getInputValue(){
-            // Selecting the input element and get its value 
-            var inputVal = document.getElementById("ActorSurName").value;
-            $.get("/NormalUser/GetActorDetails",{name:"Smith"},function(){
-              alert(inputVal)
-            });
-            // Displaying the value
-           
-        }
-    </script>
 
 <div class="container">
-    <form action="@Url.Action("GetActionDetails", "NormalUser")" method="get">
+    <form action="@Url.Action("GetActorDetails", "NormalUser")" method="get">
         <div class="row">
-            <div class="col-sm">
+                 <div class="col-sm">
                 <div class="form-group">
                     <label for="ActorSurName" class="control-label"></label>
-                    <input id="ActorSurName" name="ActorSurName" type="text" class="form-control" />
+                    <select id="surname" name="surname" class="form-control custom-select bg-white border-left-0 border-md" required>
+                        <option value="">Select a actor surname</option>
+                        @foreach (var name in  ViewBag.actorName)
+                        {
+                            <option value="@name.ActorSurname"> @name.ActorFirstName @name.ActorSurname</option>
+                        }
+                    </select>
                 </div>
             </div>
             <div class="col-sm">
-              <div class="form-group">
-             @*      <input type="button" value="Search" onclick="location.href='@Url.Action("GetActorDetails", "NormalUser", new {name = "Smith"})'" />*@
-                    <input type="button" value="Search" onclick="getInputValue();" />
+                <div class="form-group row">
+                    <div class="col-sm-10">
+                        <button type="submit" class="btn btn-primary">Search</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -41,7 +37,12 @@
 </div>
 
 
-
+@if (ViewBag.name == null)
+{
+    <h2>Not Found</h2>
+}
+else
+{
 <table class="table">
     <thead>
         <tr>
@@ -70,3 +71,4 @@
         }
     </tbody>
 </table>
+}

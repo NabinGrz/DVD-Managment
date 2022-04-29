@@ -344,7 +344,8 @@ namespace RopeyDVDs.Migrations
                     CopyNumber = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     DVDNumber = table.Column<int>(type: "int", nullable: false),
-                    DatePurchased = table.Column<DateTime>(type: "datetime2", nullable: false)
+                    DatePurchased = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    Stock = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {

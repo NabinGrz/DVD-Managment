@@ -300,6 +300,9 @@ namespace RopeyDVDs.Migrations
                     b.Property<DateTime>("DatePurchased")
                         .HasColumnType("datetime2");
 
+                    b.Property<int>("Stock")
+                        .HasColumnType("int");
+
                     b.HasKey("CopyNumber");
 
                     b.HasIndex("DVDNumber");

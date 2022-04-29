@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "kPx/tAb0X1r2aFgei73/UtkwJTAlnB1vBgkDS5ncNa0=",
+  "Hash": "UjN9LUrxIwblEQUCPj/DOx5+lD5HmHPi95bYbJQyzms=",
   "Source": "RopeyDVDs",
   "BasePath": "_content/RopeyDVDs",
   "Mode": "Default",
@@ -1938,6 +1938,23 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "C:\\Coursework\\C#\\RopeyDVDs\\RopeyDVDs\\wwwroot\\img\\accessdenied.png",
+      "SourceId": "RopeyDVDs",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Coursework\\C#\\RopeyDVDs\\RopeyDVDs\\wwwroot\\",
+      "BasePath": "_content/RopeyDVDs",
+      "RelativePath": "img/accessdenied.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\accessdenied.png"
+    },
+    {
       "Identity": "C:\\Coursework\\C#\\RopeyDVDs\\RopeyDVDs\\wwwroot\\img\\booklib.jpg",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
@@ -1953,6 +1970,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\booklib.jpg"
+    },
+    {
+      "Identity": "C:\\Coursework\\C#\\RopeyDVDs\\RopeyDVDs\\wwwroot\\img\\online.png",
+      "SourceId": "RopeyDVDs",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Coursework\\C#\\RopeyDVDs\\RopeyDVDs\\wwwroot\\",
+      "BasePath": "_content/RopeyDVDs",
+      "RelativePath": "img/online.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\online.png"
     },
     {
       "Identity": "C:\\Coursework\\C#\\RopeyDVDs\\RopeyDVDs\\wwwroot\\js\\site.js",

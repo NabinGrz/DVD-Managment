@@ -1,35 +1,31 @@
-﻿
-@{
+﻿@{
     ViewData["Title"] = "GetDateOut";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <h1>Details of DVD's copy</h1>
-        <script>
-        function getInputValue(){
-            // Selecting the input element and get its value 
-            var inputVal = document.getElementById("ActorSurName").value;
-            $.get("/NormalUser/GetActorDetails",{name:"Smith"},function(){
-              alert(inputVal)
-            });
-            // Displaying the value
-           
-        }
-    </script>
+
 
 <div class="container">
-    <form action="@Url.Action("GetActionDetails", "NormalUser")" method="get">
+    <form action="@Url.Action("GetDateOut", "NormalUser")" method="get">
         <div class="row">
             <div class="col-sm">
                 <div class="form-group">
                     <label for="ActorSurName" class="control-label"></label>
-                    <input id="ActorSurName" name="ActorSurName" type="text" class="form-control" />
+                    <select id="memberNumber" name="memberNumber" class="form-control custom-select bg-white border-left-0 border-md" required>
+                        <option value="">Select a member id</option>
+                        @foreach (var member in ViewBag.memberNumbers)
+                        {
+                            <option value="@member.MembershipNumber"> @member.MembershipNumber - @member.MembershipFirstName</option>
+                        }
+                    </select>
                 </div>
             </div>
-            <div class="col-sm">
-              <div class="form-group">
-             @*      <input type="button" value="Search" onclick="location.href='@Url.Action("GetActorDetails", "NormalUser", new {name = "Smith"})'" />*@
-                    <input type="button" value="Search" onclick="getInputValue();" />
+                <div class="col-sm">
+                <div class="form-group row">
+                    <div class="col-sm-10">
+                        <button type="submit" class="btn btn-primary">Search</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -53,7 +49,7 @@
                 <td>@item.dvdTitle.DVDTitleName</td>
                 <td>@item.dvdCopy.CopyNumber</td>
                 <td>@item.loan.DateOut</td>
-                
+
 
                 @*     <a asp-action="Edit" asp-route-id="@item.id">Edit</a> |
                     <a asp-action="Details" asp-route-id="@item.id">Details</a> |

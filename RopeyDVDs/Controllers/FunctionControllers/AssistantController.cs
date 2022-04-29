@@ -1,9 +1,11 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using RopeyDVDs.Data;
 
 namespace RopeyDVDs.Controllers
 {
+    [Authorize(Roles = "Manager,Assistant")]
     public class AssistantController : Controller
     {
 
@@ -14,21 +16,8 @@ namespace RopeyDVDs.Controllers
         {
             _dbcontext = dbcontext;
         }
-        // GET: AssistantController
-        public ActionResult Index()
-        {
-            return View();
-        }
-        /**
-
-         * 
-         */
-        // GET: AssistantController/Details/5
-        public ActionResult Details(int id)
-        {
-            return View();
-        }
         //FUNCTION 4
+        // Assistant/GetList
         public IActionResult GetList()
         {
             /**
@@ -66,7 +55,9 @@ order by  dt.DateReleased asc,a.ActorSurname asc
             return View(listProducer);
         }
 
+        //last loan data not coming
         //FUNCTION 5
+        //https://localhost:7135/Assistant/GetLoanDetails?copynumber=4
         public IActionResult GetLoanDetails(int copynumber)
         {
             /**
@@ -78,6 +69,7 @@ order by  dt.DateReleased asc,a.ActorSurname asc
             */
             var dvdTitle = _dbcontext.DVDTitles.ToList();
             var loan = _dbcontext.Loans.ToList();
+            var lastloan = loan.LastOrDefault();
             var member = _dbcontext.Members.ToList();
             var dvdCopy = _dbcontext.DVDCopys.ToList();
             var loanDetails = from l in loan
@@ -93,6 +85,8 @@ order by  dt.DateReleased asc,a.ActorSurname asc
             //var r = _context.Actors.FirstOrDefault();
             //ViewBag.last = r;
             ViewBag.loanDetails = loanDetails;
+            Console.WriteLine(ViewBag.loanDetails);
+            ViewBag.copyNumber = _dbcontext.DVDCopys.ToArray();
             return View(loanDetails);
         }
 
@@ -101,6 +95,7 @@ order by  dt.DateReleased asc,a.ActorSurname asc
 
 
         //FOR FUNCTION 13
+        //Assistant/GetDVDofNoLoan
         public IActionResult GetDVDofNoLoan()
         {
             /**
@@ -130,7 +125,7 @@ where (l.DateReturned = '0' and L.DateOut >= (GETDATE()-31))
             return View(dvd);
         }
 
-
+        // Assistant/GetLoans
         public IActionResult GetTotalLoans()
         {
             /**
@@ -183,32 +178,7 @@ where (L.DateOut >= (GETDATE()-31) and l.DateReturned = '0')
 
 
          */
-        // GET: AssistantController/Create
-        public ActionResult Create()
-        {
-            return View();
-        }
 
-        // POST: AssistantController/Create
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
-        // GET: AssistantController/Edit/5
-        public ActionResult Edit(int id)
-        {
-            return View();
-        }
 
         // POST: AssistantController/Edit/5
         [HttpPost]
@@ -225,25 +195,5 @@ where (L.DateOut >= (GETDATE()-31) and l.DateReturned = '0')
             }
         }
 
-        // GET: AssistantController/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
-
-        // POST: AssistantController/Delete/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
     }
 }

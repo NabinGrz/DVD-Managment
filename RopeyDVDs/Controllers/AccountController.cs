@@ -4,12 +4,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity.Owin;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using RopeyDVDs.Data;
 using RopeyDVDs.Models;
+using RopeyDVDs.Services;
 using RopeyDVDs.ViewModels;
 using SignInResult = Microsoft.AspNetCore.Identity.SignInResult;
 
@@ -31,6 +33,7 @@ namespace RopeyDVDs.Controllers
 
 
         //FOR REGISTER page vierw
+        [AllowAnonymous]
         public IActionResult Register()
         {
             return View();
@@ -38,6 +41,7 @@ namespace RopeyDVDs.Controllers
         //FOR REGISTER
         //
         [HttpPost]
+        [AllowAnonymous]
         public async Task<IActionResult> Register(RegisterViewModel registermodel)
         {
             //check if incoming model object is valid
@@ -45,7 +49,8 @@ namespace RopeyDVDs.Controllers
             {
                 var user = new IdentityUser
                 {
-                    UserName = registermodel.Username,
+                    UserName = registermodel.Email,
+                    Email = registermodel.Email,
                 };
 
                 var result = await _userManager.CreateAsync(user, registermodel.Password);
@@ -73,6 +78,7 @@ namespace RopeyDVDs.Controllers
 
         //FOR LOGIN PAGE VIEW
         [HttpGet]
+        [AllowAnonymous]
         public IActionResult Login()
         {
             return View();
@@ -80,22 +86,18 @@ namespace RopeyDVDs.Controllers
 
         //FOR LOGIN
         [HttpPost]
+        [AllowAnonymous]
         public async Task<IActionResult> Login(LoginViewModel loginmodel)
         {
             if (ModelState.IsValid)
             {
-                var result = await _signInManager.PasswordSignInAsync(loginmodel.Username, loginmodel.Password, loginmodel.RememberMe, false);//if lock account on failure
+                var result = await _signInManager.PasswordSignInAsync(loginmodel.Email, loginmodel.Password, !loginmodel.RememberMe, false);//if lock account on failure
                 //returnns sign in result
                 if (result.Succeeded)
                 {
-                    return RedirectToAction("Privacy", "Home");
+                    return RedirectToAction("Index", "Home");
 
                 }
-                //switch (result)
-                //{
-                //    case SignInStatus.Success:
-                //        return RedirectToAction(nameof(Login), "Home");
-                //}
                 ModelState.AddModelError(string.Empty, "Invalid Username/Password");
 
             }
@@ -108,5 +110,55 @@ namespace RopeyDVDs.Controllers
 
             return RedirectToAction("Login");
         }
+        //Account/ResetPassword
+        [HttpGet]
+        [Authorize(Roles ="Assistant")]
+        public  IActionResult ResetPassword()
+        {
+
+            return View();
+        }
+
+
+        //Account/ResetPassword
+        [HttpPost]
+        public async Task<IActionResult> ResetPassword(ResetPasswordViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                var user = await _userManager.GetUserAsync(User); //gets current logged in user records
+                if(user == null)
+                {
+                    return RedirectToAction("Login");
+                }
+
+                //changes user password method is this..
+
+                var result = await _userManager.ChangePasswordAsync(user,model.CurrentPassword,model.NewPassword);
+                if(!result.Succeeded)
+                {
+                    foreach (var error in result.Errors)
+
+                    {
+                        ModelState.AddModelError(string.Empty, error.Description);
+                    }
+                    return View();
+                }
+
+                await _signInManager.RefreshSignInAsync(user);
+                return View("ResetPasswordConfirmation");
+            }
+            return View();
+        }
+
+        [HttpGet]
+        [AllowAnonymous]
+        public IActionResult AccessDenied()
+        {
+
+            return View();
+        }
+
+
     }
 }

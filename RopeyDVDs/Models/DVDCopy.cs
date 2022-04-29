@@ -13,6 +13,7 @@ namespace RopeyDVDs.Models
         public DVDTitle DVDTitle  {get; set;}
         [Required(ErrorMessage = "Purchased Date is required")]
         public DateTime DatePurchased {get; set;}
+        public int Stock { get; set; }
 
     }
 }

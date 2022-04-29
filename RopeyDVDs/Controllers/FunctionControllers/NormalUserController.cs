@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using RopeyDVDs.Data;
@@ -13,15 +14,10 @@ namespace RopeyDVDs.Controllers
         {
             _context = context;
         }
-        // GET: NormalUserController
-        public ActionResult Index()
-        {
-            return View();
-        }
         // https://localhost:7135/NormalUser/GetActorDetails?name=Smith
-        // GET: NormalUserController/Details/5
         //FUNCTION 1
-        public IActionResult GetActorDetails(String name)
+        [Authorize]
+        public IActionResult GetActorDetails(String surname)
         {
 
             var dvdTitle = _context.DVDTitles.ToList();
@@ -33,12 +29,12 @@ namespace RopeyDVDs.Controllers
                 on d.DVDNumber equals c.DVDNumber into table1
                 from c in table1.Distinct().ToList().Where(c => c.DVDNumber == d.DVDNumber)
                 join a in actorDetails on c.ActorNumber equals a.ActorNumber into table2
-                from a in table2.Distinct().ToList().Where(a => a.ActorNumber == c.ActorNumber && a.ActorSurname == name)
+                from a in table2.Distinct().ToList().Where(a => a.ActorNumber == c.ActorNumber && a.ActorSurname == surname)
                 select new { dvdTitle = d, castMember = c, actorDetails = a };
             var r = _context.Actors.FirstOrDefault();
             ViewBag.last = r;
             ViewBag.name = details;
-
+            ViewBag.actorName = _context.Actors.ToArray();
             return View(details);
         }
         /**
@@ -54,6 +50,7 @@ namespace RopeyDVDs.Controllers
          */
 
         //FUNCTION 2
+        //[Authorize]
         //public IActionResult GetActorsLoanCopy(String name)
         //{
 
@@ -86,15 +83,20 @@ namespace RopeyDVDs.Controllers
 
 
         //Function 3
-        public IActionResult GetDateOut(int name)
+        //https://localhost:7135/NormalUser/GetDateOut?memNumber=3
+        public IActionResult GetDateOut(int memberNumber)
         {
             /**
-select DT.DVDTitleName,DC.CopyNumber,L.DateOut,DATEDIFF(DAY,L.DateOut,'2022-04-14') aS dIFF from DVDTitles dt
+select distinct DT.DVDTitleName,DC.CopyNumber,L.DateOut,DATEDIFF(DAY,L.DateOut,'2022-04-14') aS dIFF from DVDTitles dt
 inner join DVDCopys dc 
 on dt.DVDNumber = dc.DVDNumber
 inner join Loans l
 on dc.CopyNumber = l.CopyNumber
-where (L.DateOut >= (GETDATE()-31));
+inner join CastMembers c
+on c.DVDNumber = dc.DVDNumber
+inner join Members m
+on l.MemberNumber = m.MembershipNumber
+where (L.DateOut >= (GETDATE()-31) and m.MembershipNumber = 3);
 
              DateTime currentDate = DateTime.Now.Date;
             */
@@ -115,84 +117,22 @@ where (L.DateOut >= (GETDATE()-31));
         var details = from d in dvdTitle
                           join dc in dvdCopy
                           on d.DVDNumber equals dc.DVDNumber into table1
-                          from dc in table1.ToList().Where(dc => dc.DVDNumber == d.DVDNumber)
+                          from dc in table1.ToList().Distinct().Where(dc => dc.DVDNumber == d.DVDNumber)
                           join l in loan on dc.CopyNumber equals l.CopyNumber into table2
-                          from l in table2.ToList().Where(l => l.CopyNumber == dc.CopyNumber)
+                          from l in table2.ToList().Distinct().Where(l => l.CopyNumber == dc.CopyNumber)
                           join c in castMember
                           on dc.DVDNumber equals c.DVDNumber into table3
-                          from c in table3.ToList().Where(c => c.DVDNumber == dc.DVDNumber)
+                          from c in table3.ToList().Distinct().Where(c => c.DVDNumber == dc.DVDNumber)
                           join m in member
                           on l.MemberNumber equals m.MembershipNumber into table4
-                          from m in table4.ToList().Where(m => m.MembershipNumber == l.MemberNumber && m.MembershipNumber == name && DateTime.Parse(l.DateOut) >= lastDate)
+                          from m in table4.ToList().Distinct().Where(m => m.MembershipNumber == l.MemberNumber && m.MembershipNumber == memberNumber && DateTime.Parse(l.DateOut) >= lastDate)
                           select new { dvdTitle = d, castMember = c,dvdCopy =dc,loan  = l,member  = m };
 
             //var r = _context.Actors.FirstOrDefault();
             //ViewBag.last = r;
             ViewBag.date = details;
-
+            ViewBag.memberNumbers = _context.Members.ToArray();
             return View(details);
-        }
-        // GET: NormalUserController/Create
-        public ActionResult Create()
-        {
-            return View();
-        }
-
-        // POST: NormalUserController/Create
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
-        // GET: NormalUserController/Edit/5
-        public ActionResult Edit(int id)
-        {
-            return View();
-        }
-
-        // POST: NormalUserController/Edit/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
-        // GET: NormalUserController/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
-
-        // POST: NormalUserController/Delete/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
         }
     }
 }

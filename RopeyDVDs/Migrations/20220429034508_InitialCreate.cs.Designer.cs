@@ -12,7 +12,7 @@ using RopeyDVDs.Data;
 namespace RopeyDVDs.Migrations
 {
     [DbContext(typeof(RopeyDVDsContext))]
-    [Migration("20220414105013_InitialCreate.cs")]
+    [Migration("20220429034508_InitialCreate.cs")]
     partial class InitialCreatecs
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -301,6 +301,9 @@ namespace RopeyDVDs.Migrations
 
                     b.Property<DateTime>("DatePurchased")
                         .HasColumnType("datetime2");
+
+                    b.Property<int>("Stock")
+                        .HasColumnType("int");
 
                     b.HasKey("CopyNumber");
 

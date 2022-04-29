@@ -5,8 +5,33 @@
 }
 
 <h1>Details of last loan for the copy</h1>
+    <form action="@Url.Action("GetLoanDetails", "Assistant")" method="get">
+        <div class="row">
+            <div class="col-sm">
+                <div class="form-group">
+                    <label for="ActorSurName" class="control-label"></label>
+                    <select id="copynumber" name="copynumber" class="form-control custom-select bg-white border-left-0 border-md" required>
+                        <option value="">Select a copy number</option>
+                        @foreach (var copy in ViewBag.copyNumber)
+                        {
+                            <option value="@copy.CopyNumber">Copy Number: @copy.CopyNumber</option>
+                        }
+                    </select>
+                </div>
+            </div>
+                <div class="col-sm">
+                <div class="form-group row">
+                    <div class="col-sm-10">
+                        <button type="submit" class="btn btn-primary">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
 
-<table class="table">
+
+@if (ViewBag.loanDetails != null)
+{<table class="table">
     <thead>
         <tr>
             <th>Member Firstname</th>
@@ -40,3 +65,9 @@
         }
     </tbody>
 </table>
+   
+}
+else
+{
+     <h2>Not Found</h2>
+}
