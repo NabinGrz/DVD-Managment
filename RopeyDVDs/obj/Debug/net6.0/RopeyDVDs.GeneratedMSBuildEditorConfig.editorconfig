@@ -87,6 +87,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzaXN0YW50XERlbGV0ZURWRENvcHkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Coursework/C\#/RopeyDVDs/RopeyDVDs/Views/Assistant/GetDVDCopyListNotLoaned.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzaXN0YW50XEdldERWRENvcHlMaXN0Tm90TG9hbmVkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Coursework/C\#/RopeyDVDs/RopeyDVDs/Views/Assistant/GetDVDofNoLoan.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzaXN0YW50XEdldERWRG9mTm9Mb2FuLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

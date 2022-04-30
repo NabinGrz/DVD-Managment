@@ -1,0 +1,39 @@
+﻿
+@{
+    ViewData["Title"] = "GetDVDCopyListNotLoaned";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>A list of all DVD copies currently on loan with total loans</h1>
+           
+<table class="table">
+    <thead>
+        <tr>
+
+            <th>DVDTitleName</th>
+            <th>CopyNumber</th>
+            <th>MembershipFirstName</th>
+            <th>DateOut</th>
+            <th>TotalLoans</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in ViewBag.totalloans)
+        {
+            <tr>
+                <td>@item.DVDTitleName </td>
+                <td>@item.CopyNumber </td>
+                <td>@item.MembershipFirstName </td>
+                <td>@item.DateOut </td>
+                <td>@item.TotalLoans </td>
+                <td>
+                 @*   <ul class="list-inline m-0">
+                        <li class="list-inline-item">
+                            <a href="@Url.Action("DeleteCopy","Assistant",new { item.dvdCopy.CopyNumber} )" class="btn btn-danger" type="button" data-toggle="tooltip" data-placement="top" title="Delete">Delete</a>
+                        </li>
+                    </ul>*@
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

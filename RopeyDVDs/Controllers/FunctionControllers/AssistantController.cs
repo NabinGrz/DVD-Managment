@@ -18,7 +18,7 @@ namespace RopeyDVDs.Controllers
             _dbcontext = dbcontext;
         }
         //FUNCTION 4
-        // Assistant/GetList
+        //https://localhost:44344/Assistant/GetList
         public IActionResult GetList()
         {
             /**
@@ -92,7 +92,7 @@ order by  dt.DateReleased asc,a.ActorSurname asc
         }
 
         //FOR FUNCTION 13
-        //Assistant/GetDVDofNoLoan
+        //https://localhost:44344/Assistant/GetDVDofNoLoan
         public IActionResult GetDVDofNoLoan()
         {
             /**
@@ -162,7 +162,47 @@ where (l.DateReturned = '0' and L.DateOut >= (GETDATE()-31))
         }
 
         // GET: Actors/Delete/5
-     
+
+        //FOR FUNCTION 11 //Total count not coming accurately
+        //https://localhost:44344/Assistant/GetDVDCopyListNotLoaned
+        public IActionResult GetDVDCopyListNotLoaned()
+        {
+            /**
+            select dt.DVDTitleName,dc.CopyNumber,m.MembershipFirstName,l.DateOut,count(l.DateOut) as "Total Loans" from Members m
+            inner join loans l on l.MemberNumber= m.MembershipNumber
+            inner join DVDCopys dc on dc.CopyNumber = l.CopyNumber
+            inner join DVDTitles dt on dt.DVDNumber = dc.DVDNumber
+			where l.DateReturned <> '0'
+			group by dt.DVDTitleName,dc.CopyNumber,m.MembershipFirstName,l.DateOut
+            
+            */
+            String c = "0";
+            var member = _dbcontext.Members.ToList();
+            var loan = _dbcontext.Loans.ToList();
+            var dvdTitle = _dbcontext.DVDTitles.ToList();
+            var dvdCopy = _dbcontext.DVDCopys.ToList();
+
+            var copyloan = from l in loan
+                           join m in member on l.MemberNumber equals m.MembershipNumber into table1
+                           from m in table1.Distinct().ToList().Where(m => m.MembershipNumber == l.MemberNumber).Distinct().ToList()
+                           join dc in dvdCopy on l.CopyNumber equals dc.CopyNumber into table2
+                           from dc in table2.Distinct().ToList().Where(dc => dc.CopyNumber == l.CopyNumber).Distinct().ToList()
+                           join dt in dvdTitle on dc.DVDNumber equals dt.DVDNumber into table3
+                           from dt in table3.Distinct().ToList().Where(dt => dt.DVDNumber == dc.DVDNumber && l.DateReturned != c).Distinct().ToList()
+                           group new { l, m, dc, dt } by new { dt.DVDTitleName, dc.CopyNumber, m.MembershipFirstName, l.DateOut}
+                           into grp
+                           select new
+                           {
+                               TotalLoans = grp.Key.DateOut.Count(),
+                               grp.Key.DVDTitleName,
+                               grp.Key.CopyNumber,
+                               grp.Key.MembershipFirstName,
+                               grp.Key.DateOut,
+                               
+                           };
+            ViewBag.totalloans = copyloan;
+            return View(copyloan);
+        }
 
         //FOR FUNCTIONN 12 ..WRONXA
         /**
@@ -188,10 +228,11 @@ where (L.DateOut >= (GETDATE()-31) and l.DateReturned = '0')
 
          */
         //FUNCTION 10 PART 1
+        //https://localhost:44344/Assistant/GetListOfDVDCopy
         public IActionResult GetListOfDVDCopy(bool copyDeleted = false)
         {
             ViewBag.copyDeleted = copyDeleted;
-            
+
             /**
           select dc.CopyNumber,dc.DVDNumber,l.DateReturned,dc.DatePurchased from DVDCopys dc
 INNER JOIN Loans l
@@ -208,7 +249,7 @@ where (dc.DatePurchased < (GETDATE()-365) and l.DateReturned <> '0')
                       join l in loan on dc.CopyNumber equals l.CopyNumber into table1
                       from l in table1.Distinct().Where(l => l.CopyNumber == dc.CopyNumber && l.DateReturned != d && dc.DatePurchased < lastDate)
 
-                      select  new {loan = l, dvdCopy = dc };
+                      select new { loan = l, dvdCopy = dc };
             ViewBag.dvdList = dvd;
             return View(dvd);
         }
@@ -220,8 +261,8 @@ where (dc.DatePurchased < (GETDATE()-365) and l.DateReturned <> '0')
             var copy = _dbcontext.DVDCopys.Where(l => l.CopyNumber == copynumber).First();
             _dbcontext.DVDCopys.Remove(copy);
             _dbcontext.SaveChanges();
-            
-            return RedirectToAction("GetListOfDVDCopy", new {copyDeleted = true});
+
+            return RedirectToAction("GetListOfDVDCopy", new { copyDeleted = true });
         }
 
         // POST: AssistantController/Edit/5
