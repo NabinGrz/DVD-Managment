@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using RopeyDVDs.Data;
+using RopeyDVDs.Models;
 
 namespace RopeyDVDs.Controllers
 {
@@ -35,19 +36,19 @@ order by  dt.DateReleased asc,a.ActorSurname asc
             var studio = _dbcontext.Studios.ToList();
             var actor = _dbcontext.Actors.ToList();
             var listProducer = from dt in dvdTitle
-                          join c in castMember on dt.DVDNumber equals c.DVDNumber into table1
-                          from c in table1.ToList().Where(c => c.DVDNumber == dt.DVDNumber).ToList()
+                               join c in castMember on dt.DVDNumber equals c.DVDNumber into table1
+                               from c in table1.ToList().Where(c => c.DVDNumber == dt.DVDNumber).ToList()
 
-                          join p in producer on dt.ProducerNumber equals p.ProducerNumber into table2
-                          from p in table2.ToList().Where(p => p.ProducerNumber == dt.ProducerNumber).ToList()
+                               join p in producer on dt.ProducerNumber equals p.ProducerNumber into table2
+                               from p in table2.ToList().Where(p => p.ProducerNumber == dt.ProducerNumber).ToList()
 
-                          join s in studio on dt.StudioNumber equals s.StudioNumber into table3
-                          from s in table3.ToList().Where(s => s.StudioNumber == dt.StudioNumber).ToList()
+                               join s in studio on dt.StudioNumber equals s.StudioNumber into table3
+                               from s in table3.ToList().Where(s => s.StudioNumber == dt.StudioNumber).ToList()
 
-                          join a in actor on c.ActorNumber equals a.ActorNumber into table4
-                          from a in table4.ToList().Where(a => a.ActorNumber == c.ActorNumber).ToList()
-                          orderby dt.DateReleased ascending, a.ActorSurname ascending
-                          select new { dvdTitle = dt, castMember = c, actorDetails = a,studio =s, producer  = p };
+                               join a in actor on c.ActorNumber equals a.ActorNumber into table4
+                               from a in table4.ToList().Where(a => a.ActorNumber == c.ActorNumber).ToList()
+                               orderby dt.DateReleased ascending, a.ActorSurname ascending
+                               select new { dvdTitle = dt, castMember = c, actorDetails = a, studio = s, producer = p };
             //var r = _context.Actors.FirstOrDefault();
             //ViewBag.last = r;
             ViewBag.listProducer = listProducer;
@@ -73,15 +74,15 @@ order by  dt.DateReleased asc,a.ActorSurname asc
             var member = _dbcontext.Members.ToList();
             var dvdCopy = _dbcontext.DVDCopys.ToList();
             var loanDetails = from l in loan
-                               join m in member on l.MemberNumber equals m.MembershipNumber into table1
-                               from m in table1.ToList().Where(m => m.MembershipNumber == l.MemberNumber).ToList()
+                              join m in member on l.MemberNumber equals m.MembershipNumber into table1
+                              from m in table1.ToList().Where(m => m.MembershipNumber == l.MemberNumber).ToList()
 
-                               join dc in dvdCopy on l.CopyNumber equals dc.CopyNumber into table2
-                               from dc in table2.ToList().Where(dc => dc.CopyNumber == l.CopyNumber && l.CopyNumber ==  copynumber).ToList()
+                              join dc in dvdCopy on l.CopyNumber equals dc.CopyNumber into table2
+                              from dc in table2.ToList().Where(dc => dc.CopyNumber == l.CopyNumber && l.CopyNumber == copynumber).ToList()
 
-                               join dt in dvdTitle on dc.DVDNumber equals dt.DVDNumber into table3
-                               from dt in table3.ToList().Where(dt => dt.DVDNumber == dc.DVDNumber).ToList()
-                               select new { dvdTitle = dt, loan  = l, member = m,dvdCopy = dc };
+                              join dt in dvdTitle on dc.DVDNumber equals dt.DVDNumber into table3
+                              from dt in table3.ToList().Where(dt => dt.DVDNumber == dc.DVDNumber).ToList()
+                              select new { dvdTitle = dt, loan = l, member = m, dvdCopy = dc };
             //var r = _context.Actors.FirstOrDefault();
             //ViewBag.last = r;
             ViewBag.loanDetails = loanDetails;
@@ -89,10 +90,6 @@ order by  dt.DateReleased asc,a.ActorSurname asc
             ViewBag.copyNumber = _dbcontext.DVDCopys.ToArray();
             return View(loanDetails);
         }
-
-
-
-
 
         //FOR FUNCTION 13
         //Assistant/GetDVDofNoLoan
@@ -112,19 +109,20 @@ where (l.DateReturned = '0' and L.DateOut >= (GETDATE()-31))
             var dvdCopy = _dbcontext.DVDCopys.ToList();
 
             var dvd = from dt in dvdTitle
-                              join dc in dvdCopy on dt.DVDNumber equals dc.DVDNumber into table1
-                              from dc in table1.Distinct().ToList().Where(dc => dc.DVDNumber == dt.DVDNumber).Distinct().ToList()
+                      join dc in dvdCopy on dt.DVDNumber equals dc.DVDNumber into table1
+                      from dc in table1.Distinct().ToList().Where(dc => dc.DVDNumber == dt.DVDNumber).Distinct().ToList()
 
-                              join l in loan on dc.CopyNumber equals l.CopyNumber into table2
-                              from l in table2.Distinct().ToList().Where(l => l.CopyNumber == dc.CopyNumber && l.DateReturned == d && DateTime.Parse(l.DateOut) >= lastDate).Distinct().ToList()
+                      join l in loan on dc.CopyNumber equals l.CopyNumber into table2
+                      from l in table2.Distinct().ToList().Where(l => l.CopyNumber == dc.CopyNumber && l.DateReturned == d && DateTime.Parse(l.DateOut) >= lastDate).Distinct().ToList()
 
-                              select new { dvdTitle = dt, loan = l, dvdCopy = dc };
+                      select new { dvdTitle = dt, loan = l, dvdCopy = dc };
             //var r = _context.Actors.FirstOrDefault();
             //ViewBag.last = r;
             ViewBag.dvd = dvd;
             return View(dvd);
         }
 
+        //FUNCTION 8 ayena
         // Assistant/GetLoans
         public IActionResult GetTotalLoans()
         {
@@ -147,14 +145,25 @@ where (l.DateReturned = '0' and L.DateOut >= (GETDATE()-31))
                       from l in table1.Distinct().ToList().Where(l => l.MemberNumber == m.MembershipNumber).Distinct().ToList()
 
                       join mc in membercat on m.MembershipNumber equals mc.MembershipCategoryNumber into table2
-                      from mc in table2.Distinct().ToList().Where(mc => mc.MembershipCategoryNumber == m.MembershipCategoryNumber && l.DateReturned != c )
-                      
-                      select new { member = m, loan = l, membercat = mc };
+                      from mc in table2.Distinct().ToList().Where(mc => mc.MembershipCategoryNumber == m.MembershipCategoryNumber && l.DateReturned != c)
+                      group new { l, m, mc } by new { m.MembershipFirstName, m.MembershipCategoryNumber, mc.MembershipCategoryTotalLoans }
+                      into grp
+                      select new
+                      {
+                          grp.Key.MembershipFirstName,
+                          grp.Key.MembershipCategoryNumber,
+                          grp.Key.MembershipCategoryTotalLoans,
+                      };
             //var r = _context.Actors.FirstOrDefault();
             //ViewBag.last = r;
-            ViewBag.dvd = dvd;
+
+            ViewBag.totalloans = dvd;
             return View(dvd);
         }
+
+        // GET: Actors/Delete/5
+     
+
         //FOR FUNCTIONN 12 ..WRONXA
         /**
          * 
@@ -178,7 +187,42 @@ where (L.DateOut >= (GETDATE()-31) and l.DateReturned = '0')
 
 
          */
+        //FUNCTION 10 PART 1
+        public IActionResult GetListOfDVDCopy(bool copyDeleted = false)
+        {
+            ViewBag.copyDeleted = copyDeleted;
+            
+            /**
+          select dc.CopyNumber,dc.DVDNumber,l.DateReturned,dc.DatePurchased from DVDCopys dc
+INNER JOIN Loans l
+on dc.CopyNumber = l.CopyNumber
+where (dc.DatePurchased < (GETDATE()-365) and l.DateReturned <> '0')
+          */
+            DateTime currentDate = DateTime.Now.Date;
+            DateTime lastDate = currentDate.Subtract(new TimeSpan(365, 0, 0, 0, 0));
+            String d = "0";
+            var loan = _dbcontext.Loans.ToList();
+            var dvdCopy = _dbcontext.DVDCopys.ToList();
 
+            var dvd = from dc in dvdCopy
+                      join l in loan on dc.CopyNumber equals l.CopyNumber into table1
+                      from l in table1.Distinct().Where(l => l.CopyNumber == dc.CopyNumber && l.DateReturned != d && dc.DatePurchased < lastDate)
+
+                      select  new {loan = l, dvdCopy = dc };
+            ViewBag.dvdList = dvd;
+            return View(dvd);
+        }
+
+        //FUNCTION 10 PART2
+        [HttpGet]
+        public async Task<IActionResult> DeleteCopy(int copynumber)
+        {
+            var copy = _dbcontext.DVDCopys.Where(l => l.CopyNumber == copynumber).First();
+            _dbcontext.DVDCopys.Remove(copy);
+            _dbcontext.SaveChanges();
+            
+            return RedirectToAction("GetListOfDVDCopy", new {copyDeleted = true});
+        }
 
         // POST: AssistantController/Edit/5
         [HttpPost]

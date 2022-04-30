@@ -1,0 +1,43 @@
+﻿@{
+    ViewData["Title"] = "GetListOfDVDCopy";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>The list of DVD Copies purchased year ago and not on loan</h1>
+@if (ViewBag.copyDeleted)
+{
+@*    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>DVD Copy has been deleted!</strong>
+        <button type="button" asp-action="GetListOfDVDCopy" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>*@
+}
+<table class="table">
+    <thead>
+        <tr>
+
+            <th>Copy Number</th>
+            <th>Date Returned</th>
+            <th>Date Purchased</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in ViewBag.dvdList)
+        {
+            <tr>
+                <td>@item.dvdCopy.CopyNumber</td>
+                <td>@item.loan.DateReturned</td>
+                <td>@item.dvdCopy.DatePurchased</td>
+                <td>
+                    <ul class="list-inline m-0">
+                        <li class="list-inline-item">
+                            <a href="@Url.Action("DeleteCopy","Assistant",new { item.dvdCopy.CopyNumber} )" class="btn btn-danger" type="button" data-toggle="tooltip" data-placement="top" title="Delete">Delete</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
