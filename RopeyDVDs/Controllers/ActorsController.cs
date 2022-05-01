@@ -99,7 +99,8 @@ namespace RopeyDVDs.Controllers
                 try
                 {
                     _context.Update(actor);
-                    await _context.SaveChangesAsync();
+                   var result = await _context.SaveChangesAsync();
+                    Console.WriteLine(result);
                 }
                 catch (DbUpdateConcurrencyException)
                 {

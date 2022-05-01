@@ -16,17 +16,19 @@
             <div class="form-group">
                 <label asp-for="ProducerNumber" class="control-label"></label>
                 <input asp-for="ProducerNumber" class="form-control" />
-               @* <select asp-for="ProducerNumber" class ="form-control" asp-items="ViewBag.ProducerNumber"></select>*@
             </div>
             <div class="form-group">
                 <label asp-for="CategoryNumber" class="control-label"></label>
                 <input asp-for="CategoryNumber" class="form-control" />
-        @*        <select asp-for="CategoryNumber" class ="form-control" asp-items="ViewBag.CategoryNumber"></select>*@
             </div>
             <div class="form-group">
                 <label asp-for="StudioNumber" class="control-label"></label>
                 <input asp-for="StudioNumber" class="form-control" />
-               @* <select asp-for="StudioNumber" class ="form-control" asp-items="ViewBag.StudioNumber"></select>*@
+            </div>
+            <div class="form-group">
+                <label asp-for="DVDTitleName" class="control-label"></label>
+                <input asp-for="DVDTitleName" class="form-control" />
+                <span asp-validation-for="DVDTitleName" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="DateReleased" class="control-label"></label>

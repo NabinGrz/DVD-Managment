@@ -37,48 +37,46 @@ namespace RopeyDVDs.Controllers
             ViewBag.actorName = _context.Actors.ToArray();
             return View(details);
         }
-        /**
-         SELECT DISTINCT count(l.DateReturned) as cc,L.LoanTypeNumber,d.DatePurchased,DT.DVDNumber,C.ActorNumber,A.ActorFirstName,A.ActorSurname,l.DateReturned
-  FROM Loans L
-  INNER JOIN DVDCopys D ON L.CopyNumber = D.CopyNumber
-  
-  INNER JOIN DVDTitles DT ON DT.DVDNumber = D.DVDNumber
-  INNER JOIN CastMembers C ON D.DVDNumber = C.DVDNumber
-  INNER JOIN Actors A ON C.ActorNumber = A.ActorNumber
-  group by (l.DateReturned)
-  having (L.DateReturned <> '0');
-         */
+   
 
         //FUNCTION 2
-        //[Authorize]
-        //public IActionResult GetActorsLoanCopy(String name)
-        //{
-
-        //    var dvdTitle = _context.DVDTitles.ToList();
-        //    var dvdCopy = _context.DVDCopys.ToList();
-        //    var castMember = _context.CastMembers.ToList();
-        //    var actorDetails = _context.Actors.ToList();
-        //    var loan = _context.Loans.FirstOrDefault();
-        //    var details = from d in dvdTitle join dc in dvdCopy //dvdtitle dvdcopy
-        //                  on d.DVDNumber equals dc.DVDNumber into table1
-        //                  from dc in table1.Distinct().ToList().Where(dc => dc.DVDNumber == d.DVDNumber) //dvdcopy castmember
-
-        //                  join c in castMember on dc.DVDNumber equals c.DVDNumber into table2
-        //                  from c in table2.Distinct().ToList().Where(c => c.DVDNumber == dc.DVDNumber) //castmember dvdcopy
-
-        //                  join l in loan on dc.CopyNumber equals l.CopyNumber into table4
-        //                  from dcc in table4.Distinct().ToList().Where(dcc => dcc.CopyNumber == l.CopyNumber) //actor castmember
-
-        //                  join a in actorDetails on c.ActorNumber equals a.ActorNumber into table3
-        //                  from a in table3.Distinct().ToList().Where(a => a.ActorNumber == c.ActorNumber && a.ActorSurname == name)
-        //                  select new { dvdTitle = d, castMember = c, actorDetails = a ,loan = l,dvdCopy = dc};
-
-        //    //var r = _context.Actors.FirstOrDefault();
-        //    //ViewBag.last = r;
-        //    ViewBag.name = details;
-
-        //    return View(details);
-        //}
+        [Authorize]
+        public IActionResult GetActorsLoanCopy(String name)
+        {
+            /**
+       select distinct a.ActorFirstName,dt.DVDTitleName,dc.Stock from Actors a
+       inner join CastMembers c
+       on a.ActorNumber = c.ActorNumber
+       inner join DVDTitles dt
+       on dt.DVDNumber = c.DVDNumber
+       inner join DVDCopys  dc
+       on dc.DVDNumber = dt.DVDNumber
+       inner join loans l
+       on l.CopyNumber = dc.CopyNumber
+       where(a.ActorFirstName = 'Will' and dc.Stock >= 1 and l.DateReturned <> '0')
+    */
+            var dvdTitle = _context.DVDTitles.ToList();
+            var dvdCopy = _context.DVDCopys.ToList();
+            var castMember = _context.CastMembers.ToList();
+            var actorDetails = _context.Actors.ToList();
+            var loan = _context.Loans.ToList();
+            var details = from a in actorDetails
+                          join c in castMember on a.ActorNumber equals c.ActorNumber into table1
+                          from c in table1.Distinct().ToList().Where(c => c.ActorNumber == a.ActorNumber && a.ActorSurname == name)
+                          from dt in dvdTitle
+                          join c2 in castMember on dt.DVDNumber equals c2.DVDNumber into table2
+                          from c2 in table2.Distinct().ToList().Where(c2 => c2.DVDNumber == dt.DVDNumber)
+                          from dc in dvdCopy
+                          join dt2 in dvdTitle on dc.DVDNumber equals dt2.DVDNumber into table3
+                          from dt2 in table3.Distinct().ToList().Where(dt2 => dt2.DVDNumber == dc.DVDNumber && dc.Stock >=1)
+                          from l in loan
+                          join dc3 in dvdCopy on l.CopyNumber equals dc3.CopyNumber into table4
+                          from dc3 in table4.Distinct().ToList().Where(dc3 => dc3.CopyNumber == l.CopyNumber && l.DateReturned != "0")
+                          select new { dvdTitle = dt, castMember = c, actorDetails = a, loan = l, dvdCopy = dc };
+            ViewBag.name = details;
+            Console.WriteLine(ViewBag.name);
+            return View(details);
+        }
 
 
 
@@ -104,17 +102,17 @@ where (L.DateOut >= (GETDATE()-31) and m.MembershipNumber = 3);
             DateTime currentDate = DateTime.Now.Date;
             DateTime lastDate = currentDate.Subtract(new TimeSpan(31, 0, 0, 0, 0));
             Console.WriteLine("============================================================");
-            Console.WriteLine("CURRENT"+currentDate);
-            Console.WriteLine("LAST DATE"+lastDate);
-        
+            Console.WriteLine("CURRENT" + currentDate);
+            Console.WriteLine("LAST DATE" + lastDate);
+
             var dvdTitle = _context.DVDTitles.ToList();
             var dvdCopy = _context.DVDCopys.ToList();
             var castMember = _context.CastMembers.ToList();
             var member = _context.Members.ToList();
             var loan = _context.Loans.ToList();
-            
 
-        var details = from d in dvdTitle
+
+            var details = from d in dvdTitle
                           join dc in dvdCopy
                           on d.DVDNumber equals dc.DVDNumber into table1
                           from dc in table1.ToList().Distinct().Where(dc => dc.DVDNumber == d.DVDNumber)
@@ -126,7 +124,7 @@ where (L.DateOut >= (GETDATE()-31) and m.MembershipNumber = 3);
                           join m in member
                           on l.MemberNumber equals m.MembershipNumber into table4
                           from m in table4.ToList().Distinct().Where(m => m.MembershipNumber == l.MemberNumber && m.MembershipNumber == memberNumber && DateTime.Parse(l.DateOut) >= lastDate)
-                          select new { dvdTitle = d, castMember = c,dvdCopy =dc,loan  = l,member  = m };
+                          select new { dvdTitle = d, castMember = c, dvdCopy = dc, loan = l, member = m };
 
             //var r = _context.Actors.FirstOrDefault();
             //ViewBag.last = r;

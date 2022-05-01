@@ -34,11 +34,12 @@
 {<table class="table">
     <thead>
         <tr>
+            <th>Copy Number</th>
+            <th>DVD Title Name</th>
             <th>Member Firstname</th>
             <th>Member Lastname</th>
             <th>Member Address</th>
             <th>Member DOB</th>
-            <th>DVD Title Name</th>
             <th>Date Out</th>
             <th>Date Due</th>
             <th>Date Returned</th>
@@ -48,14 +49,15 @@
         @foreach (var item in ViewBag.loanDetails)
         {
             <tr>
-                <td>@item.member.MembershipFirstName</td>
-                <td>@item.member.MembershipLastName</td>
-                <td>@item.member.MembershipAddress</td>
-                <td>@item.member.MemberDOB</td>
-                <td>@item.dvdTitle.DVDTitleName</td>
-                <td>@item.loan.DateOut</td>
-                <td>@item.loan.DateDue</td>
-                <td>@item.loan.DateReturned</td>
+                <td>@item.CopyNumber</td>
+                <td>@item.DVDTitleName</td>
+                <td>@item.MembershipFirstName</td>
+                <td>@item.MembershipLastName</td>
+                <td>@item.MembershipAddress</td>
+                <td>@item.MemberDOB</td>
+                <td>@item.DateOut</td>
+                <td>@item.DateDue</td>
+                <td>@item.DateReturned</td>
 
                 @*     <a asp-action="Edit" asp-route-id="@item.id">Edit</a> |
                     <a asp-action="Details" asp-route-id="@item.id">Details</a> |

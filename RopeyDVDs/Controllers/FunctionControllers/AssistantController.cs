@@ -73,22 +73,67 @@ order by  dt.DateReleased asc,a.ActorSurname asc
             var lastloan = loan.LastOrDefault();
             var member = _dbcontext.Members.ToList();
             var dvdCopy = _dbcontext.DVDCopys.ToList();
-            var loanDetails = from l in loan
-                              join m in member on l.MemberNumber equals m.MembershipNumber into table1
-                              from m in table1.ToList().Where(m => m.MembershipNumber == l.MemberNumber).ToList()
+            var loanDetails = (from l in loan
+                               join m in member on l.MemberNumber equals m.MembershipNumber into table1
+                               from m in table1.ToList().Where(m => m.MembershipNumber == l.MemberNumber).ToList()
 
-                              join dc in dvdCopy on l.CopyNumber equals dc.CopyNumber into table2
-                              from dc in table2.ToList().Where(dc => dc.CopyNumber == l.CopyNumber && l.CopyNumber == copynumber).ToList()
+                               join dc in dvdCopy on l.CopyNumber equals dc.CopyNumber into table2
+                               from dc in table2.ToList().Where(dc => dc.CopyNumber == l.CopyNumber && l.CopyNumber == copynumber).ToList()
 
-                              join dt in dvdTitle on dc.DVDNumber equals dt.DVDNumber into table3
-                              from dt in table3.ToList().Where(dt => dt.DVDNumber == dc.DVDNumber).ToList()
-                              select new { dvdTitle = dt, loan = l, member = m, dvdCopy = dc };
+                               join dt in dvdTitle on dc.DVDNumber equals dt.DVDNumber into table3
+                               from dt in table3.ToList().Where(dt => dt.DVDNumber == dc.DVDNumber).ToList()
+                               group new { dt, l, m, dc } by new { l.CopyNumber, dt.DVDTitleName, m.MembershipFirstName, m.MembershipLastName, m.MemberDOB, m.MembershipAddress, l.DateDue, l.DateOut, l.DateReturned }
+                              into grp
+                               select new
+                               {
+                                   grp.Key.CopyNumber,
+                                   grp.Key.DVDTitleName,
+                                   grp.Key.MembershipFirstName,
+                                   grp.Key.MembershipLastName,
+                                   grp.Key.MemberDOB,
+                                   grp.Key.MembershipAddress,
+                                   grp.Key.DateDue,
+                                   grp.Key.DateOut,
+                                   grp.Key.DateReturned,
+                               });
             //var r = _context.Actors.FirstOrDefault();
             //ViewBag.last = r;
             ViewBag.loanDetails = loanDetails;
-            Console.WriteLine(ViewBag.loanDetails);
             ViewBag.copyNumber = _dbcontext.DVDCopys.ToArray();
             return View(loanDetails);
+        }
+
+        //FUNCTION 6
+        public IActionResult ListAllMembers()
+        {
+            ViewBag.allmembers = _dbcontext.Members.ToList();
+            return RedirectToAction("Index", "Members");
+        }
+
+        public IActionResult AddDVDCopy(int membershipNumber)
+        {
+            ViewBag.MemberAge = _dbcontext.Members.Where(x => x.MembershipNumber == membershipNumber).First();
+            String dob = ViewBag.MemberAge.MemberDOB;//GETTING MEMBER DOB
+            String todaysDate = DateTime.Now.ToShortDateString();
+
+            //CONVERTING IN DATE TIME
+            DateTime cDOB = DateTime.Parse(dob);
+            DateTime ctodaysDate = DateTime.Parse(todaysDate);
+
+            Console.WriteLine(todaysDate);
+            Console.WriteLine(cDOB);//{11/25/1992 12:00:00 AM}
+            Console.WriteLine(ctodaysDate);//{5/1/2022 12:00:00 AM}
+
+            //CALCULATING YEARS FOR AGE
+            TimeSpan dayDiff = ctodaysDate.Subtract(cDOB);
+            Console.Write(dayDiff.Days.ToString());
+            var age = dayDiff.Days / 365;
+            Console.Write(age);
+
+            ViewBag.memAge = age;
+
+           // ViewBag.Restriction = _dbcontext.DVDCopys.Where(dc => dc.CopyNumber == )
+            return View();
         }
 
         //FOR FUNCTION 13
@@ -124,6 +169,7 @@ where (l.DateReturned = '0' and L.DateOut >= (GETDATE()-31))
 
         //FUNCTION 8 ayena
         // Assistant/GetLoans
+        //https://localhost:44344/Assistant/GetTotalLoans
         public IActionResult GetTotalLoans()
         {
             /**
@@ -140,25 +186,33 @@ where (l.DateReturned = '0' and L.DateOut >= (GETDATE()-31))
             var loan = _dbcontext.Loans.ToList();
             var membercat = _dbcontext.MembershipCategorys.ToList();
 
-            var dvd = from m in member
-                      join l in loan on m.MembershipNumber equals l.MemberNumber into table1
-                      from l in table1.Distinct().ToList().Where(l => l.MemberNumber == m.MembershipNumber).Distinct().ToList()
+            var dvd = (from m in member
+                       join l in loan on m.MembershipNumber equals l.MemberNumber into table1
+                       from l in table1.Distinct().ToList().Where(l => l.MemberNumber == m.MembershipNumber).Distinct().ToList()
 
-                      join mc in membercat on m.MembershipNumber equals mc.MembershipCategoryNumber into table2
-                      from mc in table2.Distinct().ToList().Where(mc => mc.MembershipCategoryNumber == m.MembershipCategoryNumber && l.DateReturned != c)
-                      group new { l, m, mc } by new { m.MembershipFirstName, m.MembershipCategoryNumber, mc.MembershipCategoryTotalLoans }
+                       join mc in membercat on m.MembershipCategoryNumber equals mc.MembershipCategoryNumber into table2
+                       from mc in table2.Distinct().ToList().Where(mc => mc.MembershipCategoryNumber == m.MembershipCategoryNumber)
+                       group new { l, m, mc } by new { m.MembershipFirstName, m.MembershipCategoryNumber, mc.MembershipCategoryTotalLoans }
                       into grp
-                      select new
-                      {
-                          grp.Key.MembershipFirstName,
-                          grp.Key.MembershipCategoryNumber,
-                          grp.Key.MembershipCategoryTotalLoans,
-                      };
-            //var r = _context.Actors.FirstOrDefault();
-            //ViewBag.last = r;
-
+                       select new
+                       {
+                           //
+                           grp.Key.MembershipFirstName,
+                           grp.Key.MembershipCategoryNumber,
+                           grp.Key.MembershipCategoryTotalLoans,
+                           TotalLoans = grp.Count(),
+                       }).OrderBy(x => x.MembershipFirstName);
             ViewBag.totalloans = dvd;
             return View(dvd);
+        }
+
+
+        //FUNCTION 9
+        public IActionResult AddDVDTitle()
+        {
+            ViewBag.producer = _dbcontext.Producers;
+            ViewBag.actor = _dbcontext.Actors;
+            return View();
         }
 
         // GET: Actors/Delete/5
@@ -182,24 +236,24 @@ where (l.DateReturned = '0' and L.DateOut >= (GETDATE()-31))
             var dvdTitle = _dbcontext.DVDTitles.ToList();
             var dvdCopy = _dbcontext.DVDCopys.ToList();
 
-            var copyloan = from l in loan
-                           join m in member on l.MemberNumber equals m.MembershipNumber into table1
-                           from m in table1.Distinct().ToList().Where(m => m.MembershipNumber == l.MemberNumber).Distinct().ToList()
-                           join dc in dvdCopy on l.CopyNumber equals dc.CopyNumber into table2
-                           from dc in table2.Distinct().ToList().Where(dc => dc.CopyNumber == l.CopyNumber).Distinct().ToList()
-                           join dt in dvdTitle on dc.DVDNumber equals dt.DVDNumber into table3
-                           from dt in table3.Distinct().ToList().Where(dt => dt.DVDNumber == dc.DVDNumber && l.DateReturned != c).Distinct().ToList()
-                           group new { l, m, dc, dt } by new { dt.DVDTitleName, dc.CopyNumber, m.MembershipFirstName, l.DateOut}
+            var copyloan = (from l in loan
+                            join m in member on l.MemberNumber equals m.MembershipNumber into table1
+                            from m in table1.Distinct().ToList().Where(m => m.MembershipNumber == l.MemberNumber).Distinct().ToList()
+                            join dc in dvdCopy on l.CopyNumber equals dc.CopyNumber into table2
+                            from dc in table2.Distinct().ToList().Where(dc => dc.CopyNumber == l.CopyNumber).Distinct().ToList()
+                            join dt in dvdTitle on dc.DVDNumber equals dt.DVDNumber into table3
+                            from dt in table3.Distinct().ToList().Where(dt => dt.DVDNumber == dc.DVDNumber && l.DateReturned != c).Distinct().ToList()
+                            group new { l, m, dc, dt } by new { dt.DVDTitleName, dc.CopyNumber, m.MembershipFirstName, l.DateOut }
                            into grp
-                           select new
-                           {
-                               TotalLoans = grp.Key.DateOut.Count(),
-                               grp.Key.DVDTitleName,
-                               grp.Key.CopyNumber,
-                               grp.Key.MembershipFirstName,
-                               grp.Key.DateOut,
-                               
-                           };
+                            select new
+                            {
+                                TotalLoans = grp.Count(),
+                                grp.Key.DVDTitleName,
+                                grp.Key.CopyNumber,
+                                grp.Key.MembershipFirstName,
+                                grp.Key.DateOut,
+
+                            }).OrderBy(X => X.TotalLoans);
             ViewBag.totalloans = copyloan;
             return View(copyloan);
         }
@@ -265,6 +319,109 @@ where (dc.DatePurchased < (GETDATE()-365) and l.DateReturned <> '0')
             return RedirectToAction("GetListOfDVDCopy", new { copyDeleted = true });
         }
 
+        //FUNCTION 7 SHOWING ALL 
+        public IActionResult ListAllLoans()
+        {
+            /*
+            select l.CopyNumber,m.MembershipFirstName,l.DateDue,l.DateReturned from loans l
+            inner join members m on l.MemberNumber = m.MembershipNumber
+            where l.DateReturned = '0'
+             */
+
+            DateTime currentDate = DateTime.Now.Date;
+            DateTime lastDate = currentDate.Subtract(new TimeSpan(365, 0, 0, 0, 0));
+            String d = "0";
+            var loan = _dbcontext.Loans.ToList();
+            var member = _dbcontext.Members.ToList();
+            var loanDetail = from l in loan
+                             join m in member on l.MemberNumber equals m.MembershipNumber into table1
+                             from m in table1.ToList().Where(m => m.MembershipNumber == l.MemberNumber && l.DateReturned == d)
+
+                             select new { loan = l, member = m };
+            ViewBag.loanDetails = loanDetail;
+            return View(loanDetail);
+        }
+
+
+        public IActionResult EditDVDCopyDetails(int CopyNumber)
+        {
+            //GET LOAN DETAILS OF THE COPY NUMBER
+            ViewBag.UserLoanDetails = _dbcontext.Loans.Where(l => l.CopyNumber == CopyNumber).First();
+            var cop = ViewBag.UserLoanDetails;
+
+            //GET DVD OF THE COPY NUMBER
+            ViewBag.CopyDVDNumber = _dbcontext.DVDCopys.Where(c => c.CopyNumber == CopyNumber).First();
+            int copydvdnum = ViewBag.CopyDVDNumber.DVDNumber;
+
+            //GET PENALTY CHARGE OF DVD NUMBER
+            ViewBag.DVDNumber = _dbcontext.DVDTitles.Where(d => d.DVDNumber == copydvdnum).First();
+            ViewBag.PenaltyCharge = ViewBag.DVDNumber.PenaltyCharge;
+            int pCharge = int.Parse(ViewBag.PenaltyCharge);
+
+            //CALCULATING DATE OF RETURN
+            DateTime dueDate = DateTime.Parse(ViewBag.UserLoanDetails.DateDue);
+            DateTime returnDate = DateTime.Now.Date.Date;
+
+            //GETTING ONLY DATE
+            var onlydate = returnDate.ToShortDateString();
+
+            //GETTING DAY DIFFERENCE
+            TimeSpan difference = returnDate.Subtract(dueDate);
+            int dueDay = difference.Days;
+
+            ViewBag.ReturnDate = onlydate;
+            if (dueDay < 0)
+            {
+                ViewBag.OverDue = "0";
+                ViewBag.TotalCharge = "0";
+            }
+            else
+            {
+                ViewBag.OverDue = dueDay;
+                int totalCharge = dueDay * pCharge;
+                ViewBag.TotalCharge = totalCharge;
+                Console.WriteLine(difference);
+            }
+
+
+            return View();
+        }
+
+        public async Task<IActionResult> RecordDVDCopy
+        (Loan loan, int loanNumber, int loantypenumber, int copynumber, int membernumber, string dateOut, string dateReturned, string dateDue)
+        {
+            DVDCopy copyDB = new DVDCopy();
+            Loan loanDB = new Loan();
+            Member memberDB = new Member();
+            loan.LoanNumber = loanNumber;
+            loan.LoanTypeNumber = loantypenumber;
+            loan.CopyNumber = copynumber;
+            loan.MemberNumber = membernumber;
+            loan.DateOut = dateOut;
+            loan.DateDue = dateDue;
+            loan.DateReturned = dateReturned;
+            loan.LoanType = loanDB.LoanType;
+            loan.Copy = loanDB.Copy;
+            loan.Member = loanDB.Member;
+
+            if (ModelState.IsValid)
+            {
+                _dbcontext.Loans.Update(loan);
+                var result = await _dbcontext.SaveChangesAsync();
+                Console.WriteLine(result);
+                return RedirectToAction("ListAllLoans");
+
+            }
+
+            return View();
+
+        }
+
+        public IActionResult UpdateDVDCopyDetails(int copyNumber)
+        {
+            ViewBag.loan_details = _dbcontext.Loans.Where(x => x.CopyNumber == copyNumber).First();
+            return View();
+        }
         // POST: AssistantController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -279,6 +436,21 @@ where (dc.DatePurchased < (GETDATE()-365) and l.DateReturned <> '0')
                 return View();
             }
         }
+
+        //FUNCTION 12
+        /**
+       select distinct m.MembershipFirstName,m.MembershipLastName,m.MembershipAddress,dt.DVDTitleName,l.DateOut,DATEDIFF(day, l.DateOut, GETDATE()) as "No of days" from members m
+          inner join Loans l
+          on l.MemberNumber = m.MembershipNumber
+          inner join DVDCopys dc
+          on dc.CopyNumber = l.CopyNumber
+          inner join DVDTitles dt
+          on dt.DVDNumber = dc.DVDNumber
+          where(max(l.DateOut)<= (GETDATE()-31) )
+ORDER BY L.DateOut;
+        
+         */
+
 
     }
 }

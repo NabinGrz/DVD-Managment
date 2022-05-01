@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewData["Title"] = "GetActorsLoanCopy";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+a.ActorFirstName,dt.DVDTitleName,dc.Stock
+<h1>GetActorsLoanCopy</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ActorFirstName</th>
+            <th>DVDTitleName</th>
+            <th>Stock</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in  ViewBag.name)
+        {
+            <tr>
+                <td>@item.dvdTitle.DVDTitleName</td>
+                <td>@item.actorDetails.ActorFirstName</td>
+                <td>@item.dvdCopy.Stock</td>
+
+
+                @*     <a asp-action="Edit" asp-route-id="@item.id">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.id">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.id">Delete</a>*@
+
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,60 @@
+﻿@{
+    ViewData["Title"] = "RecordDVDCopy";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Edit DVD records</h1>
+
+<div class="row">
+    <div class="col-md-4">
+        <form action="/Assistant/RecordDVDCopy/@ViewBag.UserLoanDetails.LoanNumber" method="post">
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="form-group">
+                <label id="LoanNumber" class="control-label">Loan Number</label>
+                <input type="text" value="@ViewBag.UserLoanDetails.LoanNumber" id="LoanNumber" name="LoanNumber" placeholder="">
+            </div>
+            <div class="form-group">
+                <label id="LoanTypeNumber" class="control-label">Loan Type Number</label>
+                <input type="text" value="@ViewBag.UserLoanDetails.LoanTypeNumber" id="LoanTypeNumber" name="LoanTypeNumber" placeholder="">
+            </div>
+            <div class="form-group">
+                <label id="MemberNumber" class="control-label">Member Number</label>
+                <input type="text" value="@ViewBag.UserLoanDetails.MemberNumber" id="MemberNumber" name="MemberNumber" placeholder="">
+            </div>
+            <div class="form-group">
+                <label id="CopyNumber" class="control-label">Copy Number</label>
+                <input type="text" value="@ViewBag.UserLoanDetails.CopyNumber" id="CopyNumber" name="CopyNumber" placeholder="">
+            </div>
+            <div class="form-group">
+                <label id="DateReturned" class="control-label">Date Returned</label>
+                <input type="text" value="@ViewBag.ReturnDate" id="DateReturned" name="DateReturned" placeholder="">
+            </div>
+             <div class="form-group">
+                <label id="DateOut" class="control-label">Date Out</label>
+                <input type="text" value="@ViewBag.UserLoanDetails.DateOut" id="DateOut" name="DateOut" placeholder="">
+            </div>
+            <div class="form-group">
+                <label id="DateDue" class="control-label">Date Due</label>
+                <input type="text" value="@ViewBag.UserLoanDetails.DateDue" id="DateDue" name="DateDue" placeholder="">
+            </div>
+            <div class="form-group">
+                <label id="OverDue" class="control-label">Over Due Days</label>
+                <input type="text" value="@ViewBag.OverDue" id="OverDue" name="OverDue" placeholder="">
+            </div>
+             <div class="form-group">
+                <label id="PenaltyCharge" class="control-label">Your penalty charge wil be: @ViewBag.OverDue x @ViewBag.PenaltyCharge => @ViewBag.TotalCharge</label>
+            </div>
+          @*  <div class="form-group">
+                <label id="PenaltyCharge" class="control-label">Penalty Charge </label>
+                <input type="text" value="@ViewBag.PenaltyCharge" id="PenaltyCharge" name="PenaltyCharge" placeholder="">
+            </div>*@
+           <div class="col-sm">
+                <div class="form-group row">
+                    <div class="col-sm-10">
+                        <button type="submit" class="btn btn-primary">Record</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

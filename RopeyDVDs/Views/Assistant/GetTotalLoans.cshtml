@@ -1,29 +1,39 @@
-﻿
-@{
+﻿@{
     ViewData["Title"] = "GetDVDofNoLoan";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>GetDVDofNoLoan</h1>
+<h1>Total loans a member has taken</h1>
 
 <table class="table">
     <thead>
         <tr>
-            <th>DVD Title Name</th>
-            <th>DVD Title Name</th>
+            <th>Membership First Name</th>
+            <th>Membership Category Number</th>
+            <th>Allowed Loans</th>
+            <th>Total Loans</th>
         </tr>
     </thead>
     <tbody>
+        <h3 style="background-color:powderblue;">Too many DVDs on loan for:</h3>
         @foreach (var item in ViewBag.totalloans)
         {
-            <tr>
-                <td>@item.member.MembershipNumber</td>
-                <td>@item.membercat.MembershipCategoryTotalLoans</td>
-               
 
-                @*     <a asp-action="Edit" asp-route-id="@item.id">Edit</a> |
-                    <a asp-action="Details" asp-route-id="@item.id">Details</a> |
-                    <a asp-action="Delete" asp-route-id="@item.id">Delete</a>*@
+            @if (int.Parse(@item.MembershipCategoryTotalLoans) < @item.TotalLoans)
+            {
+                <div class="container" style="position:relative; right:80px; top:2px; background-color:red; width:300px">
+                    <ul style="ali">
+                    <li>@item.MembershipFirstName</li>
+                </ul>
+                </div>
+                
+            }
+            <tr>
+
+                <td style="width:210px">@item.MembershipFirstName</td>
+                <td style="width:210px">@item.MembershipCategoryNumber</td>
+                <td style="width:180px">@item.MembershipCategoryTotalLoans</td>
+                <td style="width:180px">@item.TotalLoans</td>
 
             </tr>
         }

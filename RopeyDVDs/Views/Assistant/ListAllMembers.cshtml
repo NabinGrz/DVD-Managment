@@ -7,15 +7,14 @@
 
 <h1>Index</h1>
 
-
 <table class="table">
     <thead>
-        <tr style="width:210px">
+        <tr>
              <th>
                 @Html.DisplayNameFor(model => model.MembershipNumber)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.MembershipCategory.MembershipCategoryNumber)
+                @Html.DisplayNameFor(model => model.MembershipCategory)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.MembershipFirstName)
@@ -26,19 +25,19 @@
     <tbody>
 @foreach (var item in Model) {
         <tr>
-            <td style="width:210px">
+            <td>
                 @Html.DisplayFor(modelItem => item.MembershipNumber)
             </td>
-            <td style="width:210px">
-                @Html.DisplayFor(modelItem => item.MembershipCategory.MembershipCategoryNumber)
-            </td>
-            <td style="width:210px">
-                @Html.DisplayFor(modelItem => item.MembershipFirstName)
             <td>
-          <td>
-                 <a href="@Url.Action("AddDVDCopy","Assistant",new { item.MembershipNumber} )" class="btn btn-primary" type="button" data-toggle="tooltip" data-placement="top" title="Update">Issue DVD Copy</a>
-           @*     <a asp-action="Details" asp-route-id="@item.MembershipNumber">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.MembershipNumber">Delete</a>*@
+                @Html.DisplayFor(modelItem => item.MembershipCategory)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MembershipFirstName)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.MembershipNumber">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.MembershipNumber">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.MembershipNumber">Delete</a>
             </td>
         </tr>
 }
