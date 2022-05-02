@@ -116,6 +116,9 @@ order by  dt.DateReleased asc,a.ActorSurname asc
             String dob = ViewBag.MemberAge.MemberDOB;//GETTING MEMBER DOB
             String todaysDate = DateTime.Now.ToShortDateString();
 
+            //MEMBER NUMBER
+            ViewBag.memberNumber = membershipNumber;
+
             //CONVERTING IN DATE TIME
             DateTime cDOB = DateTime.Parse(dob);
             DateTime ctodaysDate = DateTime.Parse(todaysDate);
@@ -131,8 +134,44 @@ order by  dt.DateReleased asc,a.ActorSurname asc
             Console.Write(age);
 
             ViewBag.memAge = age;
+            //GETTING MEMBER SHIP DETAILS
+            /**
+                 select distinct m.MembershipNumber,m.MembershipCategoryNumber,mc.MembershipCategoryTotalLoans as "Allowed Loan",count(l.CopyNumber) as 'Member Total Loan' 
+    from Members m
+    inner join loans l on m.MembershipNumber = l.MemberNumber
+    inner join MembershipCategorys mc on m.MembershipCategoryNumber = mc.MembershipCategoryNumber
+    where m.MembershipNumber = 8
+    group by m.MembershipNumber,m.MembershipCategoryNumber,mc.MembershipCategoryTotalLoans
+  
+             */
+            var loans = _dbcontext.Loans.ToList();
+            var members = _dbcontext.Members.ToList();
+            var memberCategory = _dbcontext.MembershipCategorys.ToList();
 
-           // ViewBag.Restriction = _dbcontext.DVDCopys.Where(dc => dc.CopyNumber == )
+            var details = from l in loans
+                          join m in members on l.MemberNumber equals m.MembershipNumber into table1
+                          from m in table1.Where(m => m.MembershipNumber == l.MemberNumber && m.MembershipNumber == membershipNumber).ToList()
+
+                          join mc in memberCategory on m.MembershipCategoryNumber equals mc.MembershipCategoryNumber into table2
+                          from mc in table2.Where(mc => mc.MembershipCategoryNumber == m.MembershipCategoryNumber).ToList()
+                          group new { l, m, mc } by new { m.MembershipNumber, m.MembershipCategoryNumber, mc.MembershipCategoryTotalLoans }
+                          into grp
+                          select new
+                          {
+                              grp.Key.MembershipNumber,
+                              grp.Key.MembershipCategoryNumber,
+                              grp.Key.MembershipCategoryTotalLoans,
+                              TotalLoans = grp.Count()
+                          };
+            ViewBag.Details = details;
+            //{ MembershipNumber = 8, MembershipCategoryNumber = 5, MembershipCategoryTotalLoans = "20", TotalLoans = 8 }
+            Console.WriteLine("============================================");
+            Console.WriteLine(details);
+            //FOR LOANTYPE
+            ViewBag.LoanTypeNumber = _dbcontext.LoanTypes.ToList();
+
+            //FOR COPY NUMBER
+            ViewBag.Copy = _dbcontext.DVDCopys.ToList();
             return View();
         }
 
@@ -333,11 +372,11 @@ where (dc.DatePurchased < (GETDATE()-365) and l.DateReturned <> '0')
             String d = "0";
             var loan = _dbcontext.Loans.ToList();
             var member = _dbcontext.Members.ToList();
-            var loanDetail = from l in loan
+            var loanDetail = (from l in loan
                              join m in member on l.MemberNumber equals m.MembershipNumber into table1
                              from m in table1.ToList().Where(m => m.MembershipNumber == l.MemberNumber && l.DateReturned == d)
-
-                             select new { loan = l, member = m };
+                              orderby l.CopyNumber ascending
+                              select new { loan = l, member = m });
             ViewBag.loanDetails = loanDetail;
             return View(loanDetail);
         }
@@ -387,12 +426,13 @@ where (dc.DatePurchased < (GETDATE()-365) and l.DateReturned <> '0')
             return View();
         }
 
+        [HttpPost]
         public async Task<IActionResult> RecordDVDCopy
         (Loan loan, int loanNumber, int loantypenumber, int copynumber, int membernumber, string dateOut, string dateReturned, string dateDue)
         {
-            DVDCopy copyDB = new DVDCopy();
-            Loan loanDB = new Loan();
-            Member memberDB = new Member();
+            var copyDB = _dbcontext.DVDCopys.ToList();
+            var loanDB = _dbcontext.LoanTypes.ToList();
+            var memberDB = _dbcontext.Members.ToList();
             loan.LoanNumber = loanNumber;
             loan.LoanTypeNumber = loantypenumber;
             loan.CopyNumber = copynumber;
@@ -400,9 +440,9 @@ where (dc.DatePurchased < (GETDATE()-365) and l.DateReturned <> '0')
             loan.DateOut = dateOut;
             loan.DateDue = dateDue;
             loan.DateReturned = dateReturned;
-            loan.LoanType = loanDB.LoanType;
-            loan.Copy = loanDB.Copy;
-            loan.Member = loanDB.Member;
+            //loan.LoanType = loanDB.Where(l=> l.LoanTypeNumber == loantypenumber).First();
+            //loan.Copy = copyDB.Where(c => c.CopyNumber ==  copynumber).First();
+            //loan.Member = memberDB.Where(m => m.MembershipNumber == membernumber).First();
 
             if (ModelState.IsValid)
             {
@@ -451,6 +491,10 @@ ORDER BY L.DateOut;
         
          */
 
-
+        //AllFunctions
+        public IActionResult AllFunctions()
+        {
+            return View();
+        }
     }
 }

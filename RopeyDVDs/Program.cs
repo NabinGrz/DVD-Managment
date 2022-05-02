@@ -40,6 +40,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Assistant}/{action=ListAllMembers}/{id?}");
+    pattern: "{controller=Assistant}/{action=ListAllLoans}/{id?}");
 
 app.Run();

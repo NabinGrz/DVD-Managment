@@ -30,46 +30,49 @@
     </form>
 
 
-@if (ViewBag.loanDetails != null)
-{<table class="table">
-    <thead>
-        <tr>
-            <th>Copy Number</th>
-            <th>DVD Title Name</th>
-            <th>Member Firstname</th>
-            <th>Member Lastname</th>
-            <th>Member Address</th>
-            <th>Member DOB</th>
-            <th>Date Out</th>
-            <th>Date Due</th>
-            <th>Date Returned</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in ViewBag.loanDetails)
-        {
-            <tr>
-                <td>@item.CopyNumber</td>
-                <td>@item.DVDTitleName</td>
-                <td>@item.MembershipFirstName</td>
-                <td>@item.MembershipLastName</td>
-                <td>@item.MembershipAddress</td>
-                <td>@item.MemberDOB</td>
-                <td>@item.DateOut</td>
-                <td>@item.DateDue</td>
-                <td>@item.DateReturned</td>
-
-                @*     <a asp-action="Edit" asp-route-id="@item.id">Edit</a> |
-                    <a asp-action="Details" asp-route-id="@item.id">Details</a> |
-                    <a asp-action="Delete" asp-route-id="@item.id">Delete</a>*@
-
-            </tr>
-        }
-    </tbody>
-</table>
-   
+@if (ViewBag.loanDetails == null)
+{
+    <h2>Not Found</h2>
 }
 else
 {
-     <h2>Not Found</h2>
+
+    {
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Copy Number</th>
+                    <th>DVD Title Name</th>
+                    <th>Member Firstname</th>
+                    <th>Member Lastname</th>
+                    <th>Member Address</th>
+                    <th>Member DOB</th>
+                    <th>Date Out</th>
+                    <th>Date Due</th>
+                    <th>Date Returned</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in ViewBag.loanDetails)
+                {
+                    <tr>
+                        <td>@item.CopyNumber</td>
+                        <td>@item.DVDTitleName</td>
+                        <td>@item.MembershipFirstName</td>
+                        <td>@item.MembershipLastName</td>
+                        <td>@item.MembershipAddress</td>
+                        <td>@item.MemberDOB</td>
+                        <td>@item.DateOut</td>
+                        <td>@item.DateDue</td>
+                        <td>@item.DateReturned</td>
+
+                        @*     <a asp-action="Edit" asp-route-id="@item.id">Edit</a> |
+                            <a asp-action="Details" asp-route-id="@item.id">Details</a> |
+                            <a asp-action="Delete" asp-route-id="@item.id">Delete</a>*@
+
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
 }
