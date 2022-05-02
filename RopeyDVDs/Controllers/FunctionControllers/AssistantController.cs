@@ -245,12 +245,51 @@ where (l.DateReturned = '0' and L.DateOut >= (GETDATE()-31))
             return View(dvd);
         }
 
-
         //FUNCTION 9
-        public IActionResult AddDVDTitle()
+        public IActionResult CreateDVDTitle(bool IsSuccess = false)
         {
+            ViewBag.IsSuccess = IsSuccess;
             ViewBag.producer = _dbcontext.Producers;
             ViewBag.actor = _dbcontext.Actors;
+            ViewBag.category = _dbcontext.DVDCategorys;
+            ViewBag.studio = _dbcontext.Studios;
+            return View();
+        }
+
+        public async Task<IActionResult> AddDVDTitle
+(DVDTitle dvd, CastMember cast, int ProducerNumber, int ActorNumber, int CategoryNumber, int StudioNumber, string DVDTitleName, DateTime? DateReleased, string StandardCharge, string PenaltyCharge)
+        {
+          
+            dvd.StudioNumber = StudioNumber;
+            dvd.ProducerNumber = ProducerNumber;
+            dvd.CategoryNumber = CategoryNumber;
+            dvd.DVDTitleName = DVDTitleName;
+            dvd.DateReleased = DateReleased;
+            dvd.StandardCharge = StandardCharge;
+            dvd.PenaltyCharge = PenaltyCharge;
+
+
+            if (ModelState.IsValid)
+            {
+                _dbcontext.DVDTitles.Update(dvd);
+                var result = await _dbcontext.SaveChangesAsync();
+
+                await Task.Delay(TimeSpan.FromSeconds(3));
+                //getting recent record of dvd number after some time delay
+                var last = _dbcontext.DVDTitles.OrderBy(x => x.DVDNumber).LastOrDefault();
+                Console.WriteLine(last.DVDNumber);
+
+                //after getting recent dvd number, creating new cast member record with that dvd number
+                cast.ActorNumber = ActorNumber;
+                cast.DVDNumber = last.DVDNumber;
+                _dbcontext.CastMembers.Update(cast);
+                await _dbcontext.SaveChangesAsync();
+
+               Console.WriteLine(result);
+                return RedirectToAction("CreateDVDTitle", new { IsSuccess  = true});
+
+            }
+
             return View();
         }
 
@@ -373,8 +412,8 @@ where (dc.DatePurchased < (GETDATE()-365) and l.DateReturned <> '0')
             var loan = _dbcontext.Loans.ToList();
             var member = _dbcontext.Members.ToList();
             var loanDetail = (from l in loan
-                             join m in member on l.MemberNumber equals m.MembershipNumber into table1
-                             from m in table1.ToList().Where(m => m.MembershipNumber == l.MemberNumber && l.DateReturned == d)
+                              join m in member on l.MemberNumber equals m.MembershipNumber into table1
+                              from m in table1.ToList().Where(m => m.MembershipNumber == l.MemberNumber && l.DateReturned == d)
                               orderby l.CopyNumber ascending
                               select new { loan = l, member = m });
             ViewBag.loanDetails = loanDetail;

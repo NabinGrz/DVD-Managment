@@ -39,26 +39,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZXNldFBhc3N3b3JkQ29uZmlybWF0aW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Coursework/C\#/RopeyDVDs/RopeyDVDs/Views/Actors/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWN0b3JzXENyZWF0ZS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Coursework/C\#/RopeyDVDs/RopeyDVDs/Views/Actors/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWN0b3JzXERlbGV0ZS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Coursework/C\#/RopeyDVDs/RopeyDVDs/Views/Actors/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWN0b3JzXERldGFpbHMuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Coursework/C\#/RopeyDVDs/RopeyDVDs/Views/Actors/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWN0b3JzXEVkaXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Coursework/C\#/RopeyDVDs/RopeyDVDs/Views/Actors/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWN0b3JzXEluZGV4LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Coursework/C\#/RopeyDVDs/RopeyDVDs/Views/Administration/CreateRole.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRpb25cQ3JlYXRlUm9sZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -87,12 +67,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzaXN0YW50XEFkZERWRENvcHkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Coursework/C\#/RopeyDVDs/RopeyDVDs/Views/Assistant/AddDVDTitle.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzaXN0YW50XEFkZERWRFRpdGxlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Coursework/C\#/RopeyDVDs/RopeyDVDs/Views/Assistant/AllFunctions.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzaXN0YW50XEFsbEZ1bmN0aW9ucy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Coursework/C\#/RopeyDVDs/RopeyDVDs/Views/Assistant/CreateDVDTitle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzaXN0YW50XENyZWF0ZURWRFRpdGxlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Coursework/C\#/RopeyDVDs/RopeyDVDs/Views/Assistant/DeleteDVDCopy.cshtml]
@@ -135,26 +115,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzaXN0YW50XExpc3RBbGxNZW1iZXJzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Coursework/C\#/RopeyDVDs/RopeyDVDs/Views/CastMembers/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FzdE1lbWJlcnNcQ3JlYXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Coursework/C\#/RopeyDVDs/RopeyDVDs/Views/CastMembers/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FzdE1lbWJlcnNcRGVsZXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Coursework/C\#/RopeyDVDs/RopeyDVDs/Views/CastMembers/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FzdE1lbWJlcnNcRGV0YWlscy5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Coursework/C\#/RopeyDVDs/RopeyDVDs/Views/CastMembers/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FzdE1lbWJlcnNcRWRpdC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Coursework/C\#/RopeyDVDs/RopeyDVDs/Views/CastMembers/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FzdE1lbWJlcnNcSW5kZXguY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Coursework/C\#/RopeyDVDs/RopeyDVDs/Views/DVDCategories/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRFZEQ2F0ZWdvcmllc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -193,26 +153,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Coursework/C\#/RopeyDVDs/RopeyDVDs/Views/DVDCopies/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRFZEQ29waWVzXEluZGV4LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Coursework/C\#/RopeyDVDs/RopeyDVDs/Views/DVDTitles/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRFZEVGl0bGVzXENyZWF0ZS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Coursework/C\#/RopeyDVDs/RopeyDVDs/Views/DVDTitles/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRFZEVGl0bGVzXERlbGV0ZS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Coursework/C\#/RopeyDVDs/RopeyDVDs/Views/DVDTitles/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRFZEVGl0bGVzXERldGFpbHMuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Coursework/C\#/RopeyDVDs/RopeyDVDs/Views/DVDTitles/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRFZEVGl0bGVzXEVkaXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Coursework/C\#/RopeyDVDs/RopeyDVDs/Views/DVDTitles/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRFZEVGl0bGVzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Coursework/C\#/RopeyDVDs/RopeyDVDs/Views/Home/Index.cshtml]
