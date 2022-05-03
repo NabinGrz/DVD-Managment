@@ -62,23 +62,30 @@ order by  dt.DateReleased asc,a.ActorSurname asc
         public IActionResult GetLoanDetails(int copynumber)
         {
             /**
-                   select dc.CopyNumber,m.MembershipFirstName,dt.DVDTitleName,l.DateOut,l.DateDue,l.DateReturned from Members m
-            inner join loans l on l.MemberNumber= m.MembershipNumber
-            inner join DVDCopys dc on dc.CopyNumber = l.CopyNumber
-            inner join DVDTitles dt on dt.DVDNumber = dc.DVDNumber
-            where l.CopyNumber = 2
+            Select dt.DVDTitleName,m.MembershipFirstName,l.DateOut from loans l
+            inner join DVDCopys dc
+            on dc.CopyNumber = l.CopyNumber
+            inner join Members m
+            on l.MemberNumber = m.MembershipNumber
+            inner join DVDTitles dt
+            on dc.DVDNumber = dt.DVDNumber
+            where (l.CopyNumber = 9  and (l.DateOut >=(Select max(l.dateout) from loans l where l.CopyNumber = 9)))
             */
             var dvdTitle = _dbcontext.DVDTitles.ToList();
             var loan = _dbcontext.Loans.ToList();
             var lastloan = loan.LastOrDefault();
             var member = _dbcontext.Members.ToList();
             var dvdCopy = _dbcontext.DVDCopys.ToList();
+            //Select max(l.dateout) from loans l where l.CopyNumber = 9
+            var maxDate = (from lm in loan where lm.CopyNumber == copynumber select lm).Max(m => m.DateOut);
+            Console.WriteLine(maxDate);
+            DateTime d = DateTime.Parse(maxDate ?? DateTime.Now.ToShortDateString());
             var loanDetails = (from l in loan
                                join m in member on l.MemberNumber equals m.MembershipNumber into table1
                                from m in table1.ToList().Where(m => m.MembershipNumber == l.MemberNumber).ToList()
 
                                join dc in dvdCopy on l.CopyNumber equals dc.CopyNumber into table2
-                               from dc in table2.ToList().Where(dc => dc.CopyNumber == l.CopyNumber && l.CopyNumber == copynumber).ToList()
+                               from dc in table2.ToList().Where(dc => dc.CopyNumber == l.CopyNumber && l.CopyNumber == copynumber && (DateTime.Parse(l.DateOut) >= d)).ToList()
 
                                join dt in dvdTitle on dc.DVDNumber equals dt.DVDNumber into table3
                                from dt in table3.ToList().Where(dt => dt.DVDNumber == dc.DVDNumber).ToList()
@@ -259,7 +266,7 @@ where (l.DateReturned = '0' and L.DateOut >= (GETDATE()-31))
         public async Task<IActionResult> AddDVDTitle
 (DVDTitle dvd, CastMember cast, int ProducerNumber, int ActorNumber, int CategoryNumber, int StudioNumber, string DVDTitleName, DateTime? DateReleased, string StandardCharge, string PenaltyCharge)
         {
-          
+
             dvd.StudioNumber = StudioNumber;
             dvd.ProducerNumber = ProducerNumber;
             dvd.CategoryNumber = CategoryNumber;
@@ -285,8 +292,8 @@ where (l.DateReturned = '0' and L.DateOut >= (GETDATE()-31))
                 _dbcontext.CastMembers.Update(cast);
                 await _dbcontext.SaveChangesAsync();
 
-               Console.WriteLine(result);
-                return RedirectToAction("CreateDVDTitle", new { IsSuccess  = true});
+                Console.WriteLine(result);
+                return RedirectToAction("CreateDVDTitle", new { IsSuccess = true });
 
             }
 
@@ -517,19 +524,70 @@ where (dc.DatePurchased < (GETDATE()-365) and l.DateReturned <> '0')
         }
 
         //FUNCTION 12
-        /**
-       select distinct m.MembershipFirstName,m.MembershipLastName,m.MembershipAddress,dt.DVDTitleName,l.DateOut,DATEDIFF(day, l.DateOut, GETDATE()) as "No of days" from members m
-          inner join Loans l
-          on l.MemberNumber = m.MembershipNumber
-          inner join DVDCopys dc
-          on dc.CopyNumber = l.CopyNumber
-          inner join DVDTitles dt
-          on dt.DVDNumber = dc.DVDNumber
-          where(max(l.DateOut)<= (GETDATE()-31) )
-ORDER BY L.DateOut;
-        
-         */
+        //Select DATEDIFF(day, max(l.dateout), GETDATE()) from loans l
+        public IActionResult MmemberListNotBorrowed()
+        {
+            //Select l.MemberNumber, max(l.dateout) as "Member Recent Loan", DATEDIFF(day, max(l.dateout), GETDATE()) as "My Date" from loans l where(31 > (Select DATEDIFF(day, max(l.dateout), GETDATE()) as "My Date" from loans l)) group by l.MemberNumber
+            /** 
+             Select m.MembershipFirstName,m.MembershipLastName,m.MembershipAddress,
+            max(l.dateout) as "Date out of recent loan", 
+            DATEDIFF(day, max(l.dateout), GETDATE()) as "No of days since the last loan"
+            from loans l 
+            inner join Members m on l.MemberNumber = m.MembershipNumber
+            inner join DVDCopys dc on dc.CopyNumber = l.CopyNumber
+            inner join DVDTitles dt on dt.DVDNumber = dc.DVDNumber
+            where(31 > (Select DATEDIFF(day, max(l.dateout), GETDATE()) as "My Date" from loans l))
+            group by m.MembershipFirstName,m.MembershipLastName,m.MembershipAddress
 
+             */
+            var loan = _dbcontext.Loans.ToList();
+            var maxDate = from l in loan
+                          group l by l.MemberNumber
+                          into g
+                          select new
+                          {
+                              MaxDates = (from l in g select l.DateOut).Max(),
+                          };
+            ViewBag.dates = maxDate.ToList();
+            var members = _dbcontext.Members.ToList();
+            var dvdCopy = _dbcontext.DVDCopys.ToList();
+            var dvdTitle = _dbcontext.DVDTitles.ToList();
+            List<int> difference = new List<int>();
+            dynamic details = null;
+            foreach (var m in ViewBag.dates)
+            {
+                DateTime today = DateTime.Now;
+                var dates = DateTime.Parse(m.MaxDates.ToString());
+                var diff = (today - dates).Days;
+                difference.Add(diff);
+                Console.WriteLine(diff.ToString());
+                ViewBag.listDiff = difference;
+            }
+            foreach (var dd in ViewBag.dates)
+            {
+
+                DateTime today = DateTime.Now;
+                var dates = DateTime.Parse(dd.MaxDates.ToString());
+                var diff = (today - dates).Days;
+                var data = (from l in loan
+                            join m in members on l.MemberNumber equals m.MembershipNumber
+                            join dc in dvdCopy on l.CopyNumber equals dc.CopyNumber
+                            join dt in dvdTitle on dc.DVDNumber equals dt.DVDNumber
+                            where (31 > diff)
+                            group new { l, m, dc, dt } by new { m.MembershipFirstName, m.MembershipLastName, m.MembershipAddress, ViewBag.dates }
+                            into grp
+                            select new
+                            {
+                                grp.Key.MembershipLastName,
+                                grp.Key.MembershipFirstName,
+                                grp.Key.MembershipAddress,
+                                MaxDates = (from l in grp select l.l.DateOut).Max(),
+                            }).OrderBy(x => x.MembershipFirstName);
+                ViewBag.details = data;
+                return View();
+            }
+            return View();
+        }
         //AllFunctions
         public IActionResult AllFunctions()
         {

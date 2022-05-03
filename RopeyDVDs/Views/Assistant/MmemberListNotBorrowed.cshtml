@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewData["Title"] = "MmemberListNotBorrowed";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Members list who have not borrowed any DVD in last 32 days</h1>
+
+ <table class="table">
+            <thead>
+                <tr>
+                    <th>MembershipFirstName</th>
+                    <th>MembershipLastName</th>
+                    <th>MembershipAddress</th>
+                    <th>Date out of most recent loan</th>
+                    <th>Difference</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in ViewBag.details)
+                {
+                    <tr>
+                        <td>@item.MembershipFirstName</td>
+                        <td>@item.MembershipLastName</td>
+                        <td>@item.MembershipAddress</td>
+                        <td>@item.MaxDates</td>
+                        @foreach (var d in ViewBag.listDiff)
+                        {
+                            
+                        }
+                        @for (var i = 0; i < ViewBag.listDiff.Length(); i++)
+                        {
+                           <td>@ViewBag.listDiff[i]</td> 
+                        }
+                    </tr>
+                }
+            </tbody>
+        </table>
