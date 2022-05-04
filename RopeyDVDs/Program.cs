@@ -40,6 +40,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Assistant}/{action=MmemberListNotBorrowed}/{id?}");
+    pattern: "{controller=NormalUser}/{action=GetActorCopy}/{id?}");
 
 app.Run();
