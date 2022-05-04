@@ -188,9 +188,9 @@ order by  dt.DateReleased asc,a.ActorSurname asc
         {
             /**
         select distinct dt.DVDTitleName  from DVDTitles dt
-inner join DVDCopys dc on dt.DVDNumber = dc.DVDNumber
-inner join loans l on dc.CopyNumber = l.CopyNumber
-where (l.DateReturned = '0' and L.DateOut >= (GETDATE()-31))
+        inner join DVDCopys dc on dt.DVDNumber = dc.DVDNumber
+        inner join loans l on dc.CopyNumber = l.CopyNumber
+        where (l.DateReturned = '0' and L.DateOut >= (GETDATE()-31))
             */
             DateTime currentDate = DateTime.Now.Date;
             DateTime lastDate = currentDate.Subtract(new TimeSpan(31, 0, 0, 0, 0));
@@ -201,8 +201,7 @@ where (l.DateReturned = '0' and L.DateOut >= (GETDATE()-31))
 
             var dvd = from dt in dvdTitle
                       join dc in dvdCopy on dt.DVDNumber equals dc.DVDNumber into table1
-                      from dc in table1.Distinct().ToList().Where(dc => dc.DVDNumber == dt.DVDNumber).Distinct().ToList()
-
+                      from dc in table1
                       join l in loan on dc.CopyNumber equals l.CopyNumber into table2
                       from l in table2.Distinct().ToList().Where(l => l.CopyNumber == dc.CopyNumber && l.DateReturned == d && DateTime.Parse(l.DateOut) >= lastDate).Distinct().ToList()
 
@@ -554,15 +553,16 @@ where (dc.DatePurchased < (GETDATE()-365) and l.DateReturned <> '0')
             var dvdTitle = _dbcontext.DVDTitles.ToList();
             List<int> difference = new List<int>();
             dynamic details = null;
-            foreach (var m in ViewBag.dates)
-            {
-                DateTime today = DateTime.Now;
-                var dates = DateTime.Parse(m.MaxDates.ToString());
-                var diff = (today - dates).Days;
-                difference.Add(diff);
-                Console.WriteLine(diff.ToString());
-                ViewBag.listDiff = difference;
-            }
+            //foreach (var m in ViewBag.dates)
+            //{
+            //    DateTime today = DateTime.Now;
+            //    var dates = DateTime.Parse(m.MaxDates.ToString());
+            //    var diff = (today - dates).Days;
+            //    difference.Add(diff);
+            //    Console.WriteLine(diff.ToString());
+            //    ViewBag.listDiff = difference;
+            //}
+            
             foreach (var dd in ViewBag.dates)
             {
 
@@ -582,6 +582,7 @@ where (dc.DatePurchased < (GETDATE()-365) and l.DateReturned <> '0')
                                 grp.Key.MembershipFirstName,
                                 grp.Key.MembershipAddress,
                                 MaxDates = (from l in grp select l.l.DateOut).Max(),
+                                Difference = diff
                             }).OrderBy(x => x.MembershipFirstName);
                 ViewBag.details = data;
                 return View();

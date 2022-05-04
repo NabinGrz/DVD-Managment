@@ -55,29 +55,32 @@ namespace RopeyDVDs.Controllers
        on l.CopyNumber = dc.CopyNumber
        where(a.ActorFirstName = 'Will' and dc.Stock >= 1 and l.DateReturned <> '0')
     */
+            // (from lm in loan where lm.CopyNumber == copynumber select lm).Max(m => m.DateOut);
+           // var aN= (from a in actorDetails where a.ActorSurname == name select a.ActorNumber).ToList();
+           // int actorNum = int.Parse(aN[0].ToString());
+           // Console.WriteLine(actorNum);
+           ////
+           //var cD = (from c in castMember where(c.ActorNumber == actorNum) select c.DVDNumber).ToList();
+           // int dvdNum = int.Parse(cD.ToString());
+            //Console.WriteLine(dvdNum);
             var dvdTitle = _context.DVDTitles.ToList();
             var dvdCopy = _context.DVDCopys.ToList();
             var castMember = _context.CastMembers.ToList();
             var actorDetails = _context.Actors.ToList();
             var loan = _context.Loans.ToList();
-            // (from lm in loan where lm.CopyNumber == copynumber select lm).Max(m => m.DateOut);
-            var aN= (from a in actorDetails where a.ActorSurname == name select a.ActorNumber).ToList();
-            int actorNum = int.Parse(aN[0].ToString());
-            Console.WriteLine(actorNum);
-           //
-           var cD = (from c in castMember where(c.ActorNumber == actorNum) select c.DVDNumber).ToList();
-            int dvdNum = int.Parse(cD.ToString());
-            Console.WriteLine(dvdNum);
             var details = from a in actorDetails
                           join c in castMember on a.ActorNumber equals c.ActorNumber into table1
-                          from c in table1.Distinct().ToList().Where(c => c.ActorNumber == a.ActorNumber && a.ActorSurname == name && c.DVDNumber == dvdNum)
+                          from c in table1.Distinct().ToList().Where(c => c.ActorNumber == a.ActorNumber && a.ActorSurname == name)
+                          from dt in dvdTitle
+                          join c2 in castMember on dt.DVDNumber equals c2.DVDNumber into table2
+                          from c2 in table2.Distinct().ToList().Where(c2 => c2.DVDNumber == dt.DVDNumber)
                           from dc in dvdCopy
                           join dt2 in dvdTitle on dc.DVDNumber equals dt2.DVDNumber into table3
-                          from dt2 in table3.Distinct().ToList().Where(dt2 => dt2.DVDNumber == dc.DVDNumber && dc.Stock >=1)
+                          from dt2 in table3.Distinct().ToList().Where(dt2 => dt2.DVDNumber == dc.DVDNumber && dc.Stock >= 1)
                           from l in loan
                           join dc3 in dvdCopy on l.CopyNumber equals dc3.CopyNumber into table4
                           from dc3 in table4.Distinct().ToList().Where(dc3 => dc3.CopyNumber == l.CopyNumber && l.DateReturned != "0")
-                          select new {castMember = c, actorDetails = a, loan = l, dvdCopy = dc };
+                          select new { dvdTitle = dt, castMember = c, actorDetails = a, loan = l, dvdCopy = dc };
             ViewBag.name = details;
             Console.WriteLine(ViewBag.name);
             return View(details);

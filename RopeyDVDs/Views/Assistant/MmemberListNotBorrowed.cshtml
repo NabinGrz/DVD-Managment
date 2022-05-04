@@ -19,19 +19,17 @@
             <tbody>
                 @foreach (var item in ViewBag.details)
                 {
-                    <tr>
+            var t = DateTime.Now.ToShortDateString();
+            var d = @item.MaxDates;
+            var diff = (DateTime.Parse(t) - DateTime.Parse(d)).Days;
+
+            <tr>
                         <td>@item.MembershipFirstName</td>
                         <td>@item.MembershipLastName</td>
                         <td>@item.MembershipAddress</td>
                         <td>@item.MaxDates</td>
-                        @foreach (var d in ViewBag.listDiff)
-                        {
-                            
-                        }
-                        @for (var i = 0; i < ViewBag.listDiff.Length(); i++)
-                        {
-                           <td>@ViewBag.listDiff[i]</td> 
-                        }
+                        <td>@diff
+                        </td> 
                     </tr>
                 }
             </tbody>

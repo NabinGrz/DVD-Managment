@@ -45,6 +45,7 @@ namespace RopeyDVDs.Controllers
 
 
         [HttpGet]
+
         public IActionResult ListUsers()
         {
              var users = userManager.Users;
