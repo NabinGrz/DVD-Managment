@@ -4,13 +4,14 @@
 }
 
 <h1>Details of DVD currently on loan</h1>
-<table class="table">
-    <thead>
-        <tr style="color:white; background-color:darkblue; height: 50px; text-align:center">
+<table class="table text-light mt-4">
+    <thead class="bg-custom">
+        <tr>
             <th>Copy Number</th>
             <th>Membership FirstName</th>
             <th>Date Due</th>
             <th>Date Returned</th>
+            <th>Update Loan Records</th>
         </tr>
     </thead>
     <tbody>
@@ -22,11 +23,8 @@
                 <td style="width:160px">@item.loan.DateDue </td>
                 <td style="width:160px; color:red">Not Returned </td>
                 <td>
-                    <ul class="list-inline m-0">
-                        <li class="list-inline-item">
-                            <a href="@Url.Action("EditDVDCopyDetails","Assistant",new { item.loan.CopyNumber} )" class="btn btn-primary" type="button" data-toggle="tooltip" data-placement="top" title="Update">Update Loan Records</a>
-                        </li>
-                    </ul>
+
+                    <a href="@Url.Action("EditDVDCopyDetails","Assistant",new { item.loan.CopyNumber} )" class="btn btn-primary" type="button" data-toggle="tooltip" data-placement="top" title="Update">Update Loan Records</a>
                 </td>
             </tr>
         }

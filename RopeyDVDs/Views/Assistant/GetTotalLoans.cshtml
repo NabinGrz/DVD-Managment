@@ -5,8 +5,8 @@
 
 <h1>Total loans a member has taken</h1>
 
-<table class="table">
-    <thead>
+<table class="table text-light">
+    <thead class="bg-custom">
         <tr>
             <th>Membership First Name</th>
             <th>Membership Category Number</th>
@@ -15,13 +15,13 @@
         </tr>
     </thead>
     <tbody>
-        <h3 style="background-color:powderblue;">Too many DVDs on loan for:</h3>
+        <h3 style="background-color:yellow; color:black;">Too many DVDs on loan for:</h3>
         @foreach (var item in ViewBag.totalloans)
         {
 
             @if (int.Parse(@item.MembershipCategoryTotalLoans) < @item.TotalLoans)
             {
-                <div class="container" style="position:relative; right:80px; top:2px; background-color:red; width:300px">
+                <div class="container" style="position:relative;color:black; right:80px; top:2px; background-color:yellow; width:300px">
                     <ul style="ali">
                     <li>@item.MembershipFirstName</li>
                 </ul>

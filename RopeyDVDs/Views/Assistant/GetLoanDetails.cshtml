@@ -7,7 +7,7 @@
 <h1>Details of last loan for the copy</h1>
     <form action="@Url.Action("GetLoanDetails", "Assistant")" method="get">
         <div class="row">
-            <div class="col-sm">
+            <div class="col-sm-9">
                 <div class="form-group">
                     <label for="ActorSurName" class="control-label"></label>
                     <select id="copynumber" name="copynumber" class="form-control custom-select bg-white border-left-0 border-md" required>
@@ -19,12 +19,8 @@
                     </select>
                 </div>
             </div>
-                <div class="col-sm">
-                <div class="form-group row">
-                    <div class="col-sm-10">
-                        <button type="submit" class="btn btn-primary">Search</button>
-                    </div>
-                </div>
+                <div class="col-sm-3">
+                        <button type="submit" class="btn btn-primary mt-4">Search ></button>
             </div>
         </div>
     </form>
@@ -38,8 +34,8 @@ else
 {
 
     {
-        <table class="table">
-            <thead>
+        <table class="table text-light mt-4">
+            <thead class="bg-custom">
                 <tr>
                     <th>Copy Number</th>
                     <th>DVD Title Name</th>

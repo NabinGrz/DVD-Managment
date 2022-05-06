@@ -8,10 +8,10 @@
 <h1>Index</h1>
 
 
-<table class="table">
-    <thead>
-        <tr style="width:210px">
-             <th>
+<table class="table text-light">
+    <thead class="bg-custom">
+        <tr>
+            <th>
                 @Html.DisplayNameFor(model => model.MembershipNumber)
             </th>
             <th>
@@ -20,27 +20,30 @@
             <th>
                 @Html.DisplayNameFor(model => model.MembershipFirstName)
             </th>
-            <th></th>
+            <th>Issue Copy</th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td style="width:210px">
-                @Html.DisplayFor(modelItem => item.MembershipNumber)
-            </td>
-            <td style="width:210px">
-                @Html.DisplayFor(modelItem => item.MembershipCategory.MembershipCategoryNumber)
-            </td>
-            <td style="width:210px">
-                @Html.DisplayFor(modelItem => item.MembershipFirstName)
-            <td>
-          <td>
-                 <a href="@Url.Action("AddDVDCopy","Assistant",new { item.MembershipNumber} )" class="btn btn-primary" type="button" data-toggle="tooltip" data-placement="top" title="Update">Issue DVD Copy</a>
-           @*     <a asp-action="Details" asp-route-id="@item.MembershipNumber">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.MembershipNumber">Delete</a>*@
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td style="width:210px">
+                    @Html.DisplayFor(modelItem => item.MembershipNumber)
+                </td>
+                <td style="width:210px">
+                    @Html.DisplayFor(modelItem => item.MembershipCategory.MembershipCategoryNumber)
+                </td>
+                <td style="width:210px">
+                    @Html.DisplayFor(modelItem => item.MembershipFirstName)
+                </td>
+
+                <td style="width:210px">
+                    <a href="@Url.Action("AddDVDCopy","Assistant",new { item.MembershipNumber} )" class="btn btn-primary" type="button" data-toggle="tooltip" data-placement="top" title="Update">Issue DVD Copy</a>
+
+                    @*     <a asp-action="Details" asp-route-id="@item.MembershipNumber">Details</a> |
+                        <a asp-action="Delete" asp-route-id="@item.MembershipNumber">Delete</a>*@
+                </td>
+            </tr>
+        }
     </tbody>
 </table>

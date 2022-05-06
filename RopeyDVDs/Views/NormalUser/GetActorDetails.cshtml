@@ -3,17 +3,17 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Details of DVD stocked by shop</h1>
+<h1>Search title based on actor</h1>
 
-@*<p>
-    <a asp-action="Create">Create New</a>
-    </p>*@
-
-
+<style>
+    .bg-custom {
+        background-color: #E50914;
+    }
+</style>
 <div class="container">
     <form action="@Url.Action("GetActorDetails", "NormalUser")" method="get">
         <div class="row">
-            <div class="col-sm">
+            <div class="col-sm-9">
                 <div class="form-group">
                     <label for="ActorSurName" class="control-label"></label>
                     <select id="surname" name="surname" class="form-control custom-select bg-white border-left-0 border-md" required>
@@ -23,15 +23,13 @@
                             <option value="@name.ActorSurname"> @name.ActorFirstName @name.ActorSurname</option>
                         }
                     </select>
+
                 </div>
+
             </div>
-            <div class="col-sm">
-                <div class="form-group row">
-                    <div class="col-sm-10">
-                        <button type="submit" class="btn btn-primary">Search</button>
-                    </div>
-                </div>
-            </div>
+            <div class="col-sm-3"><button type="submit" class="btn btn-primary mt-4">Search ></button></div>
+
+
         </div>
     </form>
 </div>
@@ -43,9 +41,9 @@
 }
 else
 {
-    <table class="table text-light">
-        <thead>
-            <tr>
+    <table class="table text-light mt-3">
+        <thead class="bg-custom">
+            <tr style='font-size:20px; '>
                 <th>DVD Number</th>
                 <th>DVD Title</th>
                 <th>Cast Memeber No</th>
