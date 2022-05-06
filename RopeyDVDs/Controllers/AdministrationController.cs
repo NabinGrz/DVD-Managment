@@ -5,7 +5,7 @@ using RopeyDVDs.ViewModels;
 
 namespace RopeyDVDs.Controllers
 {
-    [Authorize(Roles="Manager")]
+ [Authorize(Roles="Manager")]
     public class AdministrationController : Controller
     {
         private readonly RoleManager<IdentityRole> roleManager;
