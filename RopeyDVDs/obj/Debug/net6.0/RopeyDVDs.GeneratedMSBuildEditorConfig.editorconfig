@@ -83,6 +83,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzaXN0YW50XEVkaXREVkRDb3B5RGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/Assistant/GetDateOut.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzaXN0YW50XEdldERhdGVPdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/Assistant/GetDVDCopyListNotLoaned.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzaXN0YW50XEdldERWRENvcHlMaXN0Tm90TG9hbmVkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -233,10 +237,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/NormalUser/GetActorDetails.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm9ybWFsVXNlclxHZXRBY3RvckRldGFpbHMuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/NormalUser/GetDateOut.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm9ybWFsVXNlclxHZXREYXRlT3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/Producers/Create.cshtml]

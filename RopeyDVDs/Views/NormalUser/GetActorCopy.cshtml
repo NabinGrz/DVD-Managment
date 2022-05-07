@@ -9,12 +9,6 @@
         background-color: #E50914;
     }
 
-    container {
-        background-color: rgba(255,255,255,0.13);
-        border-radius: 10px;
-        backdrop-filter: blur(10px);
-        border: 2px solid rgba(255,255,255,0.1);
-    }
 </style>
 
 <div class="container">
@@ -44,15 +38,16 @@
         <tr style='font-size:20px; '>
             @*<th>ActorFirstName</th>*@
             <th >DVD Title Name</th>
-            <th >No of copies on shelves</th>
+            <th >Stock Left</th>
         </tr>
     </thead>
     <tbody>
         @foreach (var item in ViewBag.name)
         {
+            var StockLeft = @item.Stock - @item.LoanCount;
             <tr>
-                <td>@item.dvdTitle.DVDTitleName</td>
-                <td>@item.castMember.DVDNumber</td>
+                <td>@item.DVDTitleName</td>
+                <td>@StockLeft</td>
                 @* <td>@item.dvdCopy.Stock</td>*@
 
 
