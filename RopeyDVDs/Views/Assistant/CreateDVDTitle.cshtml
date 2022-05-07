@@ -2,7 +2,18 @@
     ViewData["Title"] = "CreateDVDTitle";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+<style>
+    label {
+        color: white;
+    }
 
+    .card {
+        background-color: rgba(255,255,255,0.13);
+        border-radius: 10px;
+        backdrop-filter: blur(10px);
+        border: 2px solid rgba(255,255,255,0.1);
+    }
+</style>
 <h1>Create New DVD Title</h1>
 @if (ViewBag.IsSuccess)
 {
@@ -13,79 +24,106 @@
         </button>
     </div>
 }
-<div class="container">
+<div class="card col-sm-6">
 
     <form action="/Assistant/AddDVDTitle" method="post">
+        <table>
+            <tr>
+                <td> <label id="DVDTitleName" class="control-label">DVD Title: </label></td>
+                <td>
+                    <input type="text" id="DVDTitleName" name="DVDTitleName" placeholder="">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="ProducerNumber" class="control-label">Producer: </label>
+                </td>
+                <td>
+                    <select id="ProducerNumber" name="ProducerNumber" class="form-control custom-select bg-white border-left-0 border-md" required>
+                        <option value="">Select a producer: </option>
+                        @foreach (var name in ViewBag.producer)
+                        {
+                            <option value="@name.ProducerNumber"> @name.ProducerNumber @name.ProducerName</option>
+                        }
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="ActorNumber" class="control-label">Actor: </label>
+                </td>
+                <td>
+                    <select id="ActorNumber" name="ActorNumber" class="form-control custom-select bg-white border-left-0 border-md" required>
+                        <option value="">Select a actor</option>
+                        @foreach (var name in ViewBag.actor)
+                        {
+                            <option value="@name.ActorNumber"> @name.ActorNumber @name.ActorFirstName</option>
+                        }
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="CategoryNumber" class="control-label">DVD Catgeory: </label>
+                </td>
+                <td>
+                    <select id="CategoryNumber" name="CategoryNumber" class="form-control custom-select bg-white border-left-0 border-md" required>
+                        <option value="">Select a dvd category</option>
+                        @foreach (var name in ViewBag.category)
+                        {
+                            <option value="@name.CategoryNumber"> @name.CategoryNumber @name.CategoryDescription</option>
+                        }
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="StudioNumber" class="control-label">Studio: </label>
+                </td>
+                <td>
+                    <select id="StudioNumber" name="StudioNumber" class="form-control custom-select bg-white border-left-0 border-md" required>
+                        <option value="">Select a studio</option>
+                        @foreach (var name in ViewBag.studio)
+                        {
+                            <option value="@name.StudioNumber"> @name.StudioNumber @name.StudioName</option>
+                        }
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label id="DateReleased" class="control-label">Date Released: </label>
+                </td>
+                <td>
+                    <input type="date" id="DateReleased" name="DateReleased" placeholder="">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label id="StandardCharge" class="control-label">Standard Charge: </label>
+                </td>
+                <td>
+                    <input type="text" id="StandardCharge" name="StandardCharge" placeholder="">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label id="PenaltyCharge" class="control-label">Penalty Charge: </label>
+                </td>
+                <td>
+                    <input type="text" id="PenaltyCharge" name="PenaltyCharge" placeholder="">
+                </td>
+            </tr>
+            <tr>
+            </tr>
+        </table>
         @*<div class="row">*@
-        <div class="form-group">
-            <label id="DVDTitleName" class="control-label">DVD Title</label>
-            <input type="text" id="DVDTitleName" name="DVDTitleName" placeholder="">
-        </div>
-        <div class="col-sm">
-            <div class="form-group">
-                <label for="ProducerNumber" class="control-label">Producer</label>
-                <select id="ProducerNumber" name="ProducerNumber" class="form-control custom-select bg-white border-left-0 border-md" required>
-                    <option value="">Select a producer</option>
-                    @foreach (var name in ViewBag.producer)
-                    {
-                        <option value="@name.ProducerNumber"> @name.ProducerNumber @name.ProducerName</option>
-                    }
-                </select>
-            </div>
-        </div>
-        <div class="col-sm">
-            <div class="form-group">
-                <label for="ActorNumber" class="control-label">Actor</label>
-                <select id="ActorNumber" name="ActorNumber" class="form-control custom-select bg-white border-left-0 border-md" required>
-                    <option value="">Select a actor</option>
-                    @foreach (var name in ViewBag.actor)
-                    {
-                        <option value="@name.ActorNumber"> @name.ActorNumber @name.ActorFirstName</option>
-                    }
-                </select>
-            </div>
-        </div>
-        <div class="col-sm">
-            <div class="form-group">
-                <label for="CategoryNumber" class="control-label">DVD Catgeory</label>
-                <select id="CategoryNumber" name="CategoryNumber" class="form-control custom-select bg-white border-left-0 border-md" required>
-                    <option value="">Select a dvd category</option>
-                    @foreach (var name in ViewBag.category)
-                    {
-                        <option value="@name.CategoryNumber"> @name.CategoryNumber @name.CategoryDescription</option>
-                    }
-                </select>
-            </div>
-        </div>
-        <div class="col-sm">
-            <div class="form-group">
-                <label for="StudioNumber" class="control-label">Studio</label>
-                <select id="StudioNumber" name="StudioNumber" class="form-control custom-select bg-white border-left-0 border-md" required>
-                    <option value="">Select a studio</option>
-                    @foreach (var name in ViewBag.studio)
-                    {
-                        <option value="@name.StudioNumber"> @name.StudioNumber @name.StudioName</option>
-                    }
-                </select>
-            </div>
-        </div>
-        <div class="form-group">
-            <label id="DateReleased" class="control-label">Date Released</label>
-            <input type="date" id="DateReleased" name="DateReleased" placeholder="">
-        </div>
-        <div class="form-group">
-            <label id="StandardCharge" class="control-label">Standard Charge</label>
-            <input type="text" id="StandardCharge" name="StandardCharge" placeholder="">
-        </div>
-        <div class="form-group">
-            <label id="PenaltyCharge" class="control-label">Penalty Charge</label>
-            <input type="text" id="PenaltyCharge" name="PenaltyCharge" placeholder="">
-        </div>
 
         <div class="col-sm">
             <div class="form-group row">
                 <div class="col-sm-10">
                     <button type="submit" class="btn btn-primary">Add DVD Title</button>
+
                 </div>
             </div>
         </div>
