@@ -41,7 +41,7 @@ namespace RopeyDVDs.Controllers
 
         //FUNCTION 2
         [Authorize]
-       public IActionResult GetActorCopy(String surname)
+       public IActionResult GetActorCopy(int actorID)
         {
             /**
              select dt.DVDTitleName,(dc.Stock - Count(*)) as "Dif(Stock Left)" from  loans l
@@ -57,17 +57,19 @@ namespace RopeyDVDs.Controllers
             var dvdCopy = _context.DVDCopys.ToList();
             var castMember = _context.CastMembers.ToList();
             var actorDetails = _context.Actors.ToList();
-            var loan = _context.Loans.ToList(); var details = from l in loan
+            var loan = _context.Loans.ToList(); var details = (from l in loan
                           join dc in dvdCopy on l.CopyNumber equals dc.CopyNumber
                           join dt in dvdTitle on dc.DVDNumber equals dt.DVDNumber
-                          group new { l, dc, dt } by new { l.CopyNumber, dc.Stock, dt.DVDTitleName }
+                          join c in castMember on dt.DVDNumber equals c.DVDNumber
+                          group new { l, dc, dt,c } by new { l.CopyNumber, dc.Stock, dt.DVDTitleName,c.ActorNumber}
                           into grp
                           select new
                           {
                               DVDTitleName = grp.Key.DVDTitleName,
                               Stock = grp.Key.Stock,
+                              CastActorNumber = grp.Key.ActorNumber,
                               LoanCount = grp.Count(),
-                          };
+                          }).Where(x => x.CastActorNumber == actorID);
             ViewBag.name = details;
             //Console.WriteLine(ViewBag.name);
             return View(details);

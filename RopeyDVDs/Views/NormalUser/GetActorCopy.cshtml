@@ -17,11 +17,11 @@
             <div class="col-sm-9">
                 <div class="form-group">
                     <label for="ActorSurName" class="control-label"></label>
-                    <select id="surname" name="surname" class="form-control custom-select bg-white border-left-0 border-md" required>
+                    <select id="actorID" name="actorID" class="form-control custom-select bg-white border-left-0 border-md" required>
                         <option value="">Select a actor surname</option>
                         @foreach (var name in ViewBag.actorName)
                         {
-                            <option value="@name.ActorSurname"> @name.ActorFirstName @name.ActorSurname</option>
+                            <option value="@name.ActorNumber"> @name.ActorNumber @name.ActorSurname</option>
                         }
                     </select>
                 </div>
