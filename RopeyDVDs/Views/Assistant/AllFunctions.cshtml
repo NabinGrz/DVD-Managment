@@ -1,4 +1,7 @@
-﻿@{
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> signInManager;
+@inject UserManager<IdentityUser> userManager;
+@{
     ViewData["Title"] = "AllFunctions";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
@@ -30,35 +33,42 @@
                 <a class="list-group-item" asp-area="" style="color: black" asp-controller="Assistant" asp-action="GetList">4. List of Producer, Studio and cast list of all the DVDs</a>
             </li>
             <li class="list-group m-1">
-                <a class="list-group-item" asp-area="" style="color: black" asp-controller="Assistant" asp-action="GetLoanDetails">5. Function5</a>
+                <a class="list-group-item" asp-area="" style="color: black" asp-controller="Assistant" asp-action="GetLoanDetails">5. Last Loaned Detail</a>
             </li>
             <li class="list-group m-1">
-                <a class="list-group-item" asp-area="" style="color: black" asp-controller="Assistant" asp-action="ListAllMembers">6. Function6</a>
+                <a class="list-group-item" asp-area="" style="color: black" asp-controller="Assistant" asp-action="ListAllMembers">6. Issue DVD copy to loan a member</a>
             </li>
             <li class="list-group m-1">
-                <a class="list-group-item" asp-area="" style="color: black" asp-controller="Assistant" asp-action="ListAllLoans">7. Problem Function7</a>
+                <a class="list-group-item" asp-area="" style="color: black" asp-controller="Assistant" asp-action="ListAllLoans">7. Returned DVD copy report</a>
             </li>
             <li class="list-group m-1">
-                <a class="list-group-item" asp-area="" style="color: black" asp-controller="Assistant" asp-action="GetTotalLoans">8. Function8</a>
+                <a class="list-group-item" asp-area="" style="color: black" asp-controller="Assistant" asp-action="GetTotalLoans">8. List of all members with their detail like loans</a>
             </li>
             <li class="list-group m-1">
-                <a class="list-group-item" asp-area="" style="color: black" asp-controller="Assistant" asp-action="CreateDVDTitle">9. Function9</a>
+                <a class="list-group-item" asp-area="" style="color: black" asp-controller="Assistant" asp-action="CreateDVDTitle">9. Create new DVD title</a>
             </li>
             <li class="list-group m-1">
-                <a class="list-group-item" asp-area="" style="color: black" asp-controller="Assistant" asp-action="GetListOfDVDCopy">10. Function10A</a>
+                <a class="list-group-item" asp-area="" style="color: black" asp-controller="Assistant" asp-action="GetListOfDVDCopy">10. Delete Old DVDs</a>
             </li>
             <li class="list-group m-1">
-                <a class="list-group-item" asp-area="" style="color: black" asp-controller="Assistant" asp-action="GetDVDCopyListNotLoaned">11. Function11</a>
+                <a class="list-group-item" asp-area="" style="color: black" asp-controller="Assistant" asp-action="GetDVDCopyListNotLoaned">11. List of all DVD copies currently on loan </a>
             </li>
             <li class="list-group m-1">
-                <a class="list-group-item" asp-area="" style="color: black" asp-controller="Assistant" asp-action="MmemberListNotBorrowed">12. Problem Function12</a>
+                <a class="list-group-item" asp-area="" style="color: black" asp-controller="Assistant" asp-action="MmemberListNotBorrowed">12. Member who has not borrowed DVD for the past 31 days</a>
             </li>
             <li class="list-group m-1">
-                <a class="list-group-item" asp-area="" style="color: black" asp-controller="Assistant" asp-action="GetDVDofNoLoan">13. Function13</a>
+                <a class="list-group-item" asp-area="" style="color: black" asp-controller="Assistant" asp-action="GetDVDofNoLoan">
+                    13. List of all DVD titles in the shop where no copy of the
+                    title has been loaned in the last 31 days
+                </a>
             </li>
-            <li class="list-group m-1">
-                <a class="list-group-item" asp-area="" style="color: black" asp-controller="Account" asp-action="ResetPassword">14. Password Change</a>
-            </li>
+            @if (signInManager.IsSignedIn(User) && User.IsInRole("Manager"))
+            {
+                <li class="list-group m-1">
+                    <a class="list-group-item" asp-area="" style="color: black" asp-controller="Account" asp-action="ResetPassword">14. Password Change</a>
+                </li>
+            }
+
 
 
         </ul>

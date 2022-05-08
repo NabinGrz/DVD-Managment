@@ -3,6 +3,36 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+<html>
+    <head>
+        
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    
+        <style>
+/*            .item{
+  padding: 5px;
+  
+            }
+        .fa {
+  padding: 10px;
+  font-size: 20px;
+  text-decoration: none;
+  margin: 5px 2px;
+}*/
+
+.fa:hover {
+    color: red;
+    opacity: 0.7;
+}
+
+.fa-trash {
+  color: white;
+}
+        
+        </style>
+        </head>
+        <body>
 <h1>The list of DVD Copies purchased year ago and not on loan</h1>
 @if (ViewBag.copyDeleted)
 {
@@ -13,7 +43,7 @@
         </button>
     </div>*@
 }
-<table class="table text-light mt-3">
+<table class="table table-custom text-light mt-3">
     <thead class='bg-custom'>
         <tr>
 
@@ -27,13 +57,16 @@
         @foreach (var item in ViewBag.dvdList)
         {
             <tr>
-                <td>@item.dvdCopy.CopyNumber</td>
-                <td>@item.loan.DateReturned</td>
-                <td>@item.dvdCopy.DatePurchased</td>
+                <td class="test">@item.dvdCopy.CopyNumber</td>
+                <td class="test">@item.loan.DateReturned</td>
+                <td class="test">@item.dvdCopy.DatePurchased</td>
                 <td>
                     <ul class="list-inline m-0">
                         <li class="list-inline-item">
-                            <a href="@Url.Action("DeleteCopy","Assistant",new { item.dvdCopy.CopyNumber} )" class="btn btn-danger" type="button" data-toggle="tooltip" data-placement="top" title="Delete">Delete</a>
+                            <a href="@Url.Action("DeleteCopy","Assistant",new { item.dvdCopy.CopyNumber} )" class="fa fa-trash" type="button" data-toggle="tooltip" data-placement="top" title="Delete">
+
+
+                            </a>
                         </li>
                     </ul>
                 </td>
@@ -41,4 +74,6 @@
         }
     </tbody>
 </table>
+</body>
+</html>
 

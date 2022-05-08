@@ -30,7 +30,7 @@
             border: 2px solid rgba(255,255,255,0.1);
         }
 
-        .table {
+        .table-custom {
             background-color: rgba(255,255,255,0.13);
             border-radius: 10px;
             backdrop-filter: blur(10px);
@@ -72,6 +72,15 @@
                             <li class="nav-item">
                                 <a class="nav-link text-light" asp-area="" style="color: white" asp-controller="Administration" asp-action="ListRoles">Manage Roles</a>
                             </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link text-light" asp-area="" style="color: white" asp-controller="Assistant" asp-action="AllFunctions">Function</a>
+                            </li>
+
+                        }
+                        @if (signInManager.IsSignedIn(User) && User.IsInRole("Assistant"))
+                        {
+
 
                             <li class="nav-item">
                                 <a class="nav-link text-light" asp-area="" style="color: white" asp-controller="Assistant" asp-action="AllFunctions">Function</a>

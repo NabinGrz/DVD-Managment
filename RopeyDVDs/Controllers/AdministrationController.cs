@@ -15,6 +15,52 @@ namespace RopeyDVDs.Controllers
             this.roleManager = roleManager;
             this.userManager = userManager;
         }
+
+        //Account/ResetPassword
+        [HttpGet]
+        [Authorize(Roles = "Assistant")]
+        public IActionResult ResetPassword()
+        {
+
+            return View();
+        }
+
+
+        //Account/ResetPassword
+        [HttpPost]
+        public async Task<IActionResult> ResetPassword(EditUserViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                var user = await userManager.FindByIdAsync(model.Id);
+
+                if (user == null)
+                {
+                    ViewBag.ErrorMessage = $"User with Id = {model.Id} cannot be found";
+                    return View("NotFound");
+                }
+
+                //changes user password method is this..
+                ResetPasswordViewModel reset= new ResetPasswordViewModel();
+                var result = await userManager.ChangePasswordAsync(user, reset.CurrentPassword, reset.NewPassword);
+                //if (!result.Succeeded)
+                //{
+                //    foreach (var error in result.Errors)
+
+                //    {
+                //        ModelState.AddModelError(string.Empty, error.Description);
+                //    }
+                //    return View();
+                //}
+
+               // await signInManager.RefreshSignInAsync(user);
+                return View("ResetPasswordConfirmation");
+            }
+            return View();
+        }
+
+
+
         [HttpPost]
         public async Task<IActionResult> DeleteUser(string id)
         {

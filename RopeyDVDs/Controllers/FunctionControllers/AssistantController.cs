@@ -382,7 +382,7 @@ order by  dt.DateReleased asc,a.ActorSurname asc
                             join dc in dvdCopy on l.CopyNumber equals dc.CopyNumber into table2
                             from dc in table2.Distinct().ToList().Where(dc => dc.CopyNumber == l.CopyNumber).Distinct().ToList()
                             join dt in dvdTitle on dc.DVDNumber equals dt.DVDNumber into table3
-                            from dt in table3.Distinct().ToList().Where(dt => dt.DVDNumber == dc.DVDNumber && l.DateReturned != c).Distinct().ToList()
+                            from dt in table3.Distinct().ToList().Where(dt => dt.DVDNumber == dc.DVDNumber && l.DateReturned == c).Distinct().ToList()
                             group new { l, m, dc, dt } by new { dt.DVDTitleName, dc.CopyNumber, m.MembershipFirstName, l.DateOut }
                            into grp
                             select new
