@@ -167,77 +167,114 @@ order by  dt.DateReleased asc,a.ActorSurname asc
         }
 
         //FUNCTION 6
-        public IActionResult ListAllMembers()
+        public IActionResult ListDVDCopy(bool isSuccess = false)
         {
-            ViewBag.allmembers = _dbcontext.Members.ToList();
-            return RedirectToAction("Index", "Members");
+            var dvdcopy = _dbcontext.DVDCopys.ToList();
+            var dvdtitle = _dbcontext.DVDTitles.ToList();
+
+            var members = _dbcontext.Members.ToList();
+
+            var loanType = _dbcontext.LoanTypes.ToList();
+
+            ViewBag.member = members;
+            ViewBag.loanType = loanType;
+
+            var dvd = from dc in dvdcopy
+                      join dt in dvdtitle on dc.DVDNumber equals dt.DVDNumber
+                      select new
+                      {
+                          dvdtitle = dt,
+                          dvdcopy = dc,
+                      };
+            ViewBag.dvd = dvd;
+            ViewBag.IsSuccess = isSuccess;
+            return View();
         }
 
-        public IActionResult AddDVDCopy(int membershipNumber)
+        [HttpPost]
+        public async Task<IActionResult> AddDVDCopy(Loan Loan, int member, int loantype, int copynumber)
         {
-            ViewBag.MemberAge = _dbcontext.Members.Where(x => x.MembershipNumber == membershipNumber).First();
-            String dob = ViewBag.MemberAge.MemberDOB;//GETTING MEMBER DOB
+            var memberInfo = _dbcontext.Members.Where(x => x.MembershipNumber == member).First();
+            String dob = memberInfo.MemberDOB;//GETTING MEMBER DOB
             String todaysDate = DateTime.Now.ToShortDateString();
 
-            //MEMBER NUMBER
-            ViewBag.memberNumber = membershipNumber;
+            var today = DateTime.Now.ToShortDateString();
+
 
             //CONVERTING IN DATE TIME
             DateTime cDOB = DateTime.Parse(dob);
             DateTime ctodaysDate = DateTime.Parse(todaysDate);
 
-            Console.WriteLine(todaysDate);
-            Console.WriteLine(cDOB);//{11/25/1992 12:00:00 AM}
-            Console.WriteLine(ctodaysDate);//{5/1/2022 12:00:00 AM}
-
-            //CALCULATING YEARS FOR AGE
             TimeSpan dayDiff = ctodaysDate.Subtract(cDOB);
             Console.Write(dayDiff.Days.ToString());
             var age = dayDiff.Days / 365;
             Console.Write(age);
 
-            ViewBag.memAge = age;
-            //GETTING MEMBER SHIP DETAILS
-            /**
-                 select distinct m.MembershipNumber,m.MembershipCategoryNumber,mc.MembershipCategoryTotalLoans as "Allowed Loan",count(l.CopyNumber) as 'Member Total Loan' 
-    from Members m
-    inner join loans l on m.MembershipNumber = l.MemberNumber
-    inner join MembershipCategorys mc on m.MembershipCategoryNumber = mc.MembershipCategoryNumber
-    where m.MembershipNumber = 8
-    group by m.MembershipNumber,m.MembershipCategoryNumber,mc.MembershipCategoryTotalLoans
-  
-             */
-            var loans = _dbcontext.Loans.ToList();
-            var members = _dbcontext.Members.ToList();
-            var memberCategory = _dbcontext.MembershipCategorys.ToList();
 
-            var details = from l in loans
-                          join m in members on l.MemberNumber equals m.MembershipNumber into table1
-                          from m in table1.Where(m => m.MembershipNumber == l.MemberNumber && m.MembershipNumber == membershipNumber).ToList()
 
-                          join mc in memberCategory on m.MembershipCategoryNumber equals mc.MembershipCategoryNumber into table2
-                          from mc in table2.Where(mc => mc.MembershipCategoryNumber == m.MembershipCategoryNumber).ToList()
-                          group new { l, m, mc } by new { m.MembershipNumber, m.MembershipCategoryNumber, mc.MembershipCategoryTotalLoans }
-                          into grp
-                          select new
-                          {
-                              grp.Key.MembershipNumber,
-                              grp.Key.MembershipCategoryNumber,
-                              grp.Key.MembershipCategoryTotalLoans,
-                              TotalLoans = grp.Count()
-                          };
-            ViewBag.Details = details;
-            //{ MembershipNumber = 8, MembershipCategoryNumber = 5, MembershipCategoryTotalLoans = "20", TotalLoans = 8 }
-            Console.WriteLine("============================================");
-            Console.WriteLine(details);
-            //FOR LOANTYPE
-            ViewBag.LoanTypeNumber = _dbcontext.LoanTypes.ToList();
+            var dvd = _dbcontext.DVDTitles.ToList();
+            var catogory = _dbcontext.DVDCategorys.ToList();
+            var dvdTitle = _dbcontext.DVDTitles.ToList();
+            // var dvdCopy = _dbcontext.DVDCopys.ToList();
+            var dvdCopy = _dbcontext.DVDCopys.Where(x => x.CopyNumber == copynumber).First();
+            var dvdInfo = _dbcontext.DVDTitles.Where(x => x.DVDNumber == dvdCopy.DVDNumber).First();
 
-            //FOR COPY NUMBER
-            ViewBag.Copy = _dbcontext.DVDCopys.ToList();
-            return View();
+            var restriction = (from dt in dvdTitle
+                               join c in catogory on dt.CategoryNumber equals c.CategoryNumber
+                               select new
+                               {
+                                   dvdTitle = dt,
+                                   catogory = c
+                               }).Where(x => x.dvdTitle.DVDNumber == dvdCopy.DVDNumber).First();
+            ViewBag.r = restriction;
+            bool agerestriction = bool.Parse(ViewBag.r.catogory.AgeRestricted);
+            Console.WriteLine(agerestriction);
+            // Console.WriteLine(agerestriction.catogory);
+
+            Loan.MemberNumber = member;
+            Loan.LoanTypeNumber = loantype;
+            Loan.CopyNumber = copynumber;
+            Loan.DateOut = DateTime.Now.ToShortDateString();
+            var loanDuration = _dbcontext.LoanTypes.Where(x => x.LoanTypeNumber == loantype).First();
+            Console.WriteLine(loanDuration.LoanDuration);
+            //if (loantype == 1)
+            //{
+            //   
+            //}
+            //else
+            //{
+            //    Loan.DateDue = DateTime.Now.AddDays(3).ToShortDateString();
+            //}
+            Loan.DateDue = DateTime.Now.AddDays(double.Parse(loanDuration.LoanDuration)).ToShortDateString();
+            Loan.DateReturned = "0";
+
+            if (!agerestriction)
+            {
+                _dbcontext.Loans.Add(Loan);
+                await _dbcontext.SaveChangesAsync();
+
+                return RedirectToAction("ListDVDCopy", "Assistant", new { isSuccess = true });
+            }
+            if (agerestriction)
+            {
+                if (age > 18)
+                {
+
+                    _dbcontext.Loans.Add(Loan);
+                    await _dbcontext.SaveChangesAsync();
+
+                    return RedirectToAction("ListDVDCopy", "Assistant", new { isSuccess = true });
+
+                }
+                else
+                {
+                    ViewBag.message = "hello";
+                    return RedirectToAction("ListDVDCopy", "Assistant", new { isSuccess = false });
+                }
+            }
+            return RedirectToAction("ListDVDCopy", "Assistant", new { isSuccess = true });
+
         }
-
         //FOR FUNCTION 13
         //https://localhost:44344/Assistant/GetDVDofNoLoan
         public IActionResult GetDVDofNoLoan()

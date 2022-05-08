@@ -5,12 +5,36 @@
     ViewBag.Titile = "All Roles";
 }
 
-<h1> All Roles</h1>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <style>
+    .fa {
+
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+            .fa:hover {
+                color: red;
+                opacity: 0.7;
+            }
+
+        
+
+        .fa-edit {
+            color: green;
+        }
+
 div{
 color:black;
 }
 </style>
+</head>
+        <body>
+<h1> All Roles</h1>
+
 @if (Model.Any())
 {
     <a class="btn btn-primary" style="width:auto" asp-controller="administration" asp-action="CreateRole">
@@ -28,8 +52,8 @@ color:black;
 
             </div>
             <div class="card-footer">
-                <a class="btn btn-primary" asp-controller="Administration" asp-action="EditRole" asp-route-id="@role.Id">Edit</a>
-                <a href='#' class="btn btn-danger">Delete</a>
+                <a class="fa fa-edit" asp-controller="Administration" asp-action="EditRole" asp-route-id="@role.Id"></a>
+                @*<a href='#' class="btn btn-danger">Delete</a>*@
             </div>
         </div>
     }
@@ -53,3 +77,5 @@ else
 
     </div>
 }
+</body>
+</html>

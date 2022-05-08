@@ -65,9 +65,13 @@
             @if (signInManager.IsSignedIn(User) && User.IsInRole("Manager"))
             {
                 <li class="list-group m-1">
-                    <a class="list-group-item" asp-area="" style="color: black" asp-controller="Account" asp-action="ResetPassword">14. Password Change</a>
+                    <a class="list-group-item" asp-area="" style="color: black" asp-controller="Account" asp-action="ResetUserPassword">14. Password Change</a>
+                </li>
+                                <li class="list-group m-1">
+                    <a class="list-group-item" asp-area="" style="color: black" asp-controller="Administration" asp-action="ListUsers">15. Change User Password</a>
                 </li>
             }
+            
 
 
 

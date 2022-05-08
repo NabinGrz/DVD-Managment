@@ -67,8 +67,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRpb25cUmVzZXRQYXNzd29yZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/Assistant/AddDVDCopy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzaXN0YW50XEFkZERWRENvcHkuY3NodG1s
+[D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/Administration/ResetUserPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRpb25cUmVzZXRVc2VyUGFzc3dvcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/Assistant/AllFunctions.cshtml]
@@ -121,6 +121,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/Assistant/ListAllMembers.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzaXN0YW50XExpc3RBbGxNZW1iZXJzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/Assistant/ListDVDCopy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzaXN0YW50XExpc3REVkRDb3B5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/Assistant/MmemberListNotBorrowed.cshtml]

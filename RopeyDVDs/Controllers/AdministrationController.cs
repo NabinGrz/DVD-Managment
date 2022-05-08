@@ -86,9 +86,35 @@ namespace RopeyDVDs.Controllers
 
                 return View("ListUsers");
             }
+
+
+
            // return View(users);
         }
+        [HttpGet]
+        public async Task<IActionResult> ResetUserPassword(string email, bool IsSuccess = false)
+        {
+            var user = await userManager.FindByEmailAsync(email);
 
+            if (user == null)
+            {
+                ViewBag.ErrorMessage = $"User with Id = {email} cannot be found";
+                return View("NotFound");
+            }
+
+            ViewBag.Success = IsSuccess;
+            ViewBag.Email = user;
+            return View();
+        }
+        public async Task<IActionResult> ChangePassword(string email, string password)
+        {
+            bool suc = false;
+            var user = await userManager.FindByEmailAsync(email);
+            var token = await userManager.GeneratePasswordResetTokenAsync(user);
+            var userPassword = await userManager.ResetPasswordAsync(user, token, password);
+
+            return RedirectToAction("ResetUserPassword", new { email = email, IsSuccess = true });
+        }
 
         [HttpGet]
 

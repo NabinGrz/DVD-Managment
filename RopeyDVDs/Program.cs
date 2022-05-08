@@ -16,12 +16,14 @@ builder.Services.AddControllersWithViews();
 // to manage the detils of registered user
 // to manage user role info
 builder.Services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<RopeyDVDsContext>();
-builder.Services.AddMvc(options =>
-{
-    var policy = new AuthorizationPolicyBuilder().RequireAuthenticatedUser().Build();
-    options.Filters.Add(new AuthorizeFilter(policy));
-}).AddXmlSerializerFormatters();
-
+//builder.Services.AddMvc(options =>
+//{
+//    var policy = new AuthorizationPolicyBuilder().RequireAuthenticatedUser().Build();
+//    options.Filters.Add(new AuthorizeFilter(policy));
+//}).AddXmlSerializerFormatters();
+builder.Services.AddIdentityCore<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = false)
+                .AddEntityFrameworkStores<RopeyDVDsContext>()
+                .AddTokenProvider<DataProtectorTokenProvider<IdentityUser>>(TokenOptions.DefaultProvider);
 var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
@@ -40,6 +42,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=NormalUser}/{action=GetActorCopy}/{id?}");
+    pattern: "{controller=Assistant}/{action=ListDVDCopy}/{id?}");
 
 app.Run();

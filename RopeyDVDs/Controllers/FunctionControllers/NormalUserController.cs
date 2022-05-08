@@ -16,7 +16,7 @@ namespace RopeyDVDs.Controllers
         }
         // https://localhost:7135/NormalUser/GetActorDetails?name=Smith
         //FUNCTION 1
-        [Authorize]
+        //[Authorize]
         public IActionResult GetActorDetails(String surname)
         {
 
@@ -40,7 +40,7 @@ namespace RopeyDVDs.Controllers
    
 
         //FUNCTION 2
-        [Authorize]
+        //[Authorize]
        public IActionResult GetActorCopy(int actorID)
         {
             /**

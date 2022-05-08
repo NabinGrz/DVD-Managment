@@ -112,7 +112,7 @@ namespace RopeyDVDs.Controllers
         }
         //Account/ResetPassword
         [HttpGet]
-        [Authorize(Roles ="Assistant")]
+        [Authorize(Roles ="Assistant,Manager")]
         public  IActionResult ResetPassword()
         {
 
