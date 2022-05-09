@@ -52,18 +52,20 @@ namespace RopeyDVDs.Controllers
                     UserName = registermodel.Email,
                     Email = registermodel.Email,
                 };
-
+                //creating new user 
                 var result = await _userManager.CreateAsync(user, registermodel.Password);
 
                 if (result.Succeeded)
                 {//specify session or Persistent cookie
                  //session coolkie is immediatlry loss after closong broswer
                  // Persistent coolkie is not loss even after closong broswer
+
+                    //after successful registration, logging the user
                     await _signInManager.SignInAsync(user, isPersistent: false);
 
-                    return RedirectToAction("Privacy", "Home");
+                    return RedirectToAction("Index", "Home");
                 }
-
+                //for error message
                 foreach (var error in result.Errors)
                 {
                     ModelState.AddModelError("", error.Description);
@@ -91,11 +93,12 @@ namespace RopeyDVDs.Controllers
         {
             if (ModelState.IsValid)
             {
+                //sign in users
                 var result = await _signInManager.PasswordSignInAsync(loginmodel.Email, loginmodel.Password, !loginmodel.RememberMe, false);//if lock account on failure
                 //returnns sign in result
                 if (result.Succeeded)
                 {
-                    return RedirectToAction("Index", "Home");
+                    return RedirectToAction("AllFunctions", "Assistant");
 
                 }
                 ModelState.AddModelError(string.Empty, "Invalid Username/Password");

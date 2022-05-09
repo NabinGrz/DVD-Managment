@@ -96,14 +96,14 @@ namespace RopeyDVDs.Controllers
         {
             var user = await userManager.FindByEmailAsync(email);
 
-            if (user == null)
+            if (user.Email == null)
             {
                 ViewBag.ErrorMessage = $"User with Id = {email} cannot be found";
                 return View("NotFound");
             }
 
             ViewBag.Success = IsSuccess;
-            ViewBag.Email = user;
+            ViewBag.Email = user.Email;
             return View();
         }
         public async Task<IActionResult> ChangePassword(string email, string password)

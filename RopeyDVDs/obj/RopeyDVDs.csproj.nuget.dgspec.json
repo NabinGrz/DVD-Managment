@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\RopeyDVDs.csproj": {}
+    "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\RopeyDVDs.csproj": {}
   },
   "projects": {
-    "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\RopeyDVDs.csproj": {
+    "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\RopeyDVDs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\RopeyDVDs.csproj",
+        "projectUniqueName": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\RopeyDVDs.csproj",
         "projectName": "RopeyDVDs",
-        "projectPath": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\RopeyDVDs.csproj",
-        "packagesPath": "C:\\Users\\Suhant KC\\.nuget\\packages\\",
-        "outputPath": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\obj\\",
+        "projectPath": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\RopeyDVDs.csproj",
+        "packagesPath": "C:\\Users\\nabin\\.nuget\\packages\\",
+        "outputPath": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Suhant KC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\nabin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -107,7 +107,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

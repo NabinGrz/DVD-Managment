@@ -8,309 +8,309 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = RopeyDVDs
 build_property.RootNamespace = RopeyDVDs
-build_property.ProjectDir = D:\C#\appdevcw\DVD-Managment\RopeyDVDs\
+build_property.ProjectDir = C:\C#\CW\DVD-Managment\RopeyDVDs\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\C#\appdevcw\DVD-Managment\RopeyDVDs
+build_property.MSBuildProjectDirectory = C:\C#\CW\DVD-Managment\RopeyDVDs
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Pages/_AuthLayout.cshtml]
+[C:/C\#/CW/DVD-Managment/RopeyDVDs/Pages/_AuthLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0F1dGhMYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/Account/AccessDenied.cshtml]
+[C:/C\#/CW/DVD-Managment/RopeyDVDs/Views/Account/AccessDenied.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBY2Nlc3NEZW5pZWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/Account/Login.cshtml]
+[C:/C\#/CW/DVD-Managment/RopeyDVDs/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/Account/Register.cshtml]
+[C:/C\#/CW/DVD-Managment/RopeyDVDs/Views/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/Account/ResetPassword.cshtml]
+[C:/C\#/CW/DVD-Managment/RopeyDVDs/Views/Account/ResetPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZXNldFBhc3N3b3JkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/Account/ResetPasswordConfirmation.cshtml]
+[C:/C\#/CW/DVD-Managment/RopeyDVDs/Views/Account/ResetPasswordConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZXNldFBhc3N3b3JkQ29uZmlybWF0aW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/Administration/CreateRole.cshtml]
+[C:/C\#/CW/DVD-Managment/RopeyDVDs/Views/Administration/CreateRole.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRpb25cQ3JlYXRlUm9sZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/Administration/EditRole.cshtml]
+[C:/C\#/CW/DVD-Managment/RopeyDVDs/Views/Administration/EditRole.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRpb25cRWRpdFJvbGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/Administration/EditUser.cshtml]
+[C:/C\#/CW/DVD-Managment/RopeyDVDs/Views/Administration/EditUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRpb25cRWRpdFVzZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/Administration/EditUsersInRole.cshtml]
+[C:/C\#/CW/DVD-Managment/RopeyDVDs/Views/Administration/EditUsersInRole.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRpb25cRWRpdFVzZXJzSW5Sb2xlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/Administration/ListRoles.cshtml]
+[C:/C\#/CW/DVD-Managment/RopeyDVDs/Views/Administration/ListRoles.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRpb25cTGlzdFJvbGVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/Administration/ListUsers.cshtml]
+[C:/C\#/CW/DVD-Managment/RopeyDVDs/Views/Administration/ListUsers.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRpb25cTGlzdFVzZXJzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/Administration/ResetPassword.cshtml]
+[C:/C\#/CW/DVD-Managment/RopeyDVDs/Views/Administration/ResetPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRpb25cUmVzZXRQYXNzd29yZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/Administration/ResetUserPassword.cshtml]
+[C:/C\#/CW/DVD-Managment/RopeyDVDs/Views/Administration/ResetUserPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRpb25cUmVzZXRVc2VyUGFzc3dvcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/Assistant/AllFunctions.cshtml]
+[C:/C\#/CW/DVD-Managment/RopeyDVDs/Views/Assistant/AllFunctions.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzaXN0YW50XEFsbEZ1bmN0aW9ucy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/Assistant/CreateDVDTitle.cshtml]
+[C:/C\#/CW/DVD-Managment/RopeyDVDs/Views/Assistant/CreateDVDTitle.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzaXN0YW50XENyZWF0ZURWRFRpdGxlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/Assistant/DeleteDVDCopy.cshtml]
+[C:/C\#/CW/DVD-Managment/RopeyDVDs/Views/Assistant/DeleteDVDCopy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzaXN0YW50XERlbGV0ZURWRENvcHkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/Assistant/EditDVDCopyDetails.cshtml]
+[C:/C\#/CW/DVD-Managment/RopeyDVDs/Views/Assistant/EditDVDCopyDetails.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzaXN0YW50XEVkaXREVkRDb3B5RGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/Assistant/GetDateOut.cshtml]
+[C:/C\#/CW/DVD-Managment/RopeyDVDs/Views/Assistant/GetDateOut.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzaXN0YW50XEdldERhdGVPdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/Assistant/GetDVDCopyListNotLoaned.cshtml]
+[C:/C\#/CW/DVD-Managment/RopeyDVDs/Views/Assistant/GetDVDCopyListNotLoaned.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzaXN0YW50XEdldERWRENvcHlMaXN0Tm90TG9hbmVkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/Assistant/GetDVDofNoLoan.cshtml]
+[C:/C\#/CW/DVD-Managment/RopeyDVDs/Views/Assistant/GetDVDofNoLoan.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzaXN0YW50XEdldERWRG9mTm9Mb2FuLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/Assistant/GetList.cshtml]
+[C:/C\#/CW/DVD-Managment/RopeyDVDs/Views/Assistant/GetList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzaXN0YW50XEdldExpc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/Assistant/GetListOfDVDCopy.cshtml]
+[C:/C\#/CW/DVD-Managment/RopeyDVDs/Views/Assistant/GetListOfDVDCopy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzaXN0YW50XEdldExpc3RPZkRWRENvcHkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/Assistant/GetLoanDetails.cshtml]
+[C:/C\#/CW/DVD-Managment/RopeyDVDs/Views/Assistant/GetLoanDetails.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzaXN0YW50XEdldExvYW5EZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/Assistant/GetTotalLoans.cshtml]
+[C:/C\#/CW/DVD-Managment/RopeyDVDs/Views/Assistant/GetTotalLoans.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzaXN0YW50XEdldFRvdGFsTG9hbnMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/Assistant/ListAllLoans.cshtml]
+[C:/C\#/CW/DVD-Managment/RopeyDVDs/Views/Assistant/ListAllLoans.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzaXN0YW50XExpc3RBbGxMb2Fucy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/Assistant/ListAllMembers.cshtml]
+[C:/C\#/CW/DVD-Managment/RopeyDVDs/Views/Assistant/ListAllMembers.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzaXN0YW50XExpc3RBbGxNZW1iZXJzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/Assistant/ListDVDCopy.cshtml]
+[C:/C\#/CW/DVD-Managment/RopeyDVDs/Views/Assistant/ListDVDCopy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzaXN0YW50XExpc3REVkRDb3B5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/Assistant/MmemberListNotBorrowed.cshtml]
+[C:/C\#/CW/DVD-Managment/RopeyDVDs/Views/Assistant/MmemberListNotBorrowed.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzaXN0YW50XE1tZW1iZXJMaXN0Tm90Qm9ycm93ZWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/DVDCategories/Create.cshtml]
+[C:/C\#/CW/DVD-Managment/RopeyDVDs/Views/DVDCategories/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRFZEQ2F0ZWdvcmllc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/DVDCategories/Delete.cshtml]
+[C:/C\#/CW/DVD-Managment/RopeyDVDs/Views/DVDCategories/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRFZEQ2F0ZWdvcmllc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/DVDCategories/Details.cshtml]
+[C:/C\#/CW/DVD-Managment/RopeyDVDs/Views/DVDCategories/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRFZEQ2F0ZWdvcmllc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/DVDCategories/Edit.cshtml]
+[C:/C\#/CW/DVD-Managment/RopeyDVDs/Views/DVDCategories/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRFZEQ2F0ZWdvcmllc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/DVDCategories/Index.cshtml]
+[C:/C\#/CW/DVD-Managment/RopeyDVDs/Views/DVDCategories/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRFZEQ2F0ZWdvcmllc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/DVDCopies/Create.cshtml]
+[C:/C\#/CW/DVD-Managment/RopeyDVDs/Views/DVDCopies/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRFZEQ29waWVzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/DVDCopies/Delete.cshtml]
+[C:/C\#/CW/DVD-Managment/RopeyDVDs/Views/DVDCopies/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRFZEQ29waWVzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/DVDCopies/Details.cshtml]
+[C:/C\#/CW/DVD-Managment/RopeyDVDs/Views/DVDCopies/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRFZEQ29waWVzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/DVDCopies/Edit.cshtml]
+[C:/C\#/CW/DVD-Managment/RopeyDVDs/Views/DVDCopies/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRFZEQ29waWVzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/DVDCopies/Index.cshtml]
+[C:/C\#/CW/DVD-Managment/RopeyDVDs/Views/DVDCopies/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRFZEQ29waWVzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/Home/Index.cshtml]
+[C:/C\#/CW/DVD-Managment/RopeyDVDs/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/Home/Privacy.cshtml]
+[C:/C\#/CW/DVD-Managment/RopeyDVDs/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/LoanTypes/Create.cshtml]
+[C:/C\#/CW/DVD-Managment/RopeyDVDs/Views/LoanTypes/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9hblR5cGVzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/LoanTypes/Delete.cshtml]
+[C:/C\#/CW/DVD-Managment/RopeyDVDs/Views/LoanTypes/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9hblR5cGVzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/LoanTypes/Details.cshtml]
+[C:/C\#/CW/DVD-Managment/RopeyDVDs/Views/LoanTypes/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9hblR5cGVzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/LoanTypes/Edit.cshtml]
+[C:/C\#/CW/DVD-Managment/RopeyDVDs/Views/LoanTypes/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9hblR5cGVzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/LoanTypes/Index.cshtml]
+[C:/C\#/CW/DVD-Managment/RopeyDVDs/Views/LoanTypes/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9hblR5cGVzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/MembershipCategories/Create.cshtml]
+[C:/C\#/CW/DVD-Managment/RopeyDVDs/Views/MembershipCategories/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyc2hpcENhdGVnb3JpZXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/MembershipCategories/Delete.cshtml]
+[C:/C\#/CW/DVD-Managment/RopeyDVDs/Views/MembershipCategories/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyc2hpcENhdGVnb3JpZXNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/MembershipCategories/Details.cshtml]
+[C:/C\#/CW/DVD-Managment/RopeyDVDs/Views/MembershipCategories/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyc2hpcENhdGVnb3JpZXNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/MembershipCategories/Edit.cshtml]
+[C:/C\#/CW/DVD-Managment/RopeyDVDs/Views/MembershipCategories/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyc2hpcENhdGVnb3JpZXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/MembershipCategories/Index.cshtml]
+[C:/C\#/CW/DVD-Managment/RopeyDVDs/Views/MembershipCategories/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyc2hpcENhdGVnb3JpZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/Members/Create.cshtml]
+[C:/C\#/CW/DVD-Managment/RopeyDVDs/Views/Members/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/Members/Delete.cshtml]
+[C:/C\#/CW/DVD-Managment/RopeyDVDs/Views/Members/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/Members/Details.cshtml]
+[C:/C\#/CW/DVD-Managment/RopeyDVDs/Views/Members/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/Members/Edit.cshtml]
+[C:/C\#/CW/DVD-Managment/RopeyDVDs/Views/Members/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/Members/Index.cshtml]
+[C:/C\#/CW/DVD-Managment/RopeyDVDs/Views/Members/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/NormalUser/GetActorCopy.cshtml]
+[C:/C\#/CW/DVD-Managment/RopeyDVDs/Views/NormalUser/GetActorCopy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm9ybWFsVXNlclxHZXRBY3RvckNvcHkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/NormalUser/GetActorDetails.cshtml]
+[C:/C\#/CW/DVD-Managment/RopeyDVDs/Views/NormalUser/GetActorDetails.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm9ybWFsVXNlclxHZXRBY3RvckRldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/Producers/Create.cshtml]
+[C:/C\#/CW/DVD-Managment/RopeyDVDs/Views/Producers/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjZXJzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/Producers/Delete.cshtml]
+[C:/C\#/CW/DVD-Managment/RopeyDVDs/Views/Producers/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjZXJzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/Producers/Details.cshtml]
+[C:/C\#/CW/DVD-Managment/RopeyDVDs/Views/Producers/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjZXJzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/Producers/Edit.cshtml]
+[C:/C\#/CW/DVD-Managment/RopeyDVDs/Views/Producers/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjZXJzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/Producers/Index.cshtml]
+[C:/C\#/CW/DVD-Managment/RopeyDVDs/Views/Producers/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjZXJzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/Shared/Error.cshtml]
+[C:/C\#/CW/DVD-Managment/RopeyDVDs/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/Shared/NotFound.cshtml]
+[C:/C\#/CW/DVD-Managment/RopeyDVDs/Views/Shared/NotFound.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXE5vdEZvdW5kLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/Shared/_IndexLayout.cshtml]
+[C:/C\#/CW/DVD-Managment/RopeyDVDs/Views/Shared/_IndexLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9JbmRleExheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/C\#/CW/DVD-Managment/RopeyDVDs/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/Studios/Create.cshtml]
+[C:/C\#/CW/DVD-Managment/RopeyDVDs/Views/Studios/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGlvc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/Studios/Delete.cshtml]
+[C:/C\#/CW/DVD-Managment/RopeyDVDs/Views/Studios/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGlvc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/Studios/Details.cshtml]
+[C:/C\#/CW/DVD-Managment/RopeyDVDs/Views/Studios/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGlvc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/Studios/Edit.cshtml]
+[C:/C\#/CW/DVD-Managment/RopeyDVDs/Views/Studios/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGlvc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/Studios/Index.cshtml]
+[C:/C\#/CW/DVD-Managment/RopeyDVDs/Views/Studios/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGlvc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/_ViewImports.cshtml]
+[C:/C\#/CW/DVD-Managment/RopeyDVDs/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/_ViewStart.cshtml]
+[C:/C\#/CW/DVD-Managment/RopeyDVDs/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/appdevcw/DVD-Managment/RopeyDVDs/Views/Shared/_Layout.cshtml]
+[C:/C\#/CW/DVD-Managment/RopeyDVDs/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-8kh4p8jrt5

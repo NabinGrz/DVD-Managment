@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "jqC1EtFOprvGTnpM7qQEnWA3biG73bvR9tXdJrAeuzU=",
+  "Hash": "GUQnsuogfkmkvLsvG6kJ441tD+78J6hBrqZ6yj1K37s=",
   "Source": "RopeyDVDs",
   "BasePath": "_content/RopeyDVDs",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "RopeyDVDs\\wwwroot",
       "Source": "RopeyDVDs",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\obj\\Debug\\net6.0\\scopedcss\\bundle\\RopeyDVDs.styles.css",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\obj\\Debug\\net6.0\\scopedcss\\bundle\\RopeyDVDs.styles.css",
       "SourceId": "RopeyDVDs",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "RopeyDVDs.styles.css",
       "AssetKind": "All",
@@ -31,13 +31,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\obj\\Debug\\net6.0\\scopedcss\\bundle\\RopeyDVDs.styles.css"
+      "OriginalItemSpec": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\obj\\Debug\\net6.0\\scopedcss\\bundle\\RopeyDVDs.styles.css"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\RopeyDVDs.bundle.scp.css",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\RopeyDVDs.bundle.scp.css",
       "SourceId": "RopeyDVDs",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "RopeyDVDs.bundle.scp.css",
       "AssetKind": "All",
@@ -48,13 +48,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\RopeyDVDs.bundle.scp.css"
+      "OriginalItemSpec": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\RopeyDVDs.bundle.scp.css"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\css\\style.css",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\css\\style.css",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/css/style.css",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\style.css"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\img\\apple-touch-icon.png",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\img\\apple-touch-icon.png",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/img/apple-touch-icon.png",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\apple-touch-icon.png"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\img\\clients\\client-1.png",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\img\\clients\\client-1.png",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/img/clients/client-1.png",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\clients\\client-1.png"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\img\\clients\\client-2.png",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\img\\clients\\client-2.png",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/img/clients/client-2.png",
       "AssetKind": "All",
@@ -119,10 +119,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\clients\\client-2.png"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\img\\clients\\client-3.png",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\img\\clients\\client-3.png",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/img/clients/client-3.png",
       "AssetKind": "All",
@@ -136,10 +136,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\clients\\client-3.png"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\img\\clients\\client-4.png",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\img\\clients\\client-4.png",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/img/clients/client-4.png",
       "AssetKind": "All",
@@ -153,10 +153,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\clients\\client-4.png"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\img\\clients\\client-5.png",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\img\\clients\\client-5.png",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/img/clients/client-5.png",
       "AssetKind": "All",
@@ -170,10 +170,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\clients\\client-5.png"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\img\\clients\\client-6.png",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\img\\clients\\client-6.png",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/img/clients/client-6.png",
       "AssetKind": "All",
@@ -187,10 +187,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\clients\\client-6.png"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\img\\cta-bg.jpg",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\img\\cta-bg.jpg",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/img/cta-bg.jpg",
       "AssetKind": "All",
@@ -204,10 +204,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\cta-bg.jpg"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\img\\favicon.png",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\img\\favicon.png",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/img/favicon.png",
       "AssetKind": "All",
@@ -221,10 +221,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\favicon.png"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\img\\hero-img.png",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\img\\hero-img.png",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/img/hero-img.png",
       "AssetKind": "All",
@@ -238,10 +238,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\hero-img.png"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\img\\portfolio\\portfolio-1.jpg",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\img\\portfolio\\portfolio-1.jpg",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/img/portfolio/portfolio-1.jpg",
       "AssetKind": "All",
@@ -255,10 +255,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\portfolio\\portfolio-1.jpg"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\img\\portfolio\\portfolio-2.jpg",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\img\\portfolio\\portfolio-2.jpg",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/img/portfolio/portfolio-2.jpg",
       "AssetKind": "All",
@@ -272,10 +272,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\portfolio\\portfolio-2.jpg"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\img\\portfolio\\portfolio-3.jpg",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\img\\portfolio\\portfolio-3.jpg",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/img/portfolio/portfolio-3.jpg",
       "AssetKind": "All",
@@ -289,10 +289,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\portfolio\\portfolio-3.jpg"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\img\\portfolio\\portfolio-4.jpg",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\img\\portfolio\\portfolio-4.jpg",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/img/portfolio/portfolio-4.jpg",
       "AssetKind": "All",
@@ -306,10 +306,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\portfolio\\portfolio-4.jpg"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\img\\portfolio\\portfolio-5.jpg",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\img\\portfolio\\portfolio-5.jpg",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/img/portfolio/portfolio-5.jpg",
       "AssetKind": "All",
@@ -323,10 +323,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\portfolio\\portfolio-5.jpg"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\img\\portfolio\\portfolio-6.jpg",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\img\\portfolio\\portfolio-6.jpg",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/img/portfolio/portfolio-6.jpg",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\portfolio\\portfolio-6.jpg"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\img\\portfolio\\portfolio-7.jpg",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\img\\portfolio\\portfolio-7.jpg",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/img/portfolio/portfolio-7.jpg",
       "AssetKind": "All",
@@ -357,10 +357,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\portfolio\\portfolio-7.jpg"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\img\\portfolio\\portfolio-8.jpg",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\img\\portfolio\\portfolio-8.jpg",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/img/portfolio/portfolio-8.jpg",
       "AssetKind": "All",
@@ -374,10 +374,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\portfolio\\portfolio-8.jpg"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\img\\portfolio\\portfolio-9.jpg",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\img\\portfolio\\portfolio-9.jpg",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/img/portfolio/portfolio-9.jpg",
       "AssetKind": "All",
@@ -391,10 +391,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\portfolio\\portfolio-9.jpg"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\img\\portfolio\\portfolio-details-1.jpg",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\img\\portfolio\\portfolio-details-1.jpg",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/img/portfolio/portfolio-details-1.jpg",
       "AssetKind": "All",
@@ -408,10 +408,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\portfolio\\portfolio-details-1.jpg"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\img\\portfolio\\portfolio-details-2.jpg",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\img\\portfolio\\portfolio-details-2.jpg",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/img/portfolio/portfolio-details-2.jpg",
       "AssetKind": "All",
@@ -425,10 +425,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\portfolio\\portfolio-details-2.jpg"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\img\\portfolio\\portfolio-details-3.jpg",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\img\\portfolio\\portfolio-details-3.jpg",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/img/portfolio/portfolio-details-3.jpg",
       "AssetKind": "All",
@@ -442,10 +442,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\portfolio\\portfolio-details-3.jpg"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\img\\skills.png",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\img\\skills.png",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/img/skills.png",
       "AssetKind": "All",
@@ -459,10 +459,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\skills.png"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\img\\team\\team-1.jpg",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\img\\team\\team-1.jpg",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/img/team/team-1.jpg",
       "AssetKind": "All",
@@ -476,10 +476,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\team\\team-1.jpg"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\img\\team\\team-2.jpg",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\img\\team\\team-2.jpg",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/img/team/team-2.jpg",
       "AssetKind": "All",
@@ -493,10 +493,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\team\\team-2.jpg"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\img\\team\\team-3.jpg",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\img\\team\\team-3.jpg",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/img/team/team-3.jpg",
       "AssetKind": "All",
@@ -510,10 +510,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\team\\team-3.jpg"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\img\\team\\team-4.jpg",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\img\\team\\team-4.jpg",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/img/team/team-4.jpg",
       "AssetKind": "All",
@@ -527,10 +527,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\team\\team-4.jpg"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\img\\why-us.png",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\img\\why-us.png",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/img/why-us.png",
       "AssetKind": "All",
@@ -544,10 +544,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\why-us.png"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\js\\main.js",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\js\\main.js",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/js/main.js",
       "AssetKind": "All",
@@ -561,10 +561,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\js\\main.js"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\aos\\aos.css",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\aos\\aos.css",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/vendor/aos/aos.css",
       "AssetKind": "All",
@@ -578,10 +578,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\aos\\aos.css"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\aos\\aos.js",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\aos\\aos.js",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/vendor/aos/aos.js",
       "AssetKind": "All",
@@ -595,10 +595,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\aos\\aos.js"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap.css",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap.css",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/vendor/bootstrap/css/bootstrap.css",
       "AssetKind": "All",
@@ -612,10 +612,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap.css"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap.css.map",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap.css.map",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/vendor/bootstrap/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -629,10 +629,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap.min.css",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap.min.css",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/vendor/bootstrap/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -646,10 +646,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap.min.css.map",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap.min.css.map",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/vendor/bootstrap/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -663,10 +663,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap.rtl.css",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap.rtl.css",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/vendor/bootstrap/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -680,10 +680,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap.rtl.css.map",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap.rtl.css.map",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/vendor/bootstrap/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -697,10 +697,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap.rtl.min.css",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap.rtl.min.css",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/vendor/bootstrap/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -714,10 +714,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/vendor/bootstrap/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -731,10 +731,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.css",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.css",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/vendor/bootstrap/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -748,10 +748,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.css.map",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.css.map",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/vendor/bootstrap/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -765,10 +765,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.min.css",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.min.css",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/vendor/bootstrap/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -782,10 +782,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.min.css.map",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.min.css.map",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/vendor/bootstrap/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -799,10 +799,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.css",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.css",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/vendor/bootstrap/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -816,10 +816,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/vendor/bootstrap/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -833,10 +833,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/vendor/bootstrap/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -850,10 +850,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/vendor/bootstrap/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -867,10 +867,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.css",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.css",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/vendor/bootstrap/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -884,10 +884,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.css.map",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.css.map",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/vendor/bootstrap/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -901,10 +901,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.min.css",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.min.css",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/vendor/bootstrap/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -918,10 +918,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/vendor/bootstrap/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -935,10 +935,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/vendor/bootstrap/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -952,10 +952,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/vendor/bootstrap/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -969,10 +969,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/vendor/bootstrap/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -986,10 +986,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/vendor/bootstrap/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -1003,10 +1003,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.css",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.css",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/vendor/bootstrap/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -1020,10 +1020,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.css.map",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.css.map",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/vendor/bootstrap/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -1037,10 +1037,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.min.css",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.min.css",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/vendor/bootstrap/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -1054,10 +1054,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/vendor/bootstrap/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -1071,10 +1071,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/vendor/bootstrap/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -1088,10 +1088,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/vendor/bootstrap/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -1105,10 +1105,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/vendor/bootstrap/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -1122,10 +1122,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/vendor/bootstrap/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -1139,10 +1139,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.bundle.js",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.bundle.js",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/vendor/bootstrap/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -1156,10 +1156,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.bundle.js.map",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.bundle.js.map",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/vendor/bootstrap/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -1173,10 +1173,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.bundle.min.js",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.bundle.min.js",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/vendor/bootstrap/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -1190,10 +1190,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/vendor/bootstrap/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -1207,10 +1207,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.esm.js",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.esm.js",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/vendor/bootstrap/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -1224,10 +1224,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.esm.js.map",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.esm.js.map",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/vendor/bootstrap/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -1241,10 +1241,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.esm.min.js",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.esm.min.js",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/vendor/bootstrap/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -1258,10 +1258,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.esm.min.js.map",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.esm.min.js.map",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/vendor/bootstrap/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -1275,10 +1275,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.js",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.js",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/vendor/bootstrap/js/bootstrap.js",
       "AssetKind": "All",
@@ -1292,10 +1292,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.js"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.js.map",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.js.map",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/vendor/bootstrap/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -1309,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.min.js",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.min.js",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/vendor/bootstrap/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -1326,10 +1326,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.min.js.map",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.min.js.map",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/vendor/bootstrap/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -1343,10 +1343,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap-icons\\bootstrap-icons.css",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap-icons\\bootstrap-icons.css",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/vendor/bootstrap-icons/bootstrap-icons.css",
       "AssetKind": "All",
@@ -1360,10 +1360,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\bootstrap-icons\\bootstrap-icons.css"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap-icons\\bootstrap-icons.json",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap-icons\\bootstrap-icons.json",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/vendor/bootstrap-icons/bootstrap-icons.json",
       "AssetKind": "All",
@@ -1377,10 +1377,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\bootstrap-icons\\bootstrap-icons.json"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap-icons\\fonts\\bootstrap-icons.woff",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap-icons\\fonts\\bootstrap-icons.woff",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/vendor/bootstrap-icons/fonts/bootstrap-icons.woff",
       "AssetKind": "All",
@@ -1394,10 +1394,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\bootstrap-icons\\fonts\\bootstrap-icons.woff"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap-icons\\fonts\\bootstrap-icons.woff2",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap-icons\\fonts\\bootstrap-icons.woff2",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/vendor/bootstrap-icons/fonts/bootstrap-icons.woff2",
       "AssetKind": "All",
@@ -1411,10 +1411,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\bootstrap-icons\\fonts\\bootstrap-icons.woff2"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap-icons\\index.html",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\bootstrap-icons\\index.html",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/vendor/bootstrap-icons/index.html",
       "AssetKind": "All",
@@ -1428,10 +1428,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\bootstrap-icons\\index.html"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\boxicons\\css\\animations.css",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\boxicons\\css\\animations.css",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/vendor/boxicons/css/animations.css",
       "AssetKind": "All",
@@ -1445,10 +1445,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\boxicons\\css\\animations.css"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\boxicons\\css\\boxicons.css",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\boxicons\\css\\boxicons.css",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/vendor/boxicons/css/boxicons.css",
       "AssetKind": "All",
@@ -1462,10 +1462,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\boxicons\\css\\boxicons.css"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\boxicons\\css\\boxicons.min.css",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\boxicons\\css\\boxicons.min.css",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/vendor/boxicons/css/boxicons.min.css",
       "AssetKind": "All",
@@ -1479,10 +1479,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\boxicons\\css\\boxicons.min.css"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\boxicons\\css\\transformations.css",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\boxicons\\css\\transformations.css",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/vendor/boxicons/css/transformations.css",
       "AssetKind": "All",
@@ -1496,10 +1496,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\boxicons\\css\\transformations.css"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\boxicons\\fonts\\boxicons.eot",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\boxicons\\fonts\\boxicons.eot",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/vendor/boxicons/fonts/boxicons.eot",
       "AssetKind": "All",
@@ -1513,10 +1513,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\boxicons\\fonts\\boxicons.eot"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\boxicons\\fonts\\boxicons.svg",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\boxicons\\fonts\\boxicons.svg",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/vendor/boxicons/fonts/boxicons.svg",
       "AssetKind": "All",
@@ -1530,10 +1530,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\boxicons\\fonts\\boxicons.svg"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\boxicons\\fonts\\boxicons.ttf",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\boxicons\\fonts\\boxicons.ttf",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/vendor/boxicons/fonts/boxicons.ttf",
       "AssetKind": "All",
@@ -1547,10 +1547,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\boxicons\\fonts\\boxicons.ttf"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\boxicons\\fonts\\boxicons.woff",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\boxicons\\fonts\\boxicons.woff",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/vendor/boxicons/fonts/boxicons.woff",
       "AssetKind": "All",
@@ -1564,10 +1564,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\boxicons\\fonts\\boxicons.woff"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\boxicons\\fonts\\boxicons.woff2",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\boxicons\\fonts\\boxicons.woff2",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/vendor/boxicons/fonts/boxicons.woff2",
       "AssetKind": "All",
@@ -1581,10 +1581,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\boxicons\\fonts\\boxicons.woff2"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\glightbox\\css\\glightbox.css",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\glightbox\\css\\glightbox.css",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/vendor/glightbox/css/glightbox.css",
       "AssetKind": "All",
@@ -1598,10 +1598,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\glightbox\\css\\glightbox.css"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\glightbox\\css\\glightbox.min.css",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\glightbox\\css\\glightbox.min.css",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/vendor/glightbox/css/glightbox.min.css",
       "AssetKind": "All",
@@ -1615,10 +1615,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\glightbox\\css\\glightbox.min.css"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\glightbox\\js\\glightbox.js",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\glightbox\\js\\glightbox.js",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/vendor/glightbox/js/glightbox.js",
       "AssetKind": "All",
@@ -1632,10 +1632,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\glightbox\\js\\glightbox.js"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\glightbox\\js\\glightbox.min.js",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\glightbox\\js\\glightbox.min.js",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/vendor/glightbox/js/glightbox.min.js",
       "AssetKind": "All",
@@ -1649,10 +1649,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\glightbox\\js\\glightbox.min.js"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\isotope-layout\\isotope.pkgd.js",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\isotope-layout\\isotope.pkgd.js",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/vendor/isotope-layout/isotope.pkgd.js",
       "AssetKind": "All",
@@ -1666,10 +1666,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\isotope-layout\\isotope.pkgd.js"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\isotope-layout\\isotope.pkgd.min.js",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\isotope-layout\\isotope.pkgd.min.js",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/vendor/isotope-layout/isotope.pkgd.min.js",
       "AssetKind": "All",
@@ -1683,10 +1683,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\isotope-layout\\isotope.pkgd.min.js"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\php-email-form\\validate.js",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\php-email-form\\validate.js",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/vendor/php-email-form/validate.js",
       "AssetKind": "All",
@@ -1700,10 +1700,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\php-email-form\\validate.js"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\remixicon\\remixicon.css",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\remixicon\\remixicon.css",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/vendor/remixicon/remixicon.css",
       "AssetKind": "All",
@@ -1717,10 +1717,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\remixicon\\remixicon.css"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\remixicon\\remixicon.eot",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\remixicon\\remixicon.eot",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/vendor/remixicon/remixicon.eot",
       "AssetKind": "All",
@@ -1734,10 +1734,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\remixicon\\remixicon.eot"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\remixicon\\remixicon.less",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\remixicon\\remixicon.less",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/vendor/remixicon/remixicon.less",
       "AssetKind": "All",
@@ -1751,10 +1751,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\remixicon\\remixicon.less"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\remixicon\\remixicon.svg",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\remixicon\\remixicon.svg",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/vendor/remixicon/remixicon.svg",
       "AssetKind": "All",
@@ -1768,10 +1768,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\remixicon\\remixicon.svg"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\remixicon\\remixicon.symbol.svg",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\remixicon\\remixicon.symbol.svg",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/vendor/remixicon/remixicon.symbol.svg",
       "AssetKind": "All",
@@ -1785,10 +1785,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\remixicon\\remixicon.symbol.svg"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\remixicon\\remixicon.ttf",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\remixicon\\remixicon.ttf",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/vendor/remixicon/remixicon.ttf",
       "AssetKind": "All",
@@ -1802,10 +1802,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\remixicon\\remixicon.ttf"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\remixicon\\remixicon.woff",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\remixicon\\remixicon.woff",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/vendor/remixicon/remixicon.woff",
       "AssetKind": "All",
@@ -1819,10 +1819,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\remixicon\\remixicon.woff"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\remixicon\\remixicon.woff2",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\remixicon\\remixicon.woff2",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/vendor/remixicon/remixicon.woff2",
       "AssetKind": "All",
@@ -1836,10 +1836,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\remixicon\\remixicon.woff2"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\swiper\\swiper-bundle.min.css",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\swiper\\swiper-bundle.min.css",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/vendor/swiper/swiper-bundle.min.css",
       "AssetKind": "All",
@@ -1853,10 +1853,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\swiper\\swiper-bundle.min.css"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\swiper\\swiper-bundle.min.js",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\swiper\\swiper-bundle.min.js",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/vendor/swiper/swiper-bundle.min.js",
       "AssetKind": "All",
@@ -1870,10 +1870,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\swiper\\swiper-bundle.min.js"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\waypoints\\noframework.waypoints.js",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\assets\\vendor\\waypoints\\noframework.waypoints.js",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "assets/vendor/waypoints/noframework.waypoints.js",
       "AssetKind": "All",
@@ -1887,10 +1887,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\waypoints\\noframework.waypoints.js"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\css\\site.css",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\css\\site.css",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -1904,10 +1904,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\css\\style.css",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\css\\style.css",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "css/style.css",
       "AssetKind": "All",
@@ -1921,10 +1921,10 @@
       "OriginalItemSpec": "wwwroot\\css\\style.css"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\favicon.ico",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\favicon.ico",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -1938,10 +1938,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\img\\accessdenied.png",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\img\\accessdenied.png",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "img/accessdenied.png",
       "AssetKind": "All",
@@ -1955,10 +1955,10 @@
       "OriginalItemSpec": "wwwroot\\img\\accessdenied.png"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\img\\booklib.jpg",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\img\\booklib.jpg",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "img/booklib.jpg",
       "AssetKind": "All",
@@ -1972,10 +1972,10 @@
       "OriginalItemSpec": "wwwroot\\img\\booklib.jpg"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\img\\online.png",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\img\\online.png",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "img/online.png",
       "AssetKind": "All",
@@ -1989,10 +1989,10 @@
       "OriginalItemSpec": "wwwroot\\img\\online.png"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\js\\site.js",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\js\\site.js",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -2006,10 +2006,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -2023,10 +2023,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -2040,10 +2040,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -2057,10 +2057,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -2074,10 +2074,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -2091,10 +2091,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -2108,10 +2108,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -2125,10 +2125,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -2142,10 +2142,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -2159,10 +2159,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -2176,10 +2176,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -2193,10 +2193,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -2210,10 +2210,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -2227,10 +2227,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -2244,10 +2244,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -2261,10 +2261,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -2278,10 +2278,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -2295,10 +2295,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -2312,10 +2312,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -2329,10 +2329,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -2346,10 +2346,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -2363,10 +2363,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -2380,10 +2380,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -2397,10 +2397,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -2414,10 +2414,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -2431,10 +2431,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -2448,10 +2448,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -2465,10 +2465,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -2482,10 +2482,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -2499,10 +2499,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -2516,10 +2516,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -2533,10 +2533,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -2550,10 +2550,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -2567,10 +2567,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -2584,10 +2584,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -2601,10 +2601,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -2618,10 +2618,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -2635,10 +2635,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -2652,10 +2652,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -2669,10 +2669,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -2686,10 +2686,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -2703,10 +2703,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -2720,10 +2720,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -2737,10 +2737,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -2754,10 +2754,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -2771,10 +2771,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -2788,10 +2788,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -2805,10 +2805,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -2822,10 +2822,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -2839,10 +2839,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -2856,10 +2856,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -2873,10 +2873,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -2890,10 +2890,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -2907,10 +2907,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -2924,10 +2924,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -2941,10 +2941,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -2958,10 +2958,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "RopeyDVDs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\appdevcw\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
+      "ContentRoot": "C:\\C#\\CW\\DVD-Managment\\RopeyDVDs\\wwwroot\\",
       "BasePath": "_content/RopeyDVDs",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",

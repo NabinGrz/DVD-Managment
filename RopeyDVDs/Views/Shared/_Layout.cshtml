@@ -69,24 +69,7 @@
                 <div class="container-fluid">
 
                     <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                        @* <ul class="navbar-nav flex-grow-1">
-                            <li class="nav-item">
-                            <a class="nav-link text-light" asp-area="" style="color: white" asp-controller="Actors" asp-action="Index">Actor</a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link text-light" asp-area="" style="color: white" asp-controller="Actors" asp-action="Index">Actor</a>
-                            </li>
-                            </ul>*@
                         <ul class="navbar-nav ml-auto">
-
-
-                            @*                        <li class="nav-item">
-                                <a class="nav-link text-light" asp-area="" style="color: white" asp-controller="Account" asp-action="Register">Register</a>
-                                </li>
-                                <li class="nav-item">
-                                <a class="nav-link text-light" asp-area="" style="color: white" asp-controller="Account" asp-action="Login">Login</a>
-                                </li>*@
-
 
                             @if (signInManager.IsSignedIn(User) && User.IsInRole("Manager"))
                             {
@@ -158,7 +141,6 @@
                         <ul class="navbar-nav order-md-last">
                             @if (signInManager.IsSignedIn(User))
                             {
-
                                 <li class="nav-item">
                                     <a class="nav-link text-light" asp-area="" style="color: white" asp-controller="Account" asp-action="ResetPassword">Reset Password</a>
                                 </li>
