@@ -17,17 +17,16 @@ namespace RopeyDVDs.Controllers
         }
 
         //Account/ResetPassword
-        [HttpGet]
+        [HttpGet] //for getting reset password view
         [Authorize(Roles = "Assistant")]
         public IActionResult ResetPassword()
         {
-
             return View();
         }
 
 
         //Account/ResetPassword
-        [HttpPost]
+        [HttpPost] //for resetting password
         public async Task<IActionResult> ResetPassword(EditUserViewModel model)
         {
             if (ModelState.IsValid)
@@ -60,8 +59,7 @@ namespace RopeyDVDs.Controllers
         }
 
 
-
-        [HttpPost]
+        [HttpPost] //for deleting user
         public async Task<IActionResult> DeleteUser(string id)
         {
             var user = await userManager.FindByIdAsync(id);
@@ -91,7 +89,7 @@ namespace RopeyDVDs.Controllers
 
            // return View(users);
         }
-        [HttpGet]
+        [HttpGet] //for getting views of other users details
         public async Task<IActionResult> ResetUserPassword(string email, bool IsSuccess = false)
         {
             var user = await userManager.FindByEmailAsync(email);
@@ -106,6 +104,7 @@ namespace RopeyDVDs.Controllers
             ViewBag.Email = user.Email;
             return View();
         }
+        //for changing user password
         public async Task<IActionResult> ChangePassword(string email, string password)
         {
             bool suc = false;
@@ -117,13 +116,14 @@ namespace RopeyDVDs.Controllers
         }
 
         [HttpGet]
-
+        //for listing all users
         public IActionResult ListUsers()
         {
              var users = userManager.Users;
             return View(users);
         }
 
+        //for editing user details
         [HttpGet]
         public async Task<IActionResult> EditUser(string id)
         {
@@ -149,6 +149,7 @@ namespace RopeyDVDs.Controllers
             return View(model);
         }
 
+        //for editing user
         [HttpPost]
         public async Task<IActionResult> EditUser(EditUserViewModel model)
         {
@@ -187,6 +188,7 @@ namespace RopeyDVDs.Controllers
             return View();
         }
 
+        //for creating role
         [HttpPost]
         public async Task<IActionResult> CreateRole(CreateRoleViewModel model)
         {
@@ -213,6 +215,7 @@ namespace RopeyDVDs.Controllers
             return View();
         }
 
+        //for listing roles
         [HttpGet]
         public IActionResult ListRoles()
         {
@@ -220,6 +223,7 @@ namespace RopeyDVDs.Controllers
             return View(roles);
         }
 
+        //for editing roles
         [HttpGet]
         public async Task<IActionResult> EditRole(string id)
         {
@@ -323,7 +327,7 @@ namespace RopeyDVDs.Controllers
         }
 
 
-
+        //edit users in roles
         [HttpPost]
         public async Task<IActionResult> EditUsersInRole(List<UserRoleViewModel> model, string roleId)
         {

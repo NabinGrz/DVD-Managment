@@ -24,6 +24,7 @@ namespace RopeyDVDs.Controllers
         private readonly SignInManager<IdentityUser> _signInManager; //for signing functions(signinasync,signoutasync,issgindedin)
         private readonly RopeyDVDsContext _context;
 
+        //initializing managers
         public AccountController(UserManager<IdentityUser> userManager,
                                       SignInManager<IdentityUser> signInManager)
         {
@@ -70,7 +71,7 @@ namespace RopeyDVDs.Controllers
                 {
                     ModelState.AddModelError("", error.Description);
                 }
-
+                //showing error message when model is invalid
                 ModelState.AddModelError(string.Empty, "Invalid Login Attempt");
 
             }
@@ -98,6 +99,7 @@ namespace RopeyDVDs.Controllers
                 //returnns sign in result
                 if (result.Succeeded)
                 {
+                    //redirecting to allfunction page view
                     return RedirectToAction("AllFunctions", "Assistant");
 
                 }
@@ -109,6 +111,7 @@ namespace RopeyDVDs.Controllers
 
         public async Task<IActionResult> Logout()
         {
+            //for log out user
             await _signInManager.SignOutAsync();
 
             return RedirectToAction("Login");
@@ -118,7 +121,7 @@ namespace RopeyDVDs.Controllers
         [Authorize(Roles ="Assistant,Manager")]
         public  IActionResult ResetPassword()
         {
-
+            //for reset password view
             return View();
         }
 
@@ -129,14 +132,14 @@ namespace RopeyDVDs.Controllers
         {
             if (ModelState.IsValid)
             {
+                //getting user details for reseeting password
                 var user = await _userManager.GetUserAsync(User); //gets current logged in user records
                 if(user == null)
                 {
                     return RedirectToAction("Login");
                 }
 
-                //changes user password method is this..
-
+                //changing user password
                 var result = await _userManager.ChangePasswordAsync(user,model.CurrentPassword,model.NewPassword);
                 if(!result.Succeeded)
                 {
@@ -156,6 +159,7 @@ namespace RopeyDVDs.Controllers
 
         [HttpGet]
         [AllowAnonymous]
+        //for access denied view
         public IActionResult AccessDenied()
         {
 
