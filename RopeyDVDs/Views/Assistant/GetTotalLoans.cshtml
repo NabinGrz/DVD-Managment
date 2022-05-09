@@ -4,7 +4,14 @@
 }
 
 <h1>Total loans a member has taken</h1>
-
+<style>
+    .custom-container {
+        background-color: rgba(255,255,255,0.13);
+        border-radius: 10px;
+        backdrop-filter: blur(10px);
+        border: 2px solid rgba(255,255,255,0.1);
+    }
+</style>
 <table class="table table-custom text-light">
     <thead class="bg-custom">
         <tr>
@@ -15,27 +22,25 @@
         </tr>
     </thead>
     <tbody>
-        <h3 style="background-color:yellow; color:black;">Too many DVDs on loan for:</h3>
         @foreach (var item in ViewBag.totalloans)
         {
-
-            @if (int.Parse(@item.MembershipCategoryTotalLoans) < @item.TotalLoans)
-            {
-                <div class="container" style="position:relative;color:black; right:80px; top:2px; background-color:yellow; width:300px">
-                    <ul style="ali">
-                    <li>@item.MembershipFirstName</li>
-                </ul>
-                </div>
-                
-            }
             <tr>
 
                 <td style="width:210px">@item.MembershipFirstName</td>
                 <td style="width:210px">@item.MembershipCategoryNumber</td>
                 <td style="width:180px">@item.MembershipCategoryTotalLoans</td>
-                <td style="width:180px">@item.TotalLoans</td>
+                @if (int.Parse(@item.MembershipCategoryTotalLoans) >= @item.TotalLoans)
+                {
+                    <td style="width:180px; ">@item.TotalLoans</td>
+                }
+                else
+                {
 
+                    <td style="width:180px; color:red;">Too many loans</td>
+                }
             </tr>
+
+
         }
     </tbody>
 </table>

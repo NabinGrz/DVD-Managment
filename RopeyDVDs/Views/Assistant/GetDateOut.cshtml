@@ -3,7 +3,8 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Details of DVD's copy</h1>
+<h1>Select a member by MemberNumber or 
+MemberLastName and view a list of all the DVDs within 31 Days</h1>
 
 <style>
     .bg-custom {
@@ -13,7 +14,7 @@
 <div class="container">
     <form action="@Url.Action("GetDateOut", "Assistant")" method="get">
         <div class="row">
-            <div class="col-sm-9">
+            <div class="col-sm-3">
                 <div class="form-group">
                     <label for="ActorSurName" class="control-label"></label>
                     <select id="memberNumber" name="memberNumber" class="form-control custom-select bg-white border-left-0 border-md" required>
@@ -25,7 +26,7 @@
                     </select>
                 </div>
             </div>
-                    <div class="col-sm-3 mt-4">
+                    <div class="col-sm-9 mt-4">
                         <button type="submit" class="btn btn-primary">Search ></button>
                     </div>
         </div>

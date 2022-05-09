@@ -42,7 +42,7 @@
         .bg-custom {
             background-color: #E50914;
         }
-        
+
         .fa {
             padding: 10px;
             font-size: 20px;
@@ -54,7 +54,7 @@
                 opacity: 0.7;
             }
 
-        
+
         .fa-sign-out {
             color: green;
         }
@@ -63,112 +63,114 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm">
-            <div class="container-fluid">
+        @if (signInManager.IsSignedIn(User))
+        {
+            <nav class="navbar navbar-expand-sm">
+                <div class="container-fluid">
 
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    @* <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                        <a class="nav-link text-light" asp-area="" style="color: white" asp-controller="Actors" asp-action="Index">Actor</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link text-light" asp-area="" style="color: white" asp-controller="Actors" asp-action="Index">Actor</a>
-                        </li>
-                        </ul>*@
-                    <ul class="navbar-nav ml-auto">
-
-
-                        @*                        <li class="nav-item">
-                            <a class="nav-link text-light" asp-area="" style="color: white" asp-controller="Account" asp-action="Register">Register</a>
+                    <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                        @* <ul class="navbar-nav flex-grow-1">
+                            <li class="nav-item">
+                            <a class="nav-link text-light" asp-area="" style="color: white" asp-controller="Actors" asp-action="Index">Actor</a>
                             </li>
                             <li class="nav-item">
-                            <a class="nav-link text-light" asp-area="" style="color: white" asp-controller="Account" asp-action="Login">Login</a>
-                            </li>*@
+                            <a class="nav-link text-light" asp-area="" style="color: white" asp-controller="Actors" asp-action="Index">Actor</a>
+                            </li>
+                            </ul>*@
+                        <ul class="navbar-nav ml-auto">
 
 
+                            @*                        <li class="nav-item">
+                                <a class="nav-link text-light" asp-area="" style="color: white" asp-controller="Account" asp-action="Register">Register</a>
+                                </li>
+                                <li class="nav-item">
+                                <a class="nav-link text-light" asp-area="" style="color: white" asp-controller="Account" asp-action="Login">Login</a>
+                                </li>*@
+
+
+                            @if (signInManager.IsSignedIn(User) && User.IsInRole("Manager"))
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link text-light" asp-area="" style="color: white" asp-controller="Administration" asp-action="ListRoles">Manage Roles & Users</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link text-light" asp-area="" style="color: white" asp-controller="Assistant" asp-action="AllFunctions">Function</a>
+                                </li>
+
+                            }
+                            @if (signInManager.IsSignedIn(User) && User.IsInRole("Assistant"))
+                            {
+
+
+                                <li class="nav-item">
+                                    <a class="nav-link text-light" asp-area="" style="color: white" asp-controller="Assistant" asp-action="AllFunctions">Function</a>
+                                </li>
+
+                            }
+                            @if (signInManager.IsSignedIn(User) && User.IsInRole("NormalUser"))
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link text-light" asp-area="" style="color: white" asp-controller="NormalUser" asp-action="GetActorDetails">Actor Movies</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link text-light" asp-area="" style="color: white" asp-controller="NormalUser" asp-action="GetActorCopy">Check Copies</a>
+                                </li>
+
+                            }
+
+                        </ul>
                         @if (signInManager.IsSignedIn(User) && User.IsInRole("Manager"))
                         {
-                            <li class="nav-item">
-                                <a class="nav-link text-light" asp-area="" style="color: white" asp-controller="Administration" asp-action="ListRoles">Manage Roles</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link text-light" asp-area="" style="color: white" asp-controller="Assistant" asp-action="AllFunctions">Function</a>
-                            </li>
-
+                            <ul class="navbar-nav order-md-last">
+                                <li class="nav-item">
+                                    <img src="~/img/online.png" style="height:10px; width:10px" />
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-light" asp-area="" style="color: white" asp-controller="Home" asp-action="Index">Manager: @User.Identity.Name</a>
+                                </li>
+                            </ul>
                         }
                         @if (signInManager.IsSignedIn(User) && User.IsInRole("Assistant"))
                         {
 
-
-                            <li class="nav-item">
-                                <a class="nav-link text-light" asp-area="" style="color: white" asp-controller="Assistant" asp-action="AllFunctions">Function</a>
-                            </li>
-
+                            <ul class="navbar-nav order-md-last">
+                                <li class="nav-item">
+                                    <img src="~/img/online.png" style="height:10px; width:10px" />
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-light" asp-area="" style="color: white">Assistant: @User.Identity.Name</a>
+                                </li>
+                            </ul>
                         }
                         @if (signInManager.IsSignedIn(User) && User.IsInRole("NormalUser"))
                         {
-                            <li class="nav-item">
-                                <a class="nav-link text-light" asp-area="" style="color: white" asp-controller="NormalUser" asp-action="GetActorDetails">Actor Movies</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link text-light" asp-area="" style="color: white" asp-controller="NormalUser" asp-action="GetActorCopy">Check Copies</a>
-                            </li>
-
+                            <ul class="navbar-nav order-md-last">
+                                <li class="nav-item">
+                                    <img src="~/img/online.png" style="height:10px; width:10px" />
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-light" asp-area="" style="color: white">NormalUser: @User.Identity.Name</a>
+                                </li>
+                            </ul>
                         }
-
-                    </ul>
-                    @if (signInManager.IsSignedIn(User) && User.IsInRole("Manager"))
-                    {
                         <ul class="navbar-nav order-md-last">
-                            <li class="nav-item">
-                                <img src="~/img/online.png" style="height:10px; width:10px" />
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-light" asp-area="" style="color: white" asp-controller="Home" asp-action="Index">Manager: @User.Identity.Name</a>
-                            </li>
-                        </ul>
-                    }
-                    @if (signInManager.IsSignedIn(User) && User.IsInRole("Assistant"))
-                    {
+                            @if (signInManager.IsSignedIn(User))
+                            {
 
-                        <ul class="navbar-nav order-md-last">
-                            <li class="nav-item">
-                                <img src="~/img/online.png" style="height:10px; width:10px" />
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-light" asp-area="" style="color: white">Assistant: @User.Identity.Name</a>
-                            </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-light" asp-area="" style="color: white" asp-controller="Account" asp-action="ResetPassword">Reset Password</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="fa fa-sign-out" asp-area="" style="color: white" asp-controller="Account" asp-action="Logout"></a>
+                                </li>
+                            }
                         </ul>
-                    }
-                    @if (signInManager.IsSignedIn(User) && User.IsInRole("NormalUser"))
-                    {
-                        <ul class="navbar-nav order-md-last">
-                            <li class="nav-item">
-                                <img src="~/img/online.png" style="height:10px; width:10px" />
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-light" asp-area="" style="color: white">NormalUser: @User.Identity.Name</a>
-                            </li>
-                        </ul>
-                    }
-                    <ul class="navbar-nav order-md-last">
-                        @if (signInManager.IsSignedIn(User))
-                        {
-                            <li class="nav-item">
-                                <a class="fa fa-sign-out"  asp-area="" style="color: white" asp-controller="Account" asp-action="Logout"></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-light" asp-area="" style="color: white" asp-controller="Account" asp-action="ResetPassword">Reset Password</a>
-                            </li>
-
-                        }
-                    </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
-
+            </nav>
+        }
     </header>
     <div class="container ">
         <main role="main" class="pb-3">

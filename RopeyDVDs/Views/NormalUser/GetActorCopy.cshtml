@@ -3,7 +3,8 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>GetActorsLoanCopy</h1>
+<h1>Titles 
+and the number of copies on the shelves</h1>
 <style>
     .bg-custom {
         background-color: #E50914;
@@ -14,7 +15,7 @@
 <div class="container">
     <form action="@Url.Action("GetActorCopy", "NormalUser")" method="get">
         <div class="row">
-            <div class="col-sm-9">
+            <div class="col-sm-3">
                 <div class="form-group">
                     <label for="ActorSurName" class="control-label"></label>
                     <select id="actorID" name="actorID" class="form-control custom-select bg-white border-left-0 border-md" required>
@@ -26,7 +27,7 @@
                     </select>
                 </div>
             </div>
-            <div class="col-sm-3">
+            <div class="col-sm-9">
                 <button type="submit" class="btn btn-primary mt-4">Search ></button>
             </div>
         </div>

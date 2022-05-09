@@ -1,52 +1,75 @@
 ﻿@{
     ViewData["Title"] = "AddDVDCopy";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
+<style>
+    .custom-container {
+        background-color: rgba(255,255,255,0.13);
+        border-radius: 10px;
+        backdrop-filter: blur(10px);
+        border: 2px solid rgba(255,255,255,0.1);
+        /*width:300px;*/
+    }
 
-<h1>AddDVDCopy</h1>
+    select {
+        width: 100px;
+    }
+</style>
+
+<h1>Issue DVD copy on a loan to a  member</h1>
 @if (ViewBag.message != null)
 {
- <p>Age for the DVD is Restricted And member is below the age restriction</p>
+    <p class="alert alert-danger col-sm-3 text-center" role="alert" style='font-size:15px;'>Age for the DVD is Restricted And member is below the age restriction</p>
 }
-@if (ViewBag.IsSuccess)
+@if (ViewBag.IsSuccess && ViewBag.sc != null && ViewBag.ld != null)
 {
-    <h2>SUCCESS</h2>
+        var sc = ViewBag.sc;
+    var ld = ViewBag.ld;
+    var f = sc * ld;
+    <h2 class="alert alert-success col-sm-3 text-center" role="alert" style='font-size:15px;'>A copy was loaned successfully<br>Standard Charge: @f</h2>
+
 }
-else
-{
-    <h2>NOT SUCCESS</h2>
-}
-<form action="/Assistant/AddDVDCopy" method="post">
+@*else
+    {
+    <h2 class="alert alert-danger col-sm-3 text-center" role="alert" style='font-size:15px;'>Unable to loan a copy</h2>
+    }*@
+<div class="row">
+    <div class="col-sm-4"></div>
+    <div class='custom-container m-3 p-3 col-sm-3'>
+        <form action="/Assistant/AddDVDCopy" method="post">
             <div class="form-group">
-                 <label> Producer</label>
-                 <select id="member" name="member" class="form-control" required>
-                        <option value="">Select a Member</option>
-                        @foreach (var name in ViewBag.member)
-                        {
-                            <option value="@name.MembershipNumber">  @name.MembershipFirstName @name.MembershipLastName</option>
-                        }
-                    </select>
+                <label> Producer</label>
+                <select id="member" name="member" class="form-control" required style="width:250px">
+                    <option value="">Select a Member</option>
+                    @foreach (var name in ViewBag.member)
+                    {
+                        <option value="@name.MembershipNumber">  @name.MembershipFirstName @name.MembershipLastName</option>
+                    }
+                </select>
             </div>
             <div class="form-group">
                 <label> Category</label>
-                 <select id="loantype" name="loantype" class="form-control custom-select bg-white border-left-0 border-md" required>
-                        <option value="">Select a Category</option>
-                        @foreach (var name in ViewBag.loanType)
-                        {
-                            <option value="@name.LoanTypeNumber">@name.Loan_Type</option>
-                        }
-                    </select>
+                <select id="loantype" name="loantype" class="form-control custom-select bg-white border-left-0 border-md" required style="width:250px">
+                    <option value="">Select a Category</option>
+                    @foreach (var name in ViewBag.loanType)
+                    {
+                        <option value="@name.LoanTypeNumber">@name.Loan_Type</option>
+                    }
+                </select>
             </div>
             <div class="form-group">
                 <label> DVD</label>
-                 <select id="copynumber" name="copynumber" class="form-control custom-select bg-white border-left-0 border-md" required>
-                        <option value="">Select a copyNumber</option>
-                        @foreach (var name in ViewBag.dvd)
-                        {
-                            <option value="@name.dvdcopy.CopyNumber">@name.dvdtitle.DVDTitleName</option>
-                        }
-                    </select>
+                <select id="copynumber" name="copynumber" class="form-control custom-select bg-white border-left-0 border-md" required style="width:250px">
+                    <option value="">Select a copyNumber</option>
+                    @foreach (var name in ViewBag.dvd)
+                    {
+                        <option value="@name.dvdcopy.CopyNumber">@name.dvdtitle.DVDTitleName</option>
+                    }
+                </select>
             </div>
-            <div class="form-group">
-                <Button type="submit" class="btn btn-primary form-control" >Submit</Button>
+            <div class="form-group mt-3 text-center">
+                <Button type="submit" class="btn btn-primary ">Submit</Button>
             </div>
         </form>
+    </div>
+</div>

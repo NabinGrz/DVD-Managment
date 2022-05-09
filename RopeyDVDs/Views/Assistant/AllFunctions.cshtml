@@ -36,13 +36,13 @@
                 <a class="list-group-item" asp-area="" style="color: black" asp-controller="Assistant" asp-action="GetLoanDetails">5. Last Loaned Detail</a>
             </li>
             <li class="list-group m-1">
-                <a class="list-group-item" asp-area="" style="color: black" asp-controller="Assistant" asp-action="ListAllMembers">6. Issue DVD copy to loan a member</a>
+                <a class="list-group-item" asp-area="" style="color: black" asp-controller="Assistant" asp-action="ListDVDCopy">6. Issue DVD copy on a loan to a  member</a>
             </li>
             <li class="list-group m-1">
                 <a class="list-group-item" asp-area="" style="color: black" asp-controller="Assistant" asp-action="ListAllLoans">7. Returned DVD copy report</a>
             </li>
             <li class="list-group m-1">
-                <a class="list-group-item" asp-area="" style="color: black" asp-controller="Assistant" asp-action="GetTotalLoans">8. List of all members with their detail like loans</a>
+                <a class="list-group-item" asp-area="" style="color: black" asp-controller="Assistant" asp-action="GetTotalLoans">8. List of all members with their detail i.e. loans</a>
             </li>
             <li class="list-group m-1">
                 <a class="list-group-item" asp-area="" style="color: black" asp-controller="Assistant" asp-action="CreateDVDTitle">9. Create new DVD title</a>
@@ -65,10 +65,7 @@
             @if (signInManager.IsSignedIn(User) && User.IsInRole("Manager"))
             {
                 <li class="list-group m-1">
-                    <a class="list-group-item" asp-area="" style="color: black" asp-controller="Account" asp-action="ResetUserPassword">14. Password Change</a>
-                </li>
-                                <li class="list-group m-1">
-                    <a class="list-group-item" asp-area="" style="color: black" asp-controller="Administration" asp-action="ListUsers">15. Change User Password</a>
+                    <a class="list-group-item" asp-area="" style="color: black" asp-controller="Administration" asp-action="ListUsers">14. Change User Password</a>
                 </li>
             }
             

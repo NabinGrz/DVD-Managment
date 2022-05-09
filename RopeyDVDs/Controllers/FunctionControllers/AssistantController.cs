@@ -167,7 +167,7 @@ order by  dt.DateReleased asc,a.ActorSurname asc
         }
 
         //FUNCTION 6
-        public IActionResult ListDVDCopy(bool isSuccess = false)
+        public IActionResult ListDVDCopy(bool isSuccess = false, int sc = 0, int ld = 0)
         {
             var dvdcopy = _dbcontext.DVDCopys.ToList();
             var dvdtitle = _dbcontext.DVDTitles.ToList();
@@ -178,6 +178,8 @@ order by  dt.DateReleased asc,a.ActorSurname asc
 
             ViewBag.member = members;
             ViewBag.loanType = loanType;
+            ViewBag.sc = sc;
+            ViewBag.ld = ld;
 
             var dvd = from dc in dvdcopy
                       join dt in dvdtitle on dc.DVDNumber equals dt.DVDNumber
@@ -187,7 +189,7 @@ order by  dt.DateReleased asc,a.ActorSurname asc
                           dvdcopy = dc,
                       };
             ViewBag.dvd = dvd;
-            ViewBag.IsSuccess = isSuccess;
+            ViewBag.IsSuccess = isSuccess ;
             return View();
         }
 
@@ -218,7 +220,8 @@ order by  dt.DateReleased asc,a.ActorSurname asc
             // var dvdCopy = _dbcontext.DVDCopys.ToList();
             var dvdCopy = _dbcontext.DVDCopys.Where(x => x.CopyNumber == copynumber).First();
             var dvdInfo = _dbcontext.DVDTitles.Where(x => x.DVDNumber == dvdCopy.DVDNumber).First();
-
+            ViewBag.sc = dvdInfo.StandardCharge;
+            var sc = int.Parse(ViewBag.sc);
             var restriction = (from dt in dvdTitle
                                join c in catogory on dt.CategoryNumber equals c.CategoryNumber
                                select new
@@ -236,6 +239,8 @@ order by  dt.DateReleased asc,a.ActorSurname asc
             Loan.CopyNumber = copynumber;
             Loan.DateOut = DateTime.Now.ToShortDateString();
             var loanDuration = _dbcontext.LoanTypes.Where(x => x.LoanTypeNumber == loantype).First();
+            ViewBag.loanDuration = loanDuration.LoanDuration;
+            var ld = ViewBag.loanDuration;
             Console.WriteLine(loanDuration.LoanDuration);
             //if (loantype == 1)
             //{
@@ -253,7 +258,7 @@ order by  dt.DateReleased asc,a.ActorSurname asc
                 _dbcontext.Loans.Add(Loan);
                 await _dbcontext.SaveChangesAsync();
 
-                return RedirectToAction("ListDVDCopy", "Assistant", new { isSuccess = true });
+                return RedirectToAction("ListDVDCopy", "Assistant", new { isSuccess = true, sc = sc, ld = int.Parse(ld) });
             }
             if (agerestriction)
             {
@@ -263,16 +268,16 @@ order by  dt.DateReleased asc,a.ActorSurname asc
                     _dbcontext.Loans.Add(Loan);
                     await _dbcontext.SaveChangesAsync();
 
-                    return RedirectToAction("ListDVDCopy", "Assistant", new { isSuccess = true });
+                    return RedirectToAction("ListDVDCopy", "Assistant", new { isSuccess = true, sc = sc, ld = int.Parse(ld) });
 
                 }
                 else
                 {
                     ViewBag.message = "hello";
-                    return RedirectToAction("ListDVDCopy", "Assistant", new { isSuccess = false });
+                    return RedirectToAction("ListDVDCopy", "Assistant", new { isSuccess = false, sc = sc, ld = int.Parse(ld) });
                 }
             }
-            return RedirectToAction("ListDVDCopy", "Assistant", new { isSuccess = true });
+            return RedirectToAction("ListDVDCopy", "Assistant", new { isSuccess = true, sc = sc, ld = int.Parse(ld) });
 
         }
         //FOR FUNCTION 13
