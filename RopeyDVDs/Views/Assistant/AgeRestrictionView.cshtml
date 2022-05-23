@@ -17,24 +17,16 @@
 </style>
 
 <h1>Issue DVD copy on a loan to a  member</h1>
-@if (ViewBag.IsSuccess && ViewBag.sc != null && ViewBag.ld != null)
-{
-        var sc = ViewBag.sc;
-    var ld = ViewBag.ld;
-    var f = sc * ld;
-    <h2 class="alert alert-success col-sm-3 text-center" role="alert" style='font-size:15px;'>A copy was loaned successfully<br>Standard Charge: @f</h2>
 
-}
-@*else
-    {
-    <h2 class="alert alert-danger col-sm-3 text-center" role="alert" style='font-size:15px;'>Unable to loan a copy</h2>
-    }*@
-<div class="row">
+    <p class="alert alert-danger col-sm-3 text-center" role="alert" style='font-size:15px;'>Members age is @ViewBag.mAge years. This DVD is restricted for under age</p>
+
+<a class="btn btn-primary" asp-controller="Assistant" asp-action="ListDVDCopy">Try for other DVD's</a>
+@*<div class="row">
     <div class="col-sm-4"></div>
     <div class='custom-container m-3 p-3 col-sm-3'>
         <form action="/Assistant/AddDVDCopy" method="post">
             <div class="form-group">
-                <label> Member Name</label>
+                <label> Producer</label>
                 <select id="member" name="member" class="form-control" required style="width:250px">
                     <option value="">Select a Member</option>
                     @foreach (var name in ViewBag.member)
@@ -68,4 +60,4 @@
             </div>
         </form>
     </div>
-</div>
+</div>*@

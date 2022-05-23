@@ -239,7 +239,7 @@ namespace RopeyDVDs.Controllers
             Console.WriteLine(loanDuration.LoanDuration);
             Loan.DateDue = DateTime.Now.AddDays(double.Parse(loanDuration.LoanDuration)).ToShortDateString();
             Loan.DateReturned = "0";
-
+            ViewBag.age = agerestriction;
             //check age restriction before issuing dvd copy
             if (!agerestriction)
             {
@@ -261,12 +261,16 @@ namespace RopeyDVDs.Controllers
                 }
                 else
                 {
-                    ViewBag.message = "hello";
-                    return RedirectToAction("ListDVDCopy", "Assistant", new { isSuccess = false, sc = sc, ld = int.Parse(ld) });
+                    return RedirectToAction("AgeRestrictionView", "Assistant", new {age = age});
                 }
             }
             return RedirectToAction("ListDVDCopy", "Assistant", new { isSuccess = true, sc = sc, ld = int.Parse(ld) });
 
+        }
+        public IActionResult AgeRestrictionView(int age)
+        {
+            ViewBag.mAge = age;
+            return View();
         }
         //FOR FUNCTION 13
         //https://localhost:44344/Assistant/GetDVDofNoLoan
