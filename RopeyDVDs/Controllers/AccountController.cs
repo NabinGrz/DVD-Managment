@@ -100,7 +100,7 @@ namespace RopeyDVDs.Controllers
                 if (result.Succeeded)
                 {
                     //redirecting to allfunction page view
-                    return RedirectToAction("AllFunctions", "Assistant");
+                    return RedirectToAction("Index", "Home");
 
                 }
                 ModelState.AddModelError(string.Empty, "Invalid Username/Password");

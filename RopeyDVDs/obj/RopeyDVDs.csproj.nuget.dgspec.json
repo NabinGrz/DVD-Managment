@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\C#\\CW\\19031726 19031160 19032171 19031368 19031368 Suhant KC Nabin Gurung Kushal Shrestha Prashanna GC Shreya Prajapati\\DVD-Managment\\RopeyDVDs\\RopeyDVDs.csproj": {}
+    "C:\\Users\\Suhant KC\\Desktop\\Ropey\\DVD-Managment\\RopeyDVDs\\RopeyDVDs.csproj": {}
   },
   "projects": {
-    "C:\\C#\\CW\\19031726 19031160 19032171 19031368 19031368 Suhant KC Nabin Gurung Kushal Shrestha Prashanna GC Shreya Prajapati\\DVD-Managment\\RopeyDVDs\\RopeyDVDs.csproj": {
+    "C:\\Users\\Suhant KC\\Desktop\\Ropey\\DVD-Managment\\RopeyDVDs\\RopeyDVDs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\C#\\CW\\19031726 19031160 19032171 19031368 19031368 Suhant KC Nabin Gurung Kushal Shrestha Prashanna GC Shreya Prajapati\\DVD-Managment\\RopeyDVDs\\RopeyDVDs.csproj",
+        "projectUniqueName": "C:\\Users\\Suhant KC\\Desktop\\Ropey\\DVD-Managment\\RopeyDVDs\\RopeyDVDs.csproj",
         "projectName": "RopeyDVDs",
-        "projectPath": "C:\\C#\\CW\\19031726 19031160 19032171 19031368 19031368 Suhant KC Nabin Gurung Kushal Shrestha Prashanna GC Shreya Prajapati\\DVD-Managment\\RopeyDVDs\\RopeyDVDs.csproj",
-        "packagesPath": "C:\\Users\\nabin\\.nuget\\packages\\",
-        "outputPath": "C:\\C#\\CW\\19031726 19031160 19032171 19031368 19031368 Suhant KC Nabin Gurung Kushal Shrestha Prashanna GC Shreya Prajapati\\DVD-Managment\\RopeyDVDs\\obj\\",
+        "projectPath": "C:\\Users\\Suhant KC\\Desktop\\Ropey\\DVD-Managment\\RopeyDVDs\\RopeyDVDs.csproj",
+        "packagesPath": "C:\\Users\\Suhant KC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Suhant KC\\Desktop\\Ropey\\DVD-Managment\\RopeyDVDs\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\nabin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Suhant KC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -107,7 +107,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }
